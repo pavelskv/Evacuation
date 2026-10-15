@@ -1,0 +1,10 @@
+[gd_resource type="FontVariation" format=3 uid="uid://drfiep1yn45dh"]
+
+[ext_resource type="FontFile" uid="uid://dy0ub7rsgjjg2" path="res://Assets/Fonts/BAHNSCHRIFT.TTF" id="1_tb2n7"]
+
+[resource]
+base_font = ExtResource("1_tb2n7")
+variation_opentype = {
+2003072104: 75,
+2003265652: 700
+}

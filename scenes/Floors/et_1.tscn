@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://hdkc6772b6t8"]
+
+[ext_resource type="PackedScene" uid="uid://ti6mhemx8lwt" path="res://models/level/1_et.glb" id="1_6rw4y"]
+[ext_resource type="PackedScene" uid="uid://cyqiyhcbh045k" path="res://models/level/1_et_pol.glb" id="2_3yt1o"]
+[ext_resource type="PackedScene" uid="uid://msekcog7tml6" path="res://models/level/potolok_1_et.glb" id="3_qyxtn"]
+
+[node name="Et_1" type="Node3D" unique_id=1996382353]
+
+[node name="1_et" parent="." unique_id=75818534 instance=ExtResource("1_6rw4y")]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1613771414]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.337164, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=1431678725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9552, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=1495511117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.440621, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1953608024]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.572832, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=1202717390]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.68887, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D7" type="OmniLight3D" parent="." unique_id=2069675674]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.314278, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D8" type="OmniLight3D" parent="." unique_id=1594000927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.6084, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D9" type="OmniLight3D" parent="." unique_id=1964821108]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.965256, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="." unique_id=1029258000]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.45523, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D11" type="OmniLight3D" parent="." unique_id=1057146284]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.247993, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D12" type="OmniLight3D" parent="." unique_id=273552621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62.163437, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D13" type="OmniLight3D" parent="." unique_id=586400291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.94437, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D14" type="OmniLight3D" parent="." unique_id=1331051571]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.99726, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D15" type="OmniLight3D" parent="." unique_id=643272448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.11353, 3.1270401, -1.2108502)
+
+[node name="OmniLight3D16" type="OmniLight3D" parent="." unique_id=686742112]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86.144104, 3.1270401, -1.2108502)
+
+[node name="1_et_pol" parent="." unique_id=937497523 instance=ExtResource("2_3yt1o")]
+
+[node name="potolok_1_et" parent="." unique_id=1248790929 instance=ExtResource("3_qyxtn")]

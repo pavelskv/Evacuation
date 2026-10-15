@@ -1,0 +1,174 @@
+[gd_scene format=3 uid="uid://bvuorqspg0yiu"]
+
+[ext_resource type="PackedScene" uid="uid://7thvtfgfrese" path="res://models/rooms/room2_1.glb" id="1_gytgy"]
+[ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="2_gytgy"]
+[ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="3_ooc1h"]
+[ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="4_d3myk"]
+[ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="5_mwqbk"]
+[ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="6_80toc"]
+[ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_chn0m"]
+[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="8_suk0y"]
+[ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="9_d5y1i"]
+[ext_resource type="LightmapGIData" uid="uid://cbufmp6t7jrli" path="res://scenes/Cabinets/cabinet_2_right.lmbake" id="10_44328"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pijc"]
+render_priority = 1
+transparency = 1
+cull_mode = 2
+depth_draw_mode = 1
+albedo_texture = ExtResource("2_gytgy")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_njlgv"]
+size = Vector2(1.1379108, 0.7903786)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w6ap4"]
+render_priority = 1
+transparency = 1
+cull_mode = 2
+depth_draw_mode = 1
+albedo_texture = ExtResource("2_gytgy")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w4dt6"]
+size = Vector2(1.1379108, 0.7903786)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njlgv"]
+render_priority = 1
+transparency = 1
+cull_mode = 2
+depth_draw_mode = 1
+albedo_texture = ExtResource("5_mwqbk")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_w6ap4"]
+size = Vector2(0.15209961, 0.14536715)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w4dt6"]
+render_priority = 1
+transparency = 1
+cull_mode = 2
+depth_draw_mode = 1
+albedo_texture = ExtResource("6_80toc")
+emission_enabled = true
+emission_texture = ExtResource("6_80toc")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_xb5gs"]
+size = Vector2(0.6020813, 0.60549927)
+
+[node name="Cabinet_2" type="Node3D" unique_id=1684688077]
+
+[node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.086693, 1.4710801, -2.4908412)
+
+[node name="room2_1" parent="." unique_id=2005838381 instance=ExtResource("1_gytgy")]
+
+[node name="Decal9_Plane" type="MeshInstance3D" parent="." unique_id=1517867941]
+transform = Transform3D(-1, 0, 8.742278e-08, -8.742278e-08, -4.371139e-08, -1, 3.821371e-15, -1, 4.371139e-08, 3.1758132, 0.604, -5.72)
+material_override = SubResource("StandardMaterial3D_6pijc")
+mesh = SubResource("PlaneMesh_njlgv")
+
+[node name="Decal10_Plane" type="MeshInstance3D" parent="." unique_id=1821773917]
+transform = Transform3D(-1, 0, 8.742278e-08, -8.742278e-08, -4.371139e-08, -1, 3.821371e-15, -1, 4.371139e-08, 0.24881315, 0.604, -5.72)
+material_override = SubResource("StandardMaterial3D_w6ap4")
+mesh = SubResource("PlaneMesh_w4dt6")
+
+[node name="Door" parent="." unique_id=1320742896 instance=ExtResource("3_ooc1h")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0414047)
+
+[node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("4_d3myk")]
+transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 4.8097787, 2.4003906, -2.3080902)
+
+[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel2" unique_id=488674409]
+transform = Transform3D(1, 0, -3.821371e-15, -3.821371e-15, 4.371139e-08, -1, 0, 1, 4.371139e-08, -0.005, -0.309, 0.01)
+material_override = SubResource("StandardMaterial3D_njlgv")
+mesh = SubResource("PlaneMesh_w6ap4")
+
+[node name="Decal2_Plane12" type="MeshInstance3D" parent="." unique_id=1748073413]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.017767906, 2.77, -1.4184942)
+material_override = SubResource("StandardMaterial3D_w4dt6")
+mesh = SubResource("PlaneMesh_xb5gs")
+
+[node name="Decal2_Plane13" type="MeshInstance3D" parent="." unique_id=1814180799]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.027478218, 2.77, -4.642834)
+material_override = SubResource("StandardMaterial3D_w4dt6")
+mesh = SubResource("PlaneMesh_xb5gs")
+
+[node name="Decal2_Plane14" type="MeshInstance3D" parent="." unique_id=535409268]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.2138362, 2.77, -1.4184942)
+material_override = SubResource("StandardMaterial3D_w4dt6")
+mesh = SubResource("PlaneMesh_xb5gs")
+
+[node name="Decal2_Plane15" type="MeshInstance3D" parent="." unique_id=248703186]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 3.23003, 2.77, -4.642834)
+material_override = SubResource("StandardMaterial3D_w4dt6")
+mesh = SubResource("PlaneMesh_xb5gs")
+
+[node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1351344714]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 3.0232158, 2.7335918, -1.4276211)
+visible = false
+shadow_enabled = true
+area_size = Vector2(0.5237906, 0.5635803)
+
+[node name="table2" parent="." unique_id=800755323 instance=ExtResource("7_chn0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3682804, -1.1920929e-06, -5.51319)
+
+[node name="AreaLight3D2" type="AreaLight3D" parent="." unique_id=646433127]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.15477514, 2.7335918, -1.4276211)
+visible = false
+shadow_enabled = true
+area_size = Vector2(0.5237906, 0.5635803)
+
+[node name="AreaLight3D3" type="AreaLight3D" parent="." unique_id=1746741310]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 3.0232158, 2.7335918, -4.6119485)
+visible = false
+shadow_enabled = true
+area_size = Vector2(0.5237906, 0.5635803)
+
+[node name="AreaLight3D4" type="AreaLight3D" parent="." unique_id=582563599]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.15477514, 2.7335918, -4.6119485)
+visible = false
+shadow_enabled = true
+area_size = Vector2(0.5237906, 0.5635803)
+
+[node name="AreaLight3D5" type="AreaLight3D" parent="." unique_id=2095027204]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 3.559267, 1.9536664, -6.210804)
+visible = false
+light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
+light_energy = 3.843
+light_size = 1.0
+shadow_enabled = true
+shadow_reverse_cull_face = true
+shadow_blur = 0.474
+area_range = 8.182
+area_size = Vector2(1.5990992, 1.3608465)
+
+[node name="AreaLight3D6" type="AreaLight3D" parent="." unique_id=1605243668]
+transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 0.7515612, 1.9536664, -6.210804)
+visible = false
+light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
+light_energy = 3.843
+light_size = 1.0
+shadow_enabled = true
+shadow_reverse_cull_face = true
+shadow_blur = 0.474
+area_range = 8.182
+area_size = Vector2(1.657333, 1.5202823)
+
+[node name="table4" parent="." unique_id=1711887434 instance=ExtResource("7_chn0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6139998, -1.1920929e-06, -5.4913363)
+
+[node name="table5" parent="." unique_id=1966023959 instance=ExtResource("7_chn0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6139998, -1.1920929e-06, -4.173868)
+
+[node name="table3" parent="." unique_id=1773307804 instance=ExtResource("7_chn0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1.4041232)
+
+[node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_suk0y")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.48082858, 0, -1.2976139)
+
+[node name="window_rooms" parent="." unique_id=156865994 instance=ExtResource("9_d5y1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5032718, 1.25, -6.0479913)
+
+[node name="window_rooms2" parent="." unique_id=1064389562 instance=ExtResource("9_d5y1i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47922802, 1.25, -6.1280994)
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
+light_data = ExtResource("10_44328")

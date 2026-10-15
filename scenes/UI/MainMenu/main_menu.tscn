@@ -1,0 +1,320 @@
+[gd_scene format=3 uid="uid://bswnduq0g73mo"]
+
+[ext_resource type="Script" uid="uid://dmp1sybikwuht" path="res://scenes/UI/MainMenu/main_menu.gd" id="1_ct1fd"]
+[ext_resource type="FontFile" uid="uid://dy0ub7rsgjjg2" path="res://assets/fonts/BAHNSCHRIFT.TTF" id="1_hs3dm"]
+[ext_resource type="FontVariation" uid="uid://drfiep1yn45dh" path="res://assets/fonts/bold_font_variation.tres" id="1_q1qrs"]
+[ext_resource type="StyleBox" uid="uid://bnk0jfjrg8vlo" path="res://scenes/UI/MainMenu/button_style_box_flat.tres" id="2_5t5jj"]
+[ext_resource type="Resource" uid="uid://dq7yq43kx5q0r" path="res://assets/cabinets.tres" id="2_scq8j"]
+[ext_resource type="FontVariation" uid="uid://dighmt70mnp3g" path="res://assets/fonts/semibold_font_variation.tres" id="3_7l1tg"]
+[ext_resource type="Texture2D" uid="uid://ce483bntdp7rf" path="res://assets/images/controls.png" id="3_qf0qt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fsmjx"]
+bg_color = Color(0.403922, 0.317647, 0.219608, 0.823529)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="MainMenu" type="CanvasLayer" unique_id=2018361327]
+script = ExtResource("1_ct1fd")
+cabinets_list = ExtResource("2_scq8j")
+
+[node name="Control" type="Control" parent="." unique_id=721739062]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Blur" type="ColorRect" parent="Control" unique_id=1462167966]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0.368627)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1129959815]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainerCaption" type="MarginContainer" parent="Control/VBoxContainer" unique_id=622204239]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_top = 40
+
+[node name="MainLabel" type="Label" parent="Control/VBoxContainer/MarginContainerCaption" unique_id=518894604]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 55
+text = "МТ-2"
+horizontal_alignment = 1
+
+[node name="MarginContainerCommon" type="MarginContainer" parent="Control/VBoxContainer" unique_id=2105865223]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon" unique_id=1361258807]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="VBoxContainerButtons" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer" unique_id=1596849827]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 35
+
+[node name="ControlsButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1191161969]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
+theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "УПРАВЛЕНИЕ"
+
+[node name="TaskButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=725804977]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
+theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "ЗАДАЧА"
+
+[node name="MaterialsButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1398156070]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
+theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "МАТЕРИАЛЫ"
+
+[node name="Panel" type="Panel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1178650504]
+custom_minimum_size = Vector2(0, 260)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_fsmjx")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/Panel" unique_id=1801236825]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=832779924]
+layout_mode = 2
+theme_override_constants/margin_bottom = 25
+
+[node name="MarginContainerPanel" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer" unique_id=1401537974]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel" unique_id=485903032]
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_5t5jj")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel" unique_id=233227898]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainerPanelLabel" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer" unique_id=14407572]
+layout_mode = 2
+theme_override_constants/margin_top = 10
+
+[node name="PanelLabelControls" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=1851189384 groups=["StartMenu_ControlsPage"]]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 55
+text = "ЭВАКУАЦИЯ"
+horizontal_alignment = 1
+
+[node name="PanelLabelTask" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=591046846 groups=["StartMenu_TaskPage"]]
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 55
+text = "ЗАДАЧА"
+horizontal_alignment = 1
+
+[node name="PanelLabelMaterials" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=269213445 groups=["StartMenu_MaterialsPage"]]
+visible = false
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 55
+text = "МАТЕРИАЛЫ"
+horizontal_alignment = 1
+
+[node name="MarginContainerPanelPic" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer" unique_id=662272919]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="TextureRectControls" type="TextureRect" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=1236044400 groups=["StartMenu_ControlsPage"]]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_qf0qt")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="RichTextLabelMaterials" type="RichTextLabel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=1660289057 groups=["StartMenu_MaterialsPage"]]
+visible = false
+layout_mode = 2
+theme_override_colors/default_color = Color(0.168627, 0.0823529, 0.0862745, 1)
+theme_override_fonts/normal_font = ExtResource("1_hs3dm")
+theme_override_fonts/bold_font = ExtResource("3_7l1tg")
+theme_override_font_sizes/normal_font_size = 23
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/bold_italics_font_size = 23
+theme_override_font_sizes/italics_font_size = 23
+theme_override_font_sizes/mono_font_size = 23
+bbcode_enabled = true
+text = "[code]1. [url=https://sdo.smolate.ru/kbase/resource/view/uid/f0a9cb74e18d217a5e425e6579346a79]Программа испытаний[/url]
+2. [url=https://sdo.smolate.ru/kbase/resource/view/uid/51cc1a5dfc0b4c9c16c07da18336457e]Паспорт на насосный агрегат[/url]
+3. [url=https://sdo.smolate.ru/kbase/resource/view/uid/2f9c1d889593b37c56d651f8f283bb5e]Руководство по эксплуатации насосного агрегата[/url]
+4. [url=https://sdo.smolate.ru/kbase/resource/view/uid/f184d76e0dd07142563fb700f645b705]Система КВС-1[/url]
+5. [url=https://sdo.smolate.ru/kbase/resource/view/uid/a08dc360bca87e6c95d2edf59d59eac5]Целевой инструктаж перед выполнением работ[/url][/code]"
+scroll_active = false
+autowrap_mode = 2
+shortcut_keys_enabled = false
+
+[node name="MarginContainerTask" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=584736634 groups=["StartMenu_TaskPage"]]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask" unique_id=1474511187]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 16
+
+[node name="LabelFooter" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=53960628]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.168788, 0.0832048, 0.0880258, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 32
+text = "Выберите этаж и кабинет"
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=1672512643]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_bottom = 40
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer" unique_id=168123865]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+
+[node name="OptionButton" type="OptionButton" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer/HBoxContainer" unique_id=70799042]
+custom_minimum_size = Vector2(0, 40)
+custom_maximum_size = Vector2(-1, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+
+[node name="OptionButton2" type="OptionButton" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer/HBoxContainer" unique_id=949222980]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+search_bar_enabled = true
+
+[node name="StartButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=462863957]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
+theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "ВЫБРАТЬ "
+
+[node name="StartButton2" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=677624833]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
+theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
+theme_override_fonts/font = ExtResource("1_q1qrs")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "СЛУЧАЙНЫЙ КАБИНЕТ"
+
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/ControlsButton" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/TaskButton" to="." method="_on_task_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/MaterialsButton" to="." method="_on_materials_button_pressed"]
+[connection signal="meta_clicked" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/RichTextLabelMaterials" to="." method="_on_rich_text_label_materials_meta_clicked"]
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/StartButton2" to="." method="_on_start_random_button_pressed"]

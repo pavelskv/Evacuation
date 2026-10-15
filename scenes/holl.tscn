@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://c46cifmgyafcn"]
+
+[ext_resource type="PackedScene" uid="uid://16rubsd4kuar" path="res://models/level/potolok_holl.glb" id="1_nf7t3"]
+[ext_resource type="PackedScene" uid="uid://dfa1s73d4qeoj" path="res://models/level/holl_pol.glb" id="2_mts8q"]
+
+[node name="holl" type="Node3D" unique_id=1120302978]
+
+[node name="potolok_holl" parent="." unique_id=859764525 instance=ExtResource("1_nf7t3")]
+
+[node name="holl_pol" parent="." unique_id=1090026978 instance=ExtResource("2_mts8q")]
+
+[node name="OmniLight3D10" type="OmniLight3D" parent="." unique_id=1274172337]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.52635, 2.8176844, -19.97731)
+light_energy = 4.789
+omni_range = 14.914986
