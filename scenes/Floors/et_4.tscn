@@ -11,7 +11,20 @@
 [ext_resource type="PackedScene" uid="uid://cb6qq87mv4h7n" path="res://models/arch/kor_arch1.glb" id="11_ifmdl"]
 [ext_resource type="PackedScene" uid="uid://v4ejbuo5rhe" path="res://models/level/window.glb" id="11_xtoyf"]
 [ext_resource type="PackedScene" uid="uid://cnnsyykkix431" path="res://models/level/DECAL.glb" id="12_08rnk"]
+[ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="12_qvswl"]
 [ext_resource type="PackedScene" uid="uid://cwxodws4ep4s0" path="res://models/office/lamp_cor.glb" id="13_adyky"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
+render_priority = 1
+transparency = 1
+cull_mode = 2
+depth_draw_mode = 1
+albedo_texture = ExtResource("12_qvswl")
+emission_enabled = true
+emission_texture = ExtResource("12_qvswl")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_tuwau"]
+size = Vector2(0.6020813, 0.60549927)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_csipu"]
 size = Vector3(1.0669737, 0.02722168, 3.4769812)
@@ -285,6 +298,67 @@ door_id = 214
 floor_number = 2
 cabinet_id = 5
 
+[node name="4_et_door103" parent="." unique_id=1553904927 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -11.099999, 0.7599997)
+script = ExtResource("6_xtoyf")
+door_id = 115
+cabinet_id = 5
+
+[node name="4_et_door104" parent="." unique_id=824796613 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.8269, -11.099999, 0.75999975)
+script = ExtResource("6_xtoyf")
+door_id = 114
+cabinet_id = 5
+
+[node name="4_et_door105" parent="." unique_id=873785396 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -11.099999, 0.7599996)
+script = ExtResource("6_xtoyf")
+door_id = 114
+
+[node name="4_et_door106" parent="." unique_id=1733196310 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -11.099999, 0.7599995)
+script = ExtResource("6_xtoyf")
+door_id = 113
+
+[node name="4_et_door108" parent="." unique_id=181263532 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.739399, -11.099999, 0.7599994)
+script = ExtResource("6_xtoyf")
+door_id = 112
+cabinet_id = 2
+
+[node name="4_et_door109" parent="." unique_id=1698096785 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 31.7044, -11.099999, 0.7599992)
+script = ExtResource("6_xtoyf")
+door_id = 111
+cabinet_id = 2
+
+[node name="4_et_door110" parent="." unique_id=469239413 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.650597, -11.099999, 0.7599986)
+script = ExtResource("6_xtoyf")
+door_id = 105
+cabinet_id = 2
+
+[node name="4_et_door111" parent="." unique_id=1852165497 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -11.099999, 0.75999826)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door112" parent="." unique_id=2122451141 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -11.099999, 0.7599981)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door113" parent="." unique_id=1480853020 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -11.099999, 0.759998)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door114" parent="." unique_id=1915527672 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.493095, -11.099999, 0.75999796)
+script = ExtResource("6_xtoyf")
+door_id = 103
+cabinet_id = 2
+
 [node name="4_et_door46" parent="." unique_id=534978620 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -3.6999998, 0.75999826)
 script = ExtResource("6_xtoyf")
@@ -448,6 +522,53 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -7.3999996, -2.76)
 script = ExtResource("6_xtoyf")
 door_id = 227
 floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door95" parent="." unique_id=748224291 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -11.099999, -2.76)
+script = ExtResource("6_xtoyf")
+door_id = 116
+cabinet_id = 2
+
+[node name="4_et_door96" parent="." unique_id=1227543603 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -11.099999, -2.7600002)
+script = ExtResource("6_xtoyf")
+door_id = 117
+cabinet_id = 2
+
+[node name="4_et_door97" parent="." unique_id=2076117661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9119, -11.099999, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 117
+cabinet_id = 2
+
+[node name="4_et_door98" parent="." unique_id=2083934661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -11.099999, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 118
+cabinet_id = 2
+
+[node name="4_et_door99" parent="." unique_id=1248952863 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -11.099999, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 121
+cabinet_id = 2
+
+[node name="4_et_door100" parent="." unique_id=1748651662 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7145, -11.099999, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 113
+
+[node name="4_et_door101" parent="." unique_id=2323999 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.631897, -11.099999, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 108
+cabinet_id = 2
+
+[node name="4_et_door102" parent="." unique_id=1407813614 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5968, -11.099999, -2.7600017)
+script = ExtResource("6_xtoyf")
+door_id = 108
 cabinet_id = 2
 
 [node name="4_et_door84" parent="." unique_id=1908221305 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
@@ -943,6 +1064,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor" unique_id=1053593455]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -954,6 +1076,233 @@ area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="lamp_cor2" parent="." unique_id=186601590 instance=ExtResource("13_adyky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.04671, 3.3, -0.98881936)
+
+[node name="Decal2_Plane3" type="MeshInstance3D" parent="." unique_id=551414086]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 10.734539, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane4" type="MeshInstance3D" parent="." unique_id=1273853037]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 13.279315, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane5" type="MeshInstance3D" parent="." unique_id=955763562]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 15.19066, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane6" type="MeshInstance3D" parent="." unique_id=1432780547]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 17.716412, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane7" type="MeshInstance3D" parent="." unique_id=1093123996]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 20.257675, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane8" type="MeshInstance3D" parent="." unique_id=1871427131]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 22.778933, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane9" type="MeshInstance3D" parent="." unique_id=1868785843]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 25.32069, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane10" type="MeshInstance3D" parent="." unique_id=339187343]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 27.850174, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane11" type="MeshInstance3D" parent="." unique_id=1344574297]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 30.377975, -4.102951, -1.0887332)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane12" type="MeshInstance3D" parent="." unique_id=1917024524]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 34.202003, -4.102951, -1.1320984)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane14" type="MeshInstance3D" parent="." unique_id=643441176]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 36.734547, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane15" type="MeshInstance3D" parent="." unique_id=973259026]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 39.246174, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane16" type="MeshInstance3D" parent="." unique_id=1662771611]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 41.79541, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane17" type="MeshInstance3D" parent="." unique_id=867024539]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 44.335564, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane18" type="MeshInstance3D" parent="." unique_id=1058217450]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 46.860023, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane25" type="MeshInstance3D" parent="." unique_id=1416187404]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 49.407993, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane26" type="MeshInstance3D" parent="." unique_id=1852310221]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 51.948147, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane27" type="MeshInstance3D" parent="." unique_id=185168065]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 54.472607, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane28" type="MeshInstance3D" parent="." unique_id=1500787101]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 58.290688, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane29" type="MeshInstance3D" parent="." unique_id=1631381539]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 60.83084, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane30" type="MeshInstance3D" parent="." unique_id=219859579]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 63.3553, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane31" type="MeshInstance3D" parent="." unique_id=1182956442]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 65.88605, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane32" type="MeshInstance3D" parent="." unique_id=1311324197]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 68.4262, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane33" type="MeshInstance3D" parent="." unique_id=1295523021]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 70.95066, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane34" type="MeshInstance3D" parent="." unique_id=1852253335]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 73.47216, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane35" type="MeshInstance3D" parent="." unique_id=1341502419]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 76.012314, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane36" type="MeshInstance3D" parent="." unique_id=1340777103]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 78.53677, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane37" type="MeshInstance3D" parent="." unique_id=944209693]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 81.07819, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane38" type="MeshInstance3D" parent="." unique_id=1647128026]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 83.61835, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane39" type="MeshInstance3D" parent="." unique_id=108781894]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 86.14281, -4.102951, -1.0947249)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane19" type="MeshInstance3D" parent="." unique_id=126730500]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 34.202003, -4.102951, -3.6599429)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane20" type="MeshInstance3D" parent="." unique_id=218004435]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 36.734547, -4.102951, -3.6225693)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane21" type="MeshInstance3D" parent="." unique_id=1206164409]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 39.246174, -4.102951, -3.6225693)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane22" type="MeshInstance3D" parent="." unique_id=302359002]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 41.79541, -4.102951, -3.6225693)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane23" type="MeshInstance3D" parent="." unique_id=1283087138]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 44.335564, -4.102951, -3.6225693)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane24" type="MeshInstance3D" parent="." unique_id=2065254344]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 46.860023, -4.102951, -3.6225693)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="Decal2_Plane13" type="MeshInstance3D" parent="." unique_id=867715137]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 34.2047, -4.102951, -6.7850513)
+material_override = SubResource("StandardMaterial3D_1lok2")
+mesh = SubResource("PlaneMesh_tuwau")
+
+[node name="lamp_cor4" parent="." unique_id=1471520014 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 80.04671, -0.39884144, -0.98881936)
+
+[node name="lamp_cor17" parent="." unique_id=17844608 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.90332, -0.39884144, -0.98881936)
+
+[node name="lamp_cor19" parent="." unique_id=1307017965 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.928856, -0.39884144, -0.98881936)
+
+[node name="lamp_cor20" parent="." unique_id=661772388 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.76356, -0.39884144, -0.98881936)
+
+[node name="lamp_cor21" parent="." unique_id=150539731 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.934456, -0.39884144, -0.98881936)
+
+[node name="lamp_cor22" parent="." unique_id=844736733 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.852962, -0.39884144, -0.98881936)
+
+[node name="lamp_cor23" parent="." unique_id=20477442 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.071953, -0.39884144, -0.98881936)
+
+[node name="lamp_cor24" parent="." unique_id=382672259 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.980354, -0.39884144, -0.98881936)
+
+[node name="lamp_cor25" parent="." unique_id=1602674623 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.400852, -0.39884144, -0.98881936)
+
+[node name="lamp_cor26" parent="." unique_id=932952468 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.602732, -0.39884144, -0.98881936)
+
+[node name="lamp_cor27" parent="." unique_id=800798006 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.041489, -0.39884144, -0.98881936)
+
+[node name="lamp_cor28" parent="." unique_id=15064073 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.459148, -0.39884144, -0.98881936)
+
+[node name="lamp_cor29" parent="." unique_id=1644462390 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.491352, -0.39884144, -0.98881936)
+
+[node name="lamp_cor30" parent="." unique_id=1036042192 instance=ExtResource("13_adyky")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.645601, -0.39884144, -0.98881936)
 
 [node name="lamp_cor3" parent="." unique_id=1408436285 instance=ExtResource("13_adyky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.92708, 3.3, -0.98881936)
@@ -973,6 +1322,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor3" unique_id=1650504109]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.289154, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1155,42 +1505,49 @@ area_size = Vector2(0.28520203, 0.23640728)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor6" unique_id=1649181587]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.4006805, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D25" type="AreaLight3D" parent="lamp_cor6" unique_id=1563407776]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.43597412, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D26" type="AreaLight3D" parent="lamp_cor6" unique_id=538900916]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -17.213303, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D27" type="AreaLight3D" parent="lamp_cor6" unique_id=1756373268]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.18983, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D28" type="AreaLight3D" parent="lamp_cor6" unique_id=764361022]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -41.205612, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D29" type="AreaLight3D" parent="lamp_cor6" unique_id=1675090724]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D30" type="AreaLight3D" parent="lamp_cor6" unique_id=1893043660]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1281,6 +1638,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor8" unique_id=1410152505]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1313,7 +1671,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor10" unique_id=1753985494]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
-light_energy = 2.0
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1347,7 +1705,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor12" unique_id=380873429]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
-light_energy = 2.0
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1379,6 +1737,7 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor14" unique_id=1084838606]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
@@ -1433,18 +1792,21 @@ area_size = Vector2(1.0180664, 0.07069588)
 [node name="AreaLight3D7" type="AreaLight3D" parent="lamp_cor16" unique_id=160922660]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.5343857, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D8" type="AreaLight3D" parent="lamp_cor16" unique_id=1052850893]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.4334536, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D9" type="AreaLight3D" parent="lamp_cor16" unique_id=662015153]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -11.384714, -7.4352703, 0.035936117)
 visible = false
+light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
