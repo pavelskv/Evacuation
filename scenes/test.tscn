@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b67vvgqyq8cdc"]
+
+[ext_resource type="PackedScene" uid="uid://yo4djrh4vlw5" path="res://models/arch/kor_arch.glb" id="1_errlg"]
+
+[node name="Test" type="Node3D" unique_id=747640494]
+
+[node name="kor_arch" parent="." unique_id=1224249572 instance=ExtResource("1_errlg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7611557, -1.1920929e-07, -0.3421886)
