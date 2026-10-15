@@ -8,5 +8,9 @@
 [node name="kor_arch" parent="." unique_id=1224249572 instance=ExtResource("1_errlg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7611557, -1.1920929e-07, -0.3421886)
 
+
 [node name="4_et_door" parent="." unique_id=1692752093 instance=ExtResource("2_bl13t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.33133173, 0, 0.59954715)
+
+[node name="kor_arch" parent="kor_arch" unique_id=748460526 instance=ExtResource("1_errlg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0129653, 0.008194804, -0.3421886)
