@@ -34,13 +34,13 @@ size = Vector2(0.6020813, 0.60549927)
 size = Vector3(1.0669737, 0.02722168, 3.4769812)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iw65l"]
-size = Vector3(2.4854126, 0.028686523, 2.1076596)
+size = Vector3(2.50568, 0.028686523, 1.9588022)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_q7uwq"]
-size = Vector3(1.3034973, 0.045410156, 4.2612305)
+size = Vector3(1.3034973, 0.045410156, 3.6354828)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_tjnno"]
-size = Vector3(1.2932129, 0.013183594, 4.3276367)
+size = Vector3(1.2932129, 0.013183594, 3.659256)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ikerq"]
 size = Vector3(1.1209717, 0.01184082, 1.5447693)
@@ -1888,131 +1888,131 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.08414677, 0, 9.9897385e-05
 
 [node name="Stairs" type="Node3D" parent="." unique_id=707045175]
 
-[node name="Stairs_4_5_2" type="StaticBody3D" parent="Stairs" unique_id=420401517]
+[node name="Stairs_4_5_R" type="StaticBody3D" parent="Stairs" unique_id=420401517]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.658836, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_5_2" unique_id=1199851897]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_5_R" unique_id=1199851897]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.471529, 0.34411323, 0.7358)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_3_4_2" type="StaticBody3D" parent="Stairs" unique_id=1133195550]
+[node name="Stairs_3_4_R" type="StaticBody3D" parent="Stairs" unique_id=1133195550]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.658836, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_4_2" unique_id=1164822558]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_4_R" unique_id=1164822558]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.470557, -3.3423743, 0.74788666)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_2_3_2" type="StaticBody3D" parent="Stairs" unique_id=1929200155]
+[node name="Stairs_2_3_R" type="StaticBody3D" parent="Stairs" unique_id=1929200155]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.658836, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_3_2" unique_id=1411611323]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_3_R" unique_id=1411611323]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.466562, -7.050581, 0.7358)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_1_2_2" type="StaticBody3D" parent="Stairs" unique_id=1141179494]
+[node name="Stairs_1_2_R" type="StaticBody3D" parent="Stairs" unique_id=1141179494]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.658836, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_2" unique_id=1877938633]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_R" unique_id=1877938633]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.472392, -10.746666, 0.750417)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_4_3_2" type="StaticBody3D" parent="Stairs" unique_id=2018332480]
+[node name="Stairs_4_3_R" type="StaticBody3D" parent="Stairs" unique_id=2018332480]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8477545, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_3_2" unique_id=1255916804]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_3_R" unique_id=1255916804]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.18643284, -1.2187575, 2.6305852)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_3_2_2" type="StaticBody3D" parent="Stairs" unique_id=1924027534]
+[node name="Stairs_3_2_R" type="StaticBody3D" parent="Stairs" unique_id=1924027534]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8477545, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_2_2" unique_id=1612491654]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_2_R" unique_id=1612491654]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.18838787, -4.9441814, 2.655736)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_2_1_2" type="StaticBody3D" parent="Stairs" unique_id=1505034739]
+[node name="Stairs_2_1_R" type="StaticBody3D" parent="Stairs" unique_id=1505034739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.8477545, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_2" unique_id=1007042325]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_R" unique_id=1007042325]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.19785309, -8.629018, 2.6276078)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_4_5_1" type="StaticBody3D" parent="Stairs" unique_id=1747142978]
+[node name="Stairs_4_5_L" type="StaticBody3D" parent="Stairs" unique_id=1747142978]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.292145, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_5_1" unique_id=2009011441]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_5_L" unique_id=2009011441]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.471527, 0.35201967, 0.7358)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_3_4_1" type="StaticBody3D" parent="Stairs" unique_id=2133155528]
+[node name="Stairs_3_4_L" type="StaticBody3D" parent="Stairs" unique_id=2133155528]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.292145, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_4_1" unique_id=1528674963]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_4_L" unique_id=1528674963]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.470558, -3.3518806, 0.7358)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_2_3_1" type="StaticBody3D" parent="Stairs" unique_id=1400699714]
+[node name="Stairs_2_3_L" type="StaticBody3D" parent="Stairs" unique_id=1400699714]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.292145, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_3_1" unique_id=685986601]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_3_L" unique_id=685986601]
 transform = Transform3D(1, 0, 0, 0, 0.8452619, 0.5343523, 0, -0.5343523, 0.8452619, -14.46656, -7.063447, 0.7358)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_1_2_1" type="StaticBody3D" parent="Stairs" unique_id=1893857552]
+[node name="Stairs_1_2_L" type="StaticBody3D" parent="Stairs" unique_id=1893857552]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 91.292145, 0.59195065, 2.7873707)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_1" unique_id=1840793291]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_L" unique_id=1840793291]
 transform = Transform3D(1, 0, 0, 0, 0.8373975, 0.54659444, 0, -0.54659444, 0.8373975, -14.470207, -10.76661, 0.7616248)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_4_3_1" type="StaticBody3D" parent="Stairs" unique_id=1718246351]
+[node name="Stairs_4_3_L" type="StaticBody3D" parent="Stairs" unique_id=1718246351]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.481064, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_3_1" unique_id=1516698140]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_4_3_L" unique_id=1516698140]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.18643284, -1.2187575, 2.6305852)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_3_2_1" type="StaticBody3D" parent="Stairs" unique_id=1938805933]
+[node name="Stairs_3_2_L" type="StaticBody3D" parent="Stairs" unique_id=1938805933]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.481064, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_2_1" unique_id=199097618]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_3_2_L" unique_id=199097618]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.18838787, -4.9227734, 2.6231456)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_2_1_1" type="StaticBody3D" parent="Stairs" unique_id=1363717285]
+[node name="Stairs_2_1_L" type="StaticBody3D" parent="Stairs" unique_id=1363717285]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.481064, 0.29597533, 1.3936853)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_1" unique_id=1891824783]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_L" unique_id=1891824783]
 transform = Transform3D(1, 0, 0, 0, 0.8358074, -0.5490228, 0, 0.5490228, 0.8358074, -0.19785309, -8.629018, 2.6276078)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99607843)
 
-[node name="Stairs_holl_1" type="StaticBody3D" parent="Stairs" unique_id=737749851]
+[node name="Stairs_holl_L" type="StaticBody3D" parent="Stairs" unique_id=737749851]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.48359, -11.270996, -9.571724)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_holl_1" unique_id=352909917]
-transform = Transform3D(1, 0, 0, 0, 0.909576, 0.41553754, 0, -0.41553754, 0.909576, -0.2716751, -0.26571846, -0.53701496)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_holl_L" unique_id=352909917]
+transform = Transform3D(1, 0, 0, 0, 0.909576, 0.41553754, 0, -0.41553754, 0.909576, -0.26657867, -0.26571846, -0.53701496)
 shape = SubResource("BoxShape3D_iw65l")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
-[node name="Stairs_holl_2" type="StaticBody3D" parent="Stairs" unique_id=1031528482]
+[node name="Stairs_holl_R" type="StaticBody3D" parent="Stairs" unique_id=1031528482]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.83612, -11.270996, -9.375233)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_holl_2" unique_id=213185567]
-transform = Transform3D(1, 0, 0, 0, 0.909576, 0.41553754, 0, -0.41553754, 0.909576, -0.2716751, -0.29265785, -0.8308563)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_holl_R" unique_id=213185567]
+transform = Transform3D(1, 0, 0, 0, 0.9001393, 0.43560216, 0, -0.43560216, 0.9001393, -0.35369873, -0.26180935, -0.753129)
 shape = SubResource("BoxShape3D_iw65l")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
@@ -2020,28 +2020,28 @@ debug_color = Color(0, 0.6, 0.69803923, 1)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.44308, -7.9044957, -6.839864)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_Center_R" unique_id=488825097]
-transform = Transform3D(1, 0, 0, 0, 0.9023489, -0.4310064, 0, 0.4310064, 0.9023489, 0.041080475, -2.2951074, 1.6783319)
+transform = Transform3D(1, 0, 0, 0, 0.8616291, -0.5075384, 0, 0.5075384, 0.8616291, 0.040023804, -2.3097014, 1.1312428)
 shape = SubResource("BoxShape3D_q7uwq")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
 [node name="Stairs_1_2_Center_L" type="StaticBody3D" parent="Stairs" unique_id=1335978753]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_1_2_Center_L" unique_id=1426324376]
-transform = Transform3D(1, 0, 0, 0, 0.9023489, -0.4310064, 0, 0.4310064, 0.9023489, 55.994843, -10.199603, -5.161532)
+transform = Transform3D(1, 0, 0, 0, 0.8616291, -0.5075384, 0, 0.5075384, 0.8616291, 55.994843, -10.19897, -5.7331886)
 shape = SubResource("BoxShape3D_q7uwq")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
 [node name="Stairs_2_1_Center_R" type="StaticBody3D" parent="Stairs" unique_id=132431795]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_Center_R" unique_id=713953319]
-transform = Transform3D(1, 0, 0, 0, 0.90258527, 0.43051112, 0, -0.43051112, 0.90258527, 35.02041, -8.338148, -5.819416)
+transform = Transform3D(1, 0, 0, 0, 0.8616291, 0.5075384, 0, -0.5075384, 0.8616291, 35.02041, -8.3343315, -6.1372943)
 shape = SubResource("BoxShape3D_tjnno")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
 [node name="Stairs_2_1_Center_L" type="StaticBody3D" parent="Stairs" unique_id=1507005010]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Stairs/Stairs_2_1_Center_L" unique_id=1292133431]
-transform = Transform3D(1, 0, 0, 0, 0.90258527, 0.43051112, 0, -0.43051112, 0.90258527, 54.43437, -8.338148, -5.819416)
+transform = Transform3D(1, 0, 0, 0, 0.8616291, 0.5075384, 0, -0.5075384, 0.8616291, 54.43437, -8.328035, -6.1322107)
 shape = SubResource("BoxShape3D_tjnno")
 debug_color = Color(0, 0.6, 0.69803923, 1)
 
