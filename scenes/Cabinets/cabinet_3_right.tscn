@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="11_i6wbf"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="12_qcebg"]
 [ext_resource type="PackedScene" uid="uid://bowoaujou2ic4" path="res://models/office/table3.glb" id="13_0yhe0"]
-[ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="14_ejt56"]
+[ext_resource type="PackedScene" uid="uid://df8et5upcubir" path="res://scenes/Windows/window_rooms.tscn" id="14_fb3v6"]
 [ext_resource type="LightmapGIData" uid="uid://dtt03u41wx6mr" path="res://scenes/Cabinets/cabinet_3_right.lmbake" id="15_fb3v6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjrci"]
@@ -244,14 +244,14 @@ mesh = SubResource("PlaneMesh_v6srv")
 [node name="table15" parent="." unique_id=347725932 instance=ExtResource("13_0yhe0")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 4.4229198, 0.7382124, -1.3320236)
 
-[node name="window_rooms" parent="." unique_id=156865994 instance=ExtResource("14_ejt56")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4624, 1.25, -5.968447)
+[node name="window_rooms" parent="." unique_id=2031299465 instance=ExtResource("14_fb3v6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.462, 1.25, -5.968)
 
-[node name="window_rooms2" parent="." unique_id=496384923 instance=ExtResource("14_ejt56")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4799, 1.25, -5.96733)
+[node name="window_rooms2" parent="." unique_id=782654367 instance=ExtResource("14_fb3v6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48, 1.25, -5.968)
 
-[node name="window_rooms3" parent="." unique_id=523732398 instance=ExtResource("14_ejt56")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.50259995, 1.25, -5.966224)
+[node name="window_rooms3" parent="." unique_id=1401177000 instance=ExtResource("14_fb3v6")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.503, 1.25, -5.968)
 
 [node name="AreaLight3D5" type="AreaLight3D" parent="." unique_id=1987241417]
 transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 3.559267, 1.9536664, -6.210804)
