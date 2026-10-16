@@ -13,6 +13,9 @@
 [ext_resource type="PackedScene" uid="uid://cnnsyykkix431" path="res://models/level/DECAL.glb" id="12_08rnk"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="12_qvswl"]
 [ext_resource type="PackedScene" uid="uid://cwxodws4ep4s0" path="res://models/office/lamp_cor.glb" id="13_adyky"]
+[ext_resource type="PackedScene" uid="uid://bmjfv2ud35ihx" path="res://models/level/holl_turniket.glb" id="14_f68q1"]
+[ext_resource type="PackedScene" uid="uid://b7n5f2ryi5w5m" path="res://models/level/holl_hrom.glb" id="15_2kk41"]
+[ext_resource type="LightmapGIData" uid="uid://bm7d0tflib7f" path="res://scenes/Main/main.lmbake" id="16_2kk41"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
 render_priority = 1
@@ -880,12 +883,12 @@ area_size = Vector2(1.5017204, 1.5201906)
 [node name="AreaLight3D16" type="AreaLight3D" parent="lamp_cor" unique_id=1302812711]
 transform = Transform3D(-5.7320566e-15, -1, 1.0133184e-07, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, -1.0133184e-07, -1, -41.034584, -13.596484, -27.229689)
 visible = false
-light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
-light_energy = 5.77
+light_color = Color(0.7736886, 0.93122137, 0.9926612, 1)
+light_energy = 7.454
 light_size = 1.0
 shadow_enabled = true
 shadow_reverse_cull_face = true
-area_range = 14.142
+area_range = 24.444
 area_size = Vector2(3.215847, 11.079536)
 
 [node name="AreaLight3D13" type="AreaLight3D" parent="lamp_cor" unique_id=862085406]
@@ -992,6 +995,7 @@ area_size = Vector2(1.7671163, 1.808197)
 [node name="AreaLight3D30" type="AreaLight3D" parent="lamp_cor" unique_id=1763367670]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, -32.079735, -13.420363, -11.042556)
 visible = false
+light_color = Color(0.73684746, 0.9426531, 0.9895707, 1)
 light_energy = 5.188
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -1002,6 +1006,7 @@ area_size = Vector2(1.7671163, 1.808197)
 [node name="AreaLight3D31" type="AreaLight3D" parent="lamp_cor" unique_id=1196085846]
 transform = Transform3D(4.371139e-08, -5.7620454e-08, -1, -1, 1.3027009e-15, -4.371139e-08, 3.821371e-15, 1, -5.7620454e-08, -50.289158, -13.420363, -11.042556)
 visible = false
+light_color = Color(0.73684746, 0.9426531, 0.9895707, 1)
 light_energy = 5.188
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -1982,3 +1987,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.83612, -11.270996, -9.3752
 transform = Transform3D(1, 0, 0, 0, 0.909576, 0.41553754, 0, -0.41553754, 0.909576, -0.2716751, -0.29265785, -0.8308563)
 shape = SubResource("BoxShape3D_iw65l")
 debug_color = Color(0, 0.6, 0.69803923, 1)
+
+[node name="holl_turniket" parent="." unique_id=710051232 instance=ExtResource("14_f68q1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.960728, -11.923203, -16.58141)
+
+[node name="holl_turniket2" parent="." unique_id=1964884110 instance=ExtResource("14_f68q1")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 41.49706, -11.923203, -16.58141)
+
+[node name="holl_hrom" parent="." unique_id=872747606 instance=ExtResource("15_2kk41")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.331734, -11.950015, -16.5799)
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=2143288109]
+quality = 2
+supersampling = true
+bounces = 4
+light_data = ExtResource("16_2kk41")

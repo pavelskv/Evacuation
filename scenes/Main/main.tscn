@@ -3,7 +3,6 @@
 [ext_resource type="PackedScene" uid="uid://bjyurhpqgq1no" path="res://scenes/Player/player.tscn" id="1"]
 [ext_resource type="Script" uid="uid://dkrjtlum3xryj" path="res://scenes/Main/main.gd" id="1_og1vs"]
 [ext_resource type="PackedScene" uid="uid://bx2rgcf4irvuo" path="res://scenes/Floors/et_4.tscn" id="2_s8bn6"]
-[ext_resource type="LightmapGIData" uid="uid://bm7d0tflib7f" path="res://scenes/Main/main.lmbake" id="3_nwfsi"]
 [ext_resource type="Texture2D" uid="uid://32ivssiqmis2" path="res://models/decals/409.png" id="3_sugp2"]
 [ext_resource type="Texture2D" uid="uid://cxxp4vhjj1iij" path="res://models/decals/4et/411_tab.png" id="5_dgi5k"]
 [ext_resource type="PackedScene" uid="uid://bvuorqspg0yiu" path="res://scenes/Cabinets/cabinet_2_right.tscn" id="5_tel4y"]
@@ -259,12 +258,6 @@ script = ExtResource("1_og1vs")
 
 [node name="Et_4" parent="." unique_id=196528262 instance=ExtResource("2_s8bn6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.6293945e-06, 0.0038224459, 0.0009851456)
-
-[node name="LightmapGI" type="LightmapGI" parent="." unique_id=1005893102]
-quality = 2
-supersampling = true
-bounces = 4
-light_data = ExtResource("3_nwfsi")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=833341886]
 environment = SubResource("Environment_riqys")
