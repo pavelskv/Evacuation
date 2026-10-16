@@ -4,7 +4,6 @@
 [ext_resource type="Script" uid="uid://dkrjtlum3xryj" path="res://scenes/Main/main.gd" id="1_og1vs"]
 [ext_resource type="PackedScene" uid="uid://bx2rgcf4irvuo" path="res://scenes/Floors/et_4.tscn" id="2_s8bn6"]
 [ext_resource type="Texture2D" uid="uid://32ivssiqmis2" path="res://models/decals/409.png" id="3_sugp2"]
-[ext_resource type="Texture2D" uid="uid://cxxp4vhjj1iij" path="res://models/decals/4et/411_tab.png" id="5_dgi5k"]
 [ext_resource type="PackedScene" uid="uid://bvuorqspg0yiu" path="res://scenes/Cabinets/cabinet_2_right.tscn" id="5_tel4y"]
 [ext_resource type="Texture2D" uid="uid://bq64xutqee8wl" path="res://models/decals/9.png" id="7_85g3d"]
 [ext_resource type="Texture2D" uid="uid://cnnir1rlnncwl" path="res://models/decals/SHO_9.png" id="8_choun"]
@@ -42,16 +41,6 @@ albedo_texture = ExtResource("3_sugp2")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_fuf3a"]
 size = Vector2(0.21, 0.297)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5he1u"]
-render_priority = 1
-transparency = 1
-cull_mode = 2
-depth_draw_mode = 1
-albedo_texture = ExtResource("5_dgi5k")
-
-[sub_resource type="PlaneMesh" id="PlaneMesh_5poiv"]
-size = Vector2(0.297, 0.21)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r4e17"]
 render_priority = 1
@@ -280,11 +269,6 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 30.4
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 64.683, 1.528, -1.99)
 material_override = SubResource("StandardMaterial3D_kmb1v")
 mesh = SubResource("PlaneMesh_fuf3a")
-
-[node name="440_Plane" type="MeshInstance3D" parent="." unique_id=817678428]
-transform = Transform3D(1, -1.7484555e-07, 7.642742e-15, 0, -4.371139e-08, -1, 1.7484555e-07, 1, -4.371139e-08, 52.908, 1.528, -1.99)
-material_override = SubResource("StandardMaterial3D_5he1u")
-mesh = SubResource("PlaneMesh_5poiv")
 
 [node name="plan_9_Plane" type="MeshInstance3D" parent="." unique_id=1581721077]
 transform = Transform3D(-1, 8.742278e-08, -3.821371e-15, 0, -4.371139e-08, -1, -8.742278e-08, -1, 4.371139e-08, 78.07, 0.865, -1.99)
