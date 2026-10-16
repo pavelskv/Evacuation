@@ -1,4 +1,4 @@
-extends Node3D
+extends Interactable
 
 enum HingeSide {
 	LEFT,   # Петли слева
@@ -12,6 +12,9 @@ enum HingeSide {
 var is_open = false
 var tween: Tween
 @onready var pivot = $Pivot
+
+func get_message() -> String:
+	return "Закрыть дверь [E]" if is_open else "Открыть дверь [E]"
 
 func interact():
 	is_open = !is_open

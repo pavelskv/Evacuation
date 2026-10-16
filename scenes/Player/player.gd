@@ -68,13 +68,13 @@ func _physics_process(delta):
 
 	_check_interact()
 
-func _get_interactable():
+func _get_interactable() -> Interactable:
 	if not raycast.is_colliding():
 		return null
 	var collider = raycast.get_collider()
 	var node = collider
 	while node:
-		if node.has_method("interact"):
+		if node is Interactable:
 			return node
 		node = node.get_parent()
 	return null
@@ -82,8 +82,10 @@ func _get_interactable():
 func _check_interact():
 	if not interact_label:
 		return
+		
 	var interactable = _get_interactable()
 	if interactable:
+		interact_label.text = interactable.get_message()
 		interact_label.visible = true
 	else:
 		interact_label.visible = false

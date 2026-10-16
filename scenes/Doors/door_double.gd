@@ -1,4 +1,4 @@
-extends Node3D
+extends Interactable
 
 @export var open_angle: float = 90.0
 @export var duration: float = 0.5
@@ -9,6 +9,9 @@ var tween: Tween
 
 @onready var pivot_left: Node3D = $PivotLeft
 @onready var pivot_right: Node3D = $PivotRight
+
+func get_message() -> String:
+	return "Закрыть дверь [E]" if is_open else "Открыть дверь [E]"
 
 func interact() -> void:
 	is_open = not is_open
