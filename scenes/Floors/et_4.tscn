@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://bmjfv2ud35ihx" path="res://models/level/holl_turniket.glb" id="14_f68q1"]
 [ext_resource type="PackedScene" uid="uid://b7n5f2ryi5w5m" path="res://models/level/holl_hrom.glb" id="15_2kk41"]
 [ext_resource type="LightmapGIData" uid="uid://bm7d0tflib7f" path="res://scenes/Main/main.lmbake" id="16_2kk41"]
+[ext_resource type="Script" uid="uid://c78qvdnlnv3w5" path="res://scenes/Plan/plan.gd" id="17_7yfx8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
 render_priority = 1
@@ -34,6 +35,9 @@ size = Vector3(1.0669737, 0.02722168, 3.4769812)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_iw65l"]
 size = Vector3(2.4854126, 0.028686523, 2.1076596)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ksqf0"]
+size = Vector3(0.41549683, 0.29061508, 0.001)
 
 [node name="Et_4" type="Node3D" unique_id=196528262]
 
@@ -2002,3 +2006,93 @@ quality = 2
 supersampling = true
 bounces = 4
 light_data = ExtResource("16_2kk41")
+
+[node name="Plans" type="Node3D" parent="." unique_id=614901605]
+
+[node name="Plan4L" type="StaticBody3D" parent="Plans" unique_id=286482943]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 74.68024, 1.5451672, -0.0063640475)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan4L" unique_id=1622721734]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan4R" type="StaticBody3D" parent="Plans" unique_id=280913413]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 14.834158, 1.5451672, -0.0063640475)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 4
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan4R" unique_id=363999341]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan3L" type="StaticBody3D" parent="Plans" unique_id=652406488]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 74.68024, -2.0917385, -0.0063640475)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan3L" unique_id=1267459183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan3R" type="StaticBody3D" parent="Plans" unique_id=757999241]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 14.834158, -2.0917385, -0.0063640475)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan3R" unique_id=588501586]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan2L" type="StaticBody3D" parent="Plans" unique_id=2082299752]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 74.68, -5.6150985, -0.006)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan2L" unique_id=1540095911]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan2R" type="StaticBody3D" parent="Plans" unique_id=247330004]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 14.834, -5.615, -0.006)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan2R" unique_id=1252694220]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan1L" type="StaticBody3D" parent="Plans" unique_id=1632920954]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 74.68, -9.46, -0.006)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan1L" unique_id=1259042308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
+
+[node name="Plan1R" type="StaticBody3D" parent="Plans" unique_id=954065022]
+transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 14.834, -9.459679, -0.006)
+collision_layer = 2
+script = ExtResource("17_7yfx8")
+floor_number = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan1R" unique_id=1698453976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
+shape = SubResource("BoxShape3D_ksqf0")
+debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
