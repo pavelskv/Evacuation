@@ -3,7 +3,7 @@ extends Node
 
 @export var message: String = "Взаимодействовать"
 
-func interact(player):
+func interact():
 	pass
 	
 func get_message() -> String:
