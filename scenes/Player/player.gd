@@ -85,7 +85,7 @@ func _check_interact():
 		
 	var interactable = _get_interactable()
 	if interactable:
-		interact_label.text = interactable.get_prompt()
+		interact_label.text = interactable.get_message()
 		interact_label.visible = true
 	else:
 		interact_label.visible = false
