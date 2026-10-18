@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bjyurhpqgq1no" path="res://scenes/Player/player.tscn" id="1"]
 [ext_resource type="Script" uid="uid://dkrjtlum3xryj" path="res://scenes/Main/main.gd" id="1_og1vs"]
 [ext_resource type="PackedScene" uid="uid://bx2rgcf4irvuo" path="res://scenes/Floors/et_4.tscn" id="2_s8bn6"]
+[ext_resource type="Texture2D" uid="uid://b722un6ebdru6" path="res://assets/images/thumbnail_2bc1b28c-7e5e-4d85-83c5-588885e8feee.jpg.2048x2048_q85.jpg" id="3_2ep58"]
 [ext_resource type="Texture2D" uid="uid://32ivssiqmis2" path="res://models/decals/409.png" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bvuorqspg0yiu" path="res://scenes/Cabinets/cabinet_2_right.tscn" id="5_tel4y"]
 [ext_resource type="Texture2D" uid="uid://bq64xutqee8wl" path="res://models/decals/9.png" id="7_85g3d"]
@@ -23,14 +24,16 @@
 [ext_resource type="PackedScene" uid="uid://b430uamxq8han" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="25_2wyq8"]
 [ext_resource type="PackedScene" uid="uid://57vxupnx85cc" path="res://models/office/firelom.glb" id="37_fuf3a"]
 
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_muem4"]
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_k7ajv"]
+panorama = ExtResource("3_2ep58")
 
 [sub_resource type="Sky" id="Sky_sn0t7"]
-sky_material = SubResource("ProceduralSkyMaterial_muem4")
+sky_material = SubResource("PanoramaSkyMaterial_k7ajv")
 
 [sub_resource type="Environment" id="Environment_riqys"]
 background_mode = 2
 sky = SubResource("Sky_sn0t7")
+ambient_light_source = 3
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kmb1v"]
 render_priority = 1

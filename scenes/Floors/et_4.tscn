@@ -17,6 +17,7 @@
 [ext_resource type="PackedScene" uid="uid://b7n5f2ryi5w5m" path="res://models/level/holl_hrom.glb" id="15_2kk41"]
 [ext_resource type="LightmapGIData" uid="uid://bm7d0tflib7f" path="res://scenes/Main/main.lmbake" id="16_2kk41"]
 [ext_resource type="Script" uid="uid://c78qvdnlnv3w5" path="res://scenes/Plan/plan.gd" id="17_7yfx8"]
+[ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="18_jk051"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
 render_priority = 1
@@ -2584,3 +2585,54 @@ quality = 2
 supersampling = true
 bounces = 4
 light_data = ExtResource("16_2kk41")
+
+[node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.249397, 1.25, -8.637697)
+
+[node name="window_rooms2" parent="." unique_id=522504411 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.249397, -2.45, -8.768917)
+
+[node name="window_rooms3" parent="." unique_id=1127526217 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.406898, -2.45, -8.694356)
+
+[node name="window_rooms4" parent="." unique_id=1119253017 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.2991, -6.1499996, -8.807399)
+
+[node name="window_rooms5" parent="." unique_id=805329653 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.468098, -9.849999, -8.807399)
+
+[node name="window_rooms6" parent="." unique_id=804669266 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.266895, -6.15, -8.807964)
+
+[node name="window_rooms7" parent="." unique_id=1813742741 instance=ExtResource("18_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.435894, -9.85, -8.807964)
+
+[node name="window_rooms8" parent="." unique_id=969209395 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.295, 3.5337, 6.77262)
+
+[node name="window_rooms9" parent="." unique_id=147074240 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.295, -0.16649997, 6.7590466)
+
+[node name="window_rooms10" parent="." unique_id=993749686 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.295, -3.8665, 6.6666474)
+
+[node name="window_rooms11" parent="." unique_id=1598522763 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.295, -7.5664997, 6.696313)
+
+[node name="window_rooms12" parent="." unique_id=481942036 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 76.9275, 3.5337, 6.7399077)
+
+[node name="window_rooms13" parent="." unique_id=1350924404 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 76.9275, -0.1665, 6.6751947)
+
+[node name="window_rooms14" parent="." unique_id=338529735 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 76.9275, -3.8662996, 6.6994867)
+
+[node name="window_rooms15" parent="." unique_id=1283049433 instance=ExtResource("18_jk051")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 76.9275, -7.5664997, 6.685913)
+
+[node name="ReflectionProbe" type="ReflectionProbe" parent="." unique_id=252852314]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 44.70004, -9.845285, -15.305487)
+size = Vector3(11.748993, 4.0185547, 8.7799225)
+box_projection = true
+interior = true

@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="11_owglw"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="12_xjrci"]
 [ext_resource type="PackedScene" uid="uid://bowoaujou2ic4" path="res://models/office/table3.glb" id="13_xjrci"]
-[ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="14_dg1d0"]
+[ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="15_3l5l7"]
 [ext_resource type="LightmapGIData" uid="uid://h3mfy0rsn2av" path="res://scenes/Cabinets/cabinet_3.lmbake" id="15_7sdir"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjrci"]
@@ -238,15 +238,6 @@ mesh = SubResource("PlaneMesh_v6srv")
 [node name="table15" parent="." unique_id=347725932 instance=ExtResource("13_xjrci")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.5762124, 0.7382124, -1.3320236)
 
-[node name="window_rooms" parent="." unique_id=156865994 instance=ExtResource("14_dg1d0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.40723228, 1.25, -5.968447)
-
-[node name="window_rooms2" parent="." unique_id=496384923 instance=ExtResource("14_dg1d0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3897324, 1.25, -5.96733)
-
-[node name="window_rooms3" parent="." unique_id=523732398 instance=ExtResource("14_dg1d0")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3722324, 1.25, -5.966224)
-
 [node name="AreaLight3D5" type="AreaLight3D" parent="." unique_id=1987241417]
 transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.439865, 1.9536664, -6.210804)
 visible = false
@@ -286,3 +277,12 @@ area_size = Vector2(1.657333, 1.5202823)
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=768688272]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0009665, 0, 0)
 light_data = ExtResource("15_7sdir")
+
+[node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("15_3l5l7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.3469, 1.25, -6.1282)
+
+[node name="window_rooms2" parent="." unique_id=1639871645 instance=ExtResource("15_3l5l7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.38190007, 1.25, -6.1282)
+
+[node name="window_rooms3" parent="." unique_id=1276416999 instance=ExtResource("15_3l5l7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3644001, 1.25, -6.1282)

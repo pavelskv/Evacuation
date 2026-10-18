@@ -5,6 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="4_0bhe4"]
 [ext_resource type="PackedScene" uid="uid://crp0gj01x283b" path="res://models/rooms/room4_1.glb" id="4_68mt2"]
 [ext_resource type="LightmapGIData" uid="uid://c8ec8y61atluo" path="res://scenes/Cabinets/cabinet_4_rigth.lmbake" id="5_vn4lv"]
+[ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="6_vn4lv"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ahg2h"]
 render_priority = 1
@@ -223,3 +224,15 @@ area_size = Vector2(1.657333, 1.5202823)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=1152435063]
 light_data = ExtResource("5_vn4lv")
+
+[node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("6_vn4lv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4756, 1.25, -6.029407)
+
+[node name="window_rooms2" parent="." unique_id=1399859110 instance=ExtResource("6_vn4lv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5068996, 1.25, -6.029407)
+
+[node name="window_rooms3" parent="." unique_id=1420003172 instance=ExtResource("6_vn4lv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4894, 1.25, -6.029407)
+
+[node name="window_rooms4" parent="." unique_id=51733351 instance=ExtResource("6_vn4lv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.4719, 1.25, -6.029407)

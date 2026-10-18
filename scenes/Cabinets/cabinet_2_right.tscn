@@ -8,8 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="6_80toc"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_chn0m"]
 [ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="8_suk0y"]
-[ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="9_d5y1i"]
 [ext_resource type="LightmapGIData" uid="uid://cbufmp6t7jrli" path="res://scenes/Cabinets/cabinet_2_right.lmbake" id="10_44328"]
+[ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="10_fh8k0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pijc"]
 render_priority = 1
@@ -164,11 +164,11 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1
 [node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_suk0y")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.48082858, 0, -1.2976139)
 
-[node name="window_rooms" parent="." unique_id=156865994 instance=ExtResource("9_d5y1i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5032718, 1.25, -6.0479913)
-
-[node name="window_rooms2" parent="." unique_id=1064389562 instance=ExtResource("9_d5y1i")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47922802, 1.25, -6.1280994)
-
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
 light_data = ExtResource("10_44328")
+
+[node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("10_fh8k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47560012, 1.25, -6.0355754)
+
+[node name="window_rooms2" parent="." unique_id=1965288623 instance=ExtResource("10_fh8k0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5068994, 1.25, -6.0355754)
