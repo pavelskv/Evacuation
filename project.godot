@@ -21,6 +21,7 @@ config/features=PackedStringArray("4.7")
 GameState="*uid://caa2m02378a1d"
 Debug="*uid://byjioor5wh6pa"
 InputModeManager="*uid://qsxmssn7bly3"
+BrowserInputFixes="*uid://bnlh1pvstbo4v"
 
 [display]
 

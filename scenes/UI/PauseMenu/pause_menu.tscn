@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b430uamxq8han"]
 
-[ext_resource type="Script" uid="uid://bpql53js1o3ud" path="res://Scenes/UI/PauseMenu/pause_menu.gd" id="1_07p5f"]
-[ext_resource type="FontVariation" uid="uid://drfiep1yn45dh" path="res://Assets/Fonts/bold_font_variation.tres" id="1_pvan1"]
-[ext_resource type="StyleBox" uid="uid://bnk0jfjrg8vlo" path="res://Scenes/UI/MainMenu/button_style_box_flat.tres" id="2_7k4v1"]
-[ext_resource type="Texture2D" uid="uid://bewh5uxnhrbg2" path="res://Assets/Images/go.png" id="4_2pv02"]
-[ext_resource type="Texture2D" uid="uid://23mef5uw7rxp" path="res://Assets/Images/mouse.png" id="5_tljsn"]
+[ext_resource type="Script" uid="uid://bk6ty86nmlh62" path="res://scenes/UI/PauseMenu/pause_menu.gd" id="1_07p5f"]
+[ext_resource type="FontVariation" uid="uid://drfiep1yn45dh" path="res://assets/fonts/bold_font_variation.tres" id="1_pvan1"]
+[ext_resource type="StyleBox" uid="uid://bnk0jfjrg8vlo" path="res://scenes/UI/MainMenu/button_style_box_flat.tres" id="2_7k4v1"]
+[ext_resource type="Texture2D" uid="uid://cj0m5q4bviafe" path="res://assets/images/go.png" id="4_2pv02"]
+[ext_resource type="Texture2D" uid="uid://dh8k5k81l8x5k" path="res://assets/images/mouse.png" id="5_tljsn"]
 
 [node name="PauseMenu" type="CanvasLayer" unique_id=674402355]
 process_mode = 3

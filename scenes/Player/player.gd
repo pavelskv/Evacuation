@@ -28,9 +28,6 @@ func _input(event):
 		camera.rotate_x(-event.relative.y * MOUSE_SENSITIVITY)
 		camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
 
-	if event.is_action_pressed("ui_cancel"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-
 func _physics_process(delta):
 	var e_down = Input.is_physical_key_pressed(KEY_E)
 	if e_down and not e_pressed:
