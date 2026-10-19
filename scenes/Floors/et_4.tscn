@@ -2595,7 +2595,7 @@ transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 35.2
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 35.2081, -9.849999, 6.608795)
 
 [node name="window_rooms26" parent="." unique_id=850735492 instance=ExtResource("18_jk051")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 55.9759, -9.849999, 6.6087947)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 56.200897, -9.849999, 6.699538)
 
 [node name="window_rooms9" parent="." unique_id=147074240 instance=ExtResource("18_jk051")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 14.295, -0.16649997, 6.7590466)
