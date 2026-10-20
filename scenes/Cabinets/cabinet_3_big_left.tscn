@@ -120,7 +120,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.80966234, 0.066299915, -0.
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.5688629, 1.0912989, -4.8320208)
 
 [node name="Decal2_Plane14" type="MeshInstance3D" parent="room3_2_big_1" unique_id=1305942917]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 7.07784, 2.8382037, -1.3362248)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 7.078, 2.768, -1.336)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -130,7 +130,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane15" type="MeshInstance3D" parent="room3_2_big_1" unique_id=822593222]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 7.07784, 2.8382037, -3.9950714)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 7.078, 2.768, -3.995)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -140,7 +140,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane16" type="MeshInstance3D" parent="room3_2_big_1" unique_id=434216367]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 4.409434, 2.8382037, -3.9950714)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 4.409, 2.768, -3.995)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -150,7 +150,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane17" type="MeshInstance3D" parent="room3_2_big_1" unique_id=1531313900]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 2.394299, 2.8382037, -3.994985)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 2.394, 2.768, -3.995)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -160,7 +160,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane19" type="MeshInstance3D" parent="room3_2_big_1" unique_id=17577268]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 4.409434, 2.8382037, -1.333735)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 4.409, 2.768, -1.334)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -170,7 +170,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane20" type="MeshInstance3D" parent="room3_2_big_1" unique_id=1624249494]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 2.394299, 2.8382037, -1.3336487)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 2.394, 2.758, -1.334)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -180,7 +180,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane21" type="MeshInstance3D" parent="room3_2_big_1" unique_id=460980563]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 0.4051237, 2.8382037, -1.3336487)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 0.405, 2.768, -1.334)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 
@@ -190,7 +190,7 @@ visible = false
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane18" type="MeshInstance3D" parent="room3_2_big_1" unique_id=923697948]
-transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 0.38433075, 2.8382037, -3.994985)
+transform = Transform3D(-8.742276e-08, 8.742277e-08, -1, 4.371139e-08, 1, 8.74228e-08, 1, -4.371141e-08, -8.742278e-08, 0.384, 2.768, -3.995)
 material_override = SubResource("StandardMaterial3D_xjrci")
 mesh = SubResource("PlaneMesh_dg1d0")
 

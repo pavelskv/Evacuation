@@ -277,8 +277,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.15329981, 1.25, -6.0635204)
 [node name="window_rooms3" parent="." unique_id=1276416999 instance=ExtResource("15_5ht8k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.8292003, 1.25, -6.0635204)
 
-[node name="room3_2_big" parent="." unique_id=974468513 instance=ExtResource("13_iym0g")]
-
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=768688272]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0009665, 0, 0)
 light_data = ExtResource("14_qetji")
+
+[node name="room3_2_big" parent="." unique_id=974468513 instance=ExtResource("13_iym0g")]
