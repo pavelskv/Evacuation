@@ -6,8 +6,6 @@
 [ext_resource type="PackedScene" uid="uid://d0c7rhgyrf5yt" path="res://models/doors/4_et_door.glb" id="6_l5fpg"]
 [ext_resource type="PackedScene" uid="uid://bo8dayyncafpc" path="res://models/arch/stairs_arch.glb" id="6_v1r83"]
 [ext_resource type="Script" uid="uid://en34l4ysyv8d" path="res://scenes/Doors/door_marker.gd" id="6_xtoyf"]
-[ext_resource type="PackedScene" uid="uid://bbwha4c6feb7c" path="res://models/doors/stairs_l.glb" id="7_itnyv"]
-[ext_resource type="PackedScene" uid="uid://qgpknkiwvhki" path="res://models/doors/stairs_R.glb" id="8_itnyv"]
 [ext_resource type="PackedScene" uid="uid://cb6qq87mv4h7n" path="res://models/arch/kor_arch1.glb" id="11_ifmdl"]
 [ext_resource type="PackedScene" uid="uid://cnnsyykkix431" path="res://models/level/DECAL.glb" id="12_08rnk"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="12_qvswl"]
@@ -54,31 +52,79 @@ size = Vector3(0.41549683, 0.29061508, 0.001)
 
 [node name="4_et" parent="." unique_id=1424352069 instance=ExtResource("1_mdnpl")]
 
-[node name="Door" parent="." unique_id=148101463 instance=ExtResource("3_fbsdc")]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 59.665897, 0.03469996, -1.0388272)
+[node name="Door" parent="." unique_id=1320742896 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.44, 0, 0, 0, 1, 0, 0, 0, 1, 47.63777, -11.861356, -22.264782)
+invert = true
 
-[node name="Door2" parent="." unique_id=1320742896 instance=ExtResource("3_fbsdc")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 59.62663, -3.686319, -1.0461013)
+[node name="Door2" parent="." unique_id=840762826 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.44, 0, 0, 0, 1, 0, 0, 0, 1, 41.88001, -11.861356, -22.264782)
+invert = true
 
-[node name="Door4" parent="." unique_id=924603671 instance=ExtResource("3_fbsdc")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 30.291134, -3.6964653, -0.9921036)
+[node name="Door_4_L" parent="." unique_id=148101463 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 59.665897, 0.03469996, -1.0388272)
+
+[node name="Door_3_L" parent="." unique_id=735671880 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 59.71058, -3.686319, -1.0461013)
+
+[node name="Door_2_L" parent="." unique_id=1818654714 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.742752, -7.383107, -1.0461013)
+
+[node name="Door_1_L" parent="." unique_id=716988130 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 50.89988, -11.092647, -1.0461013)
+
+[node name="Door_3_R" parent="." unique_id=924603671 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 30.291134, -3.6964653, -1.039835)
+invert = true
+
+[node name="Door_2_R" parent="." unique_id=72559698 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 32.787224, -7.387016, -1.0245304)
+invert = true
+
+[node name="Door_1_R" parent="." unique_id=87371949 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.09209, -11.091657, -1.0245304)
+invert = true
+
+[node name="Door_4_R" parent="." unique_id=1856763518 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 30.329887, 0.0347, -1.0432911)
 invert = true
 
 [node name="kor_arch2" parent="." unique_id=1681003900 instance=ExtResource("4_rhwqc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2386, 0, -2.0000002)
 
-[node name="Door3" parent="." unique_id=1856763518 instance=ExtResource("3_fbsdc")]
-transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 30.329887, 0.0347, -1.0432911)
-invert = true
-
 [node name="stairs_arch" parent="." unique_id=1962018675 instance=ExtResource("6_v1r83")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.002, 0.3875, 0.068072975)
 
-[node name="stairs_l" parent="." unique_id=1193898193 instance=ExtResource("7_itnyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.9868, 0.024699867, 0.044473067)
+[node name="Door5" parent="." unique_id=995118426 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.93, 0, 0, 0, 1, 76.069534, 0.024699867, 0.044473067)
+opened = true
 
-[node name="stairs_R" parent="." unique_id=1289476479 instance=ExtResource("8_itnyv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.1139, 0.024800003, 0.044472903)
+[node name="Door7" parent="." unique_id=1791749954 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 13.428253, 0.024699867, 0.044473067)
+opened = true
+
+[node name="Door8" parent="." unique_id=1641138644 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 13.428253, -3.682515, 0.044473067)
+opened = true
+
+[node name="Door9" parent="." unique_id=1540395499 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 13.428253, -7.381887, 0.044473067)
+opened = true
+
+[node name="Door12" parent="." unique_id=1814068430 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 13.428253, -11.0902195, 0.044473067)
+opened = true
+
+[node name="Door6" parent="." unique_id=912323013 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 76.0652, -3.6912553, 0.044473067)
+opened = true
+
+[node name="Door10" parent="." unique_id=2006448792 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 76.0652, -7.3947687, 0.044473067)
+opened = true
+
+[node name="Door11" parent="." unique_id=1295363606 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(1.5, 0, 0, 0, 0.95, 0, 0, 0, 1, 76.0652, -11.091544, 0.044473067)
+opened = true
 
 [node name="kor_arch1" parent="." unique_id=1557439735 instance=ExtResource("11_ifmdl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.1166, 5.2928925e-05, 0)
