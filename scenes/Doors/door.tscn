@@ -4,6 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://b5ka43yw4jp2k" path="res://models/doors/kor_L.glb" id="2_uvdjg"]
 [ext_resource type="PackedScene" uid="uid://nxdo2aeu1ths" path="res://models/doors/kor_R.glb" id="3_83dcw"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_f68q1"]
+size = Vector3(0.601593, 2.3502197, 0.053253174)
+
 [node name="Door" type="Node3D" unique_id=1320742896]
 script = ExtResource("1_83dcw")
 
@@ -16,14 +19,22 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0
 [node name="StaticBody3D" parent="PivotLeft/kor_L/door_11_003" parent_id_path=PackedInt32Array(180787145, 1467572705) index="0" unique_id=1341902150]
 collision_layer = 3
 
+[node name="CollisionShape3D" parent="PivotLeft/kor_L/door_11_003/StaticBody3D" index="0" unique_id=1398211173]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3041648, 1.1796265, -0.02273426)
+shape = SubResource("BoxShape3D_f68q1")
+
 [node name="PivotRight" type="Node3D" parent="." unique_id=15434510]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.63100785, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.62, 0, 0)
 
 [node name="kor_R" parent="PivotRight" unique_id=42210072 instance=ExtResource("3_83dcw")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
 
 [node name="StaticBody3D" parent="PivotRight/kor_R/door_11_002" parent_id_path=PackedInt32Array(42210072, 415551579) index="0" unique_id=863102795]
 collision_layer = 3
+
+[node name="CollisionShape3D" parent="PivotRight/kor_R/door_11_002/StaticBody3D" index="0" unique_id=1871748671]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1.18, -0.02054937)
+shape = SubResource("BoxShape3D_f68q1")
 
 [editable path="PivotLeft/kor_L"]
 [editable path="PivotRight/kor_R"]
