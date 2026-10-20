@@ -14,7 +14,9 @@
 [ext_resource type="PackedScene" uid="uid://vdrih3drx5vo" path="res://scenes/Cabinets/cabinet_3_right.tscn" id="10_ax2h5"]
 [ext_resource type="PackedScene" uid="uid://cag5exlbvmjep" path="res://scenes/Cabinets/cabinet_4_rigth.tscn" id="11_jhp5o"]
 [ext_resource type="PackedScene" uid="uid://ylwvjxpfu8ew" path="res://scenes/Main/debug_camera.tscn" id="11_qhn81"]
+[ext_resource type="PackedScene" uid="uid://dj4t8y613lm5l" path="res://scenes/Cabinets/cabinet_3_big.tscn" id="12_jhp5o"]
 [ext_resource type="Texture2D" uid="uid://d12o8cmv6bi5t" path="res://models/decals/4et/polosa.png" id="12_muem4"]
+[ext_resource type="PackedScene" uid="uid://bmyjmi4nsovg8" path="res://scenes/Cabinets/cabinet_3_big_left.tscn" id="13_ixvot"]
 [ext_resource type="Texture2D" uid="uid://bab04t3v0arwo" path="res://models/decals/4et/2.png" id="14_2wyq8"]
 [ext_resource type="Script" uid="uid://dvvkm246o3sgf" path="res://scripts/game_manager.gd" id="18_dp3eg"]
 [ext_resource type="PackedScene" uid="uid://cp3knvpbbx0gf" path="res://scenes/Cabinets/cabinet_1.tscn" id="19_yc10j"]
@@ -196,7 +198,7 @@ environment = SubResource("Environment_riqys")
 
 [node name="GameManager" type="Node3D" parent="." unique_id=1515093515]
 script = ExtResource("18_dp3eg")
-cabinet_scenes = Array[PackedScene]([ExtResource("19_yc10j"), ExtResource("20_jscy8"), ExtResource("21_pm3ni"), ExtResource("22_y6deb"), ExtResource("5_tel4y"), ExtResource("10_ax2h5"), ExtResource("11_jhp5o")])
+cabinet_scenes = Array[PackedScene]([ExtResource("19_yc10j"), ExtResource("20_jscy8"), ExtResource("21_pm3ni"), ExtResource("22_y6deb"), ExtResource("5_tel4y"), ExtResource("10_ax2h5"), ExtResource("11_jhp5o"), ExtResource("12_jhp5o"), ExtResource("13_ixvot")])
 player_scene = ExtResource("1")
 debug_camera_scene = ExtResource("11_qhn81")
 
