@@ -2052,7 +2052,6 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4
 script = ExtResource("6_xtoyf")
 door_id = 204
 floor_number = 2
-cabinet_id = 5
 
 [node name="4_et_door70" parent="Doors/Et2" unique_id=1019095950 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.56799, -7.3999996, 0.7599983)
