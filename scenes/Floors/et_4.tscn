@@ -57,735 +57,19 @@ size = Vector3(0.41549683, 0.29061508, 0.001)
 [node name="Door" parent="." unique_id=148101463 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 59.665897, 0.03469996, -1.0388272)
 
+[node name="Door2" parent="." unique_id=1320742896 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 59.62663, -3.686319, -1.0461013)
+
+[node name="Door4" parent="." unique_id=924603671 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 30.291134, -3.6964653, -0.9921036)
+invert = true
+
 [node name="kor_arch2" parent="." unique_id=1681003900 instance=ExtResource("4_rhwqc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.2386, 0, -2.0000002)
 
 [node name="Door3" parent="." unique_id=1856763518 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, 30.329887, 0.0347, -1.0432911)
 invert = true
-
-[node name="4_et_door" parent="." unique_id=114016261 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.637695, 0, 0.7599982)
-script = ExtResource("6_xtoyf")
-door_id = 428
-floor_number = 4
-cabinet_id = 6
-
-[node name="4_et_door17" parent="." unique_id=851178829 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.6128, 0, 0.75999826)
-script = ExtResource("6_xtoyf")
-door_id = 427
-floor_number = 4
-
-[node name="4_et_door18" parent="." unique_id=1690860777 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 52.6852, 0, 0.7599983)
-script = ExtResource("6_xtoyf")
-door_id = 426
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door19" parent="." unique_id=1151006643 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.7207, 0, 0.7599985)
-script = ExtResource("6_xtoyf")
-door_id = 425
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door20" parent="." unique_id=738379227 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 40.7563, 0, 0.7599986)
-script = ExtResource("6_xtoyf")
-door_id = 424
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door21" parent="." unique_id=644408737 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 34.7904, 0, 0.75999874)
-script = ExtResource("6_xtoyf")
-door_id = 423
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door22" parent="." unique_id=399478308 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.826, 0, 0.7599989)
-script = ExtResource("6_xtoyf")
-door_id = 422
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door23" parent="." unique_id=1685220794 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.860098, 0, 0.75999904)
-script = ExtResource("6_xtoyf")
-door_id = 421
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door24" parent="." unique_id=503833073 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.840399, 0, 0.7599992)
-script = ExtResource("6_xtoyf")
-door_id = 9
-floor_number = 4
-
-[node name="4_et_door25" parent="." unique_id=196327820 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.9312, 0, 0.75999933)
-script = ExtResource("6_xtoyf")
-door_id = 420
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door26" parent="." unique_id=1991394038 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.9653, 0, 0.75999945)
-script = ExtResource("6_xtoyf")
-door_id = 419
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door32" parent="." unique_id=1692752093 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -3.6999998, 0.7599997)
-script = ExtResource("6_xtoyf")
-door_id = 316
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door33" parent="." unique_id=1453384983 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.8269, -3.6999998, 0.75999975)
-script = ExtResource("6_xtoyf")
-door_id = 315
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door34" parent="." unique_id=1691605277 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -3.6999998, 0.75999945)
-script = ExtResource("6_xtoyf")
-floor_number = 3
-
-[node name="4_et_door35" parent="." unique_id=1844170121 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -3.6999998, 0.7599995)
-script = ExtResource("6_xtoyf")
-door_id = 314
-floor_number = 3
-
-[node name="4_et_door36" parent="." unique_id=576615473 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.813, -3.6999998, 0.75999945)
-script = ExtResource("6_xtoyf")
-door_id = 313
-floor_number = 3
-
-[node name="4_et_door38" parent="." unique_id=1082744784 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.721899, -3.6999998, 0.75999916)
-script = ExtResource("6_xtoyf")
-door_id = 312
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door39" parent="." unique_id=1414098346 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 34.686897, -3.6999998, 0.75999916)
-script = ExtResource("6_xtoyf")
-door_id = 311
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door40" parent="." unique_id=1382013480 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 40.651897, -3.6999998, 0.75999904)
-script = ExtResource("6_xtoyf")
-door_id = 310
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door41" parent="." unique_id=495885660 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.616898, -3.6999998, 0.75999886)
-script = ExtResource("6_xtoyf")
-door_id = 309
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door42" parent="." unique_id=950121208 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 52.581898, -3.6999998, 0.75999874)
-script = ExtResource("6_xtoyf")
-door_id = 308
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door43" parent="." unique_id=1380639252 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.546898, -3.6999998, 0.7599986)
-script = ExtResource("6_xtoyf")
-door_id = 307
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door44" parent="." unique_id=1794736323 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.5119, -3.6999998, 0.75999844)
-script = ExtResource("6_xtoyf")
-door_id = 306
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door45" parent="." unique_id=401111852 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4769, -3.6999998, 0.7599983)
-script = ExtResource("6_xtoyf")
-door_id = 305
-floor_number = 3
-cabinet_id = 5
-
-[node name="4_et_door69" parent="." unique_id=705723400 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4769, -7.3999996, 0.7599983)
-script = ExtResource("6_xtoyf")
-door_id = 204
-floor_number = 2
-cabinet_id = 5
-
-[node name="4_et_door70" parent="." unique_id=1019095950 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.56799, -7.3999996, 0.7599983)
-script = ExtResource("6_xtoyf")
-door_id = 205
-floor_number = 2
-
-[node name="4_et_door71" parent="." unique_id=650008992 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 61.5855, -7.3999996, 0.7599984)
-script = ExtResource("6_xtoyf")
-door_id = 206
-floor_number = 2
-
-[node name="4_et_door72" parent="." unique_id=528530482 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.603, -7.3999996, 0.75999844)
-script = ExtResource("6_xtoyf")
-door_id = 207
-floor_number = 2
-
-[node name="4_et_door73" parent="." unique_id=1450112253 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.6205, -7.3999996, 0.7599985)
-script = ExtResource("6_xtoyf")
-door_id = 228
-floor_number = 2
-cabinet_id = 6
-
-[node name="4_et_door74" parent="." unique_id=1973194110 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.6645, -7.3999996, 0.75999874)
-script = ExtResource("6_xtoyf")
-door_id = 229
-floor_number = 2
-cabinet_id = 5
-
-[node name="4_et_door75" parent="." unique_id=1936867110 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.8256, -7.3999996, 0.75999916)
-script = ExtResource("6_xtoyf")
-door_id = 208
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door76" parent="." unique_id=1280050985 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.795498, -7.3999996, 0.7599992)
-script = ExtResource("6_xtoyf")
-door_id = 209
-floor_number = 2
-
-[node name="4_et_door77" parent="." unique_id=1397315096 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.812998, -7.3999996, 0.7599993)
-script = ExtResource("6_xtoyf")
-door_id = 210
-floor_number = 2
-
-[node name="4_et_door78" parent="." unique_id=1010079516 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.830498, -7.3999996, 0.75999933)
-script = ExtResource("6_xtoyf")
-door_id = 211
-floor_number = 2
-
-[node name="4_et_door79" parent="." unique_id=1838608392 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -7.3999996, 0.75999945)
-script = ExtResource("6_xtoyf")
-floor_number = 2
-
-[node name="4_et_door80" parent="." unique_id=630048932 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.882999, -7.3999996, 0.7599996)
-script = ExtResource("6_xtoyf")
-door_id = 212
-floor_number = 2
-
-[node name="4_et_door81" parent="." unique_id=130640997 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.9005, -7.3999996, 0.75999963)
-script = ExtResource("6_xtoyf")
-door_id = 213
-floor_number = 2
-
-[node name="4_et_door82" parent="." unique_id=1767641945 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -7.3999996, 0.7599997)
-script = ExtResource("6_xtoyf")
-door_id = 214
-floor_number = 2
-cabinet_id = 5
-
-[node name="4_et_door103" parent="." unique_id=1553904927 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -11.099999, 0.7599997)
-script = ExtResource("6_xtoyf")
-door_id = 115
-cabinet_id = 5
-
-[node name="4_et_door104" parent="." unique_id=824796613 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.8269, -11.099999, 0.75999975)
-script = ExtResource("6_xtoyf")
-door_id = 114
-cabinet_id = 5
-
-[node name="4_et_door105" parent="." unique_id=873785396 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -11.099999, 0.7599996)
-script = ExtResource("6_xtoyf")
-door_id = 114
-
-[node name="4_et_door106" parent="." unique_id=1733196310 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -11.099999, 0.7599995)
-script = ExtResource("6_xtoyf")
-door_id = 113
-
-[node name="4_et_door108" parent="." unique_id=181263532 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.739399, -11.099999, 0.7599994)
-script = ExtResource("6_xtoyf")
-door_id = 112
-cabinet_id = 5
-
-[node name="4_et_door109" parent="." unique_id=1698096785 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 31.7044, -11.099999, 0.7599992)
-script = ExtResource("6_xtoyf")
-door_id = 111
-cabinet_id = 5
-
-[node name="4_et_door110" parent="." unique_id=469239413 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.650597, -11.099999, 0.7599986)
-script = ExtResource("6_xtoyf")
-door_id = 105
-cabinet_id = 2
-
-[node name="4_et_door111" parent="." unique_id=1852165497 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -11.099999, 0.75999826)
-script = ExtResource("6_xtoyf")
-door_id = 103
-
-[node name="4_et_door112" parent="." unique_id=2122451141 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -11.099999, 0.7599981)
-script = ExtResource("6_xtoyf")
-door_id = 103
-
-[node name="4_et_door113" parent="." unique_id=1480853020 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -11.099999, 0.759998)
-script = ExtResource("6_xtoyf")
-door_id = 103
-
-[node name="4_et_door114" parent="." unique_id=1915527672 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.493095, -11.099999, 0.75999796)
-script = ExtResource("6_xtoyf")
-door_id = 103
-cabinet_id = 2
-
-[node name="4_et_door46" parent="." unique_id=534978620 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -3.6999998, 0.75999826)
-script = ExtResource("6_xtoyf")
-door_id = 304
-floor_number = 3
-
-[node name="4_et_door47" parent="." unique_id=620833459 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -3.6999998, 0.7599981)
-script = ExtResource("6_xtoyf")
-floor_number = 3
-
-[node name="4_et_door48" parent="." unique_id=1468608698 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -3.6999998, 0.759998)
-script = ExtResource("6_xtoyf")
-door_id = 303
-floor_number = 3
-
-[node name="4_et_door49" parent="." unique_id=2139102840 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.445496, -3.6999998, 0.75999796)
-script = ExtResource("6_xtoyf")
-door_id = 302
-floor_number = 3
-
-[node name="4_et_door50" parent="." unique_id=576824631 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.428, -3.6999998, 0.7599979)
-script = ExtResource("6_xtoyf")
-door_id = 301
-floor_number = 3
-
-[node name="4_et_door65" parent="." unique_id=1478600711 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.428, -7.3999996, 0.7599979)
-script = ExtResource("6_xtoyf")
-door_id = 201
-floor_number = 2
-
-[node name="4_et_door66" parent="." unique_id=1875947535 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.445496, -7.3999996, 0.7599978)
-script = ExtResource("6_xtoyf")
-door_id = 202
-floor_number = 2
-
-[node name="4_et_door68" parent="." unique_id=2142464761 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -7.3999996, 0.7599981)
-script = ExtResource("6_xtoyf")
-door_id = 203
-floor_number = 2
-
-[node name="4_et_door67" parent="." unique_id=953698407 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.48049, -7.3999996, 0.75999796)
-script = ExtResource("6_xtoyf")
-floor_number = 2
-
-[node name="4_et_door7" parent="." unique_id=1362458665 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.631897, 0, -2.7599258)
-script = ExtResource("6_xtoyf")
-door_id = 409
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door27" parent="." unique_id=671651161 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5978, 0, -2.759926)
-script = ExtResource("6_xtoyf")
-door_id = 408
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door28" parent="." unique_id=102313695 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5623, 0, -2.7599263)
-script = ExtResource("6_xtoyf")
-door_id = 407
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door29" parent="." unique_id=1841175129 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5281, 0, -2.7599263)
-script = ExtResource("6_xtoyf")
-door_id = 406
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door30" parent="." unique_id=2085333638 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.558, 0, -2.7599266)
-script = ExtResource("6_xtoyf")
-door_id = 405
-floor_number = 4
-
-[node name="4_et_door31" parent="." unique_id=1820808483 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.539604, 0, -2.7599266)
-script = ExtResource("6_xtoyf")
-door_id = 404
-floor_number = 4
-
-[node name="4_et_door8" parent="." unique_id=1941572571 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.7328, 0, -2.7599256)
-script = ExtResource("6_xtoyf")
-door_id = 410
-floor_number = 4
-
-[node name="4_et_door9" parent="." unique_id=1991137982 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.8052, 0, -2.7599256)
-script = ExtResource("6_xtoyf")
-door_id = 411
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door10" parent="." unique_id=1903196010 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.7855, 0, -2.7599256)
-script = ExtResource("6_xtoyf")
-door_id = 412
-floor_number = 4
-
-[node name="4_et_door11" parent="." unique_id=1995850922 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.879898, 0, -2.7599254)
-script = ExtResource("6_xtoyf")
-door_id = 413
-floor_number = 4
-cabinet_id = 3
-
-[node name="4_et_door12" parent="." unique_id=1673705966 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8551, 0, -2.7599251)
-script = ExtResource("6_xtoyf")
-door_id = 414
-floor_number = 4
-
-[node name="4_et_door13" parent="." unique_id=1281327215 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8907, 0, -2.7599251)
-script = ExtResource("6_xtoyf")
-door_id = 415
-floor_number = 4
-cabinet_id = 4
-
-[node name="4_et_door14" parent="." unique_id=166714143 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9604, 0, -2.759925)
-script = ExtResource("6_xtoyf")
-door_id = 416
-floor_number = 4
-
-[node name="4_et_door15" parent="." unique_id=2038635098 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0548, 0, -2.7599247)
-script = ExtResource("6_xtoyf")
-door_id = 417
-floor_number = 4
-cabinet_id = 3
-
-[node name="4_et_door16" parent="." unique_id=1092337597 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0853004, 0, -2.7599244)
-script = ExtResource("6_xtoyf")
-door_id = 418
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door37" parent="." unique_id=711628923 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -3.6999998, -2.76)
-script = ExtResource("6_xtoyf")
-door_id = 332
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door83" parent="." unique_id=1654760086 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -7.3999996, -2.76)
-script = ExtResource("6_xtoyf")
-door_id = 227
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door95" parent="." unique_id=748224291 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -11.099999, -2.76)
-script = ExtResource("6_xtoyf")
-door_id = 116
-cabinet_id = 2
-
-[node name="4_et_door96" parent="." unique_id=1227543603 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -11.099999, -2.7600002)
-script = ExtResource("6_xtoyf")
-door_id = 117
-cabinet_id = 2
-
-[node name="4_et_door97" parent="." unique_id=2076117661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9119, -11.099999, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 117
-cabinet_id = 2
-
-[node name="4_et_door98" parent="." unique_id=2083934661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -11.099999, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 118
-cabinet_id = 2
-
-[node name="4_et_door99" parent="." unique_id=1248952863 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -11.099999, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 121
-cabinet_id = 2
-
-[node name="4_et_door100" parent="." unique_id=1748651662 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7145, -11.099999, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 113
-
-[node name="4_et_door101" parent="." unique_id=2323999 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.631897, -11.099999, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 108
-cabinet_id = 2
-
-[node name="4_et_door102" parent="." unique_id=1407813614 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5968, -11.099999, -2.7600017)
-script = ExtResource("6_xtoyf")
-door_id = 108
-cabinet_id = 2
-
-[node name="4_et_door84" parent="." unique_id=1908221305 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -7.3999996, -2.7600002)
-script = ExtResource("6_xtoyf")
-door_id = 226
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door85" parent="." unique_id=39591451 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.911899, -7.3999996, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 225
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door86" parent="." unique_id=944058586 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -7.3999996, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 224
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door87" parent="." unique_id=1598456073 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.907, -7.3999996, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 223
-floor_number = 2
-
-[node name="4_et_door88" parent="." unique_id=1087269821 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8895, -7.3999996, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 223
-floor_number = 2
-
-[node name="4_et_door89" parent="." unique_id=1161623780 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -7.3999996, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 223
-floor_number = 2
-
-[node name="4_et_door51" parent="." unique_id=2106548801 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -3.6999998, -2.7600002)
-script = ExtResource("6_xtoyf")
-door_id = 331
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door52" parent="." unique_id=943091247 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.911899, -3.6999998, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 330
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door53" parent="." unique_id=1159678547 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -3.6999998, -2.7600005)
-script = ExtResource("6_xtoyf")
-door_id = 329
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door54" parent="." unique_id=1934235196 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8419, -3.6999998, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 328
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door55" parent="." unique_id=1735240713 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8545, -3.6999998, -2.7600007)
-script = ExtResource("6_xtoyf")
-door_id = 327
-floor_number = 3
-
-[node name="4_et_door56" parent="." unique_id=1992648546 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.771896, -3.6999998, -2.760001)
-script = ExtResource("6_xtoyf")
-door_id = 326
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door57" parent="." unique_id=1150301112 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.736897, -3.6999998, -2.7600012)
-script = ExtResource("6_xtoyf")
-door_id = 325
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door58" parent="." unique_id=2089687509 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.8094, -3.6999998, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 324
-floor_number = 3
-cabinet_id = 3
-
-[node name="4_et_door59" parent="." unique_id=1890838127 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.697, -3.6999998, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 322
-floor_number = 3
-
-[node name="4_et_door60" parent="." unique_id=233561659 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.6795, -3.6999998, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 321
-floor_number = 3
-
-[node name="4_et_door61" parent="." unique_id=234462069 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.59689, -3.6999998, -2.7600017)
-script = ExtResource("6_xtoyf")
-door_id = 320
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door62" parent="." unique_id=418401450 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5619, -3.6999998, -2.760002)
-script = ExtResource("6_xtoyf")
-door_id = 319
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door63" parent="." unique_id=1965760069 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5269, -3.6999998, -2.760002)
-script = ExtResource("6_xtoyf")
-door_id = 319
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door64" parent="." unique_id=1491547233 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.4919, -3.6999998, -2.7600021)
-script = ExtResource("6_xtoyf")
-door_id = 319
-floor_number = 3
-cabinet_id = 2
-
-[node name="4_et_door90" parent="." unique_id=14890301 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.600494, -7.3999996, -2.760002)
-script = ExtResource("6_xtoyf")
-door_id = 215
-floor_number = 2
-cabinet_id = 7
-
-[node name="4_et_door91" parent="." unique_id=99201250 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.6831, -7.3999996, -2.7600017)
-script = ExtResource("6_xtoyf")
-door_id = 218
-floor_number = 2
-cabinet_id = 5
-
-[node name="4_et_door92" parent="." unique_id=129640448 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5969, -7.3999996, -2.7600017)
-script = ExtResource("6_xtoyf")
-door_id = 219
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door94" parent="." unique_id=1528844138 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6494, -7.3999996, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 222
-floor_number = 2
-cabinet_id = 2
-
-[node name="4_et_door93" parent="." unique_id=546824479 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.679497, -7.3999996, -2.7600014)
-script = ExtResource("6_xtoyf")
-door_id = 220
-floor_number = 2
-
-[node name="4_et_door2" parent="." unique_id=1829001729 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4778, 0, 0.7599981)
-script = ExtResource("6_xtoyf")
-door_id = 429
-floor_number = 4
-cabinet_id = 5
-
-[node name="4_et_door3" parent="." unique_id=1784337103 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.5077, 0, 0.759998)
-script = ExtResource("6_xtoyf")
-door_id = 403
-floor_number = 4
-
-[node name="4_et_door4" parent="." unique_id=1223106084 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4722, 0, 0.75999784)
-script = ExtResource("6_xtoyf")
-door_id = 29
-floor_number = 4
-
-[node name="4_et_door5" parent="." unique_id=512708122 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.454994, 0, 0.75999784)
-script = ExtResource("6_xtoyf")
-door_id = 402
-floor_number = 4
-cabinet_id = 2
-
-[node name="4_et_door6" parent="." unique_id=38850065 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
-transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.4196, 0, 0.75999767)
-script = ExtResource("6_xtoyf")
-door_id = 401
-floor_number = 4
 
 [node name="stairs_arch" parent="." unique_id=1962018675 instance=ExtResource("6_v1r83")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.002, 0.3875, 0.068072975)
@@ -2648,3 +1932,736 @@ transform = Transform3D(1.2455175e-07, 0, 1, 0, 1.1392101, 0, -0.94980407, 0, 1.
 
 [node name="window_rooms23" parent="." unique_id=1394560524 instance=ExtResource("18_jk051")]
 transform = Transform3D(1.2455175e-07, 0, 1, 0, 1.1392101, 0, -0.94980407, 0, 1.3113417e-07, -0.30420178, -9.887637, -0.17009997)
+
+[node name="Doors" type="Node3D" parent="." unique_id=1958870274]
+
+[node name="Et1" type="Node3D" parent="Doors" unique_id=19567494]
+
+[node name="4_et_door103" parent="Doors/Et1" unique_id=1553904927 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -11.099999, 0.7599997)
+script = ExtResource("6_xtoyf")
+door_id = 115
+cabinet_id = 5
+
+[node name="4_et_door104" parent="Doors/Et1" unique_id=824796613 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.8269, -11.099999, 0.75999975)
+script = ExtResource("6_xtoyf")
+door_id = 114
+cabinet_id = 5
+
+[node name="4_et_door105" parent="Doors/Et1" unique_id=873785396 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -11.099999, 0.7599996)
+script = ExtResource("6_xtoyf")
+door_id = 114
+
+[node name="4_et_door106" parent="Doors/Et1" unique_id=1733196310 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -11.099999, 0.7599995)
+script = ExtResource("6_xtoyf")
+door_id = 113
+
+[node name="4_et_door108" parent="Doors/Et1" unique_id=181263532 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.739399, -11.099999, 0.7599994)
+script = ExtResource("6_xtoyf")
+door_id = 112
+cabinet_id = 5
+
+[node name="4_et_door109" parent="Doors/Et1" unique_id=1698096785 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 31.7044, -11.099999, 0.7599992)
+script = ExtResource("6_xtoyf")
+door_id = 111
+cabinet_id = 5
+
+[node name="4_et_door110" parent="Doors/Et1" unique_id=469239413 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.650597, -11.099999, 0.7599986)
+script = ExtResource("6_xtoyf")
+door_id = 105
+cabinet_id = 2
+
+[node name="4_et_door111" parent="Doors/Et1" unique_id=1852165497 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -11.099999, 0.75999826)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door112" parent="Doors/Et1" unique_id=2122451141 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -11.099999, 0.7599981)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door113" parent="Doors/Et1" unique_id=1480853020 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -11.099999, 0.759998)
+script = ExtResource("6_xtoyf")
+door_id = 103
+
+[node name="4_et_door114" parent="Doors/Et1" unique_id=1915527672 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.493095, -11.099999, 0.75999796)
+script = ExtResource("6_xtoyf")
+door_id = 103
+cabinet_id = 2
+
+[node name="4_et_door95" parent="Doors/Et1" unique_id=748224291 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -11.099999, -2.76)
+script = ExtResource("6_xtoyf")
+door_id = 116
+cabinet_id = 2
+
+[node name="4_et_door96" parent="Doors/Et1" unique_id=1227543603 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -11.099999, -2.7600002)
+script = ExtResource("6_xtoyf")
+door_id = 117
+cabinet_id = 2
+
+[node name="4_et_door97" parent="Doors/Et1" unique_id=2076117661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9119, -11.099999, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 117
+cabinet_id = 2
+
+[node name="4_et_door98" parent="Doors/Et1" unique_id=2083934661 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -11.099999, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 118
+cabinet_id = 2
+
+[node name="4_et_door99" parent="Doors/Et1" unique_id=1248952863 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -11.099999, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 121
+cabinet_id = 2
+
+[node name="4_et_door100" parent="Doors/Et1" unique_id=1748651662 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7145, -11.099999, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 113
+
+[node name="4_et_door101" parent="Doors/Et1" unique_id=2323999 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.631897, -11.099999, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 108
+cabinet_id = 2
+
+[node name="4_et_door102" parent="Doors/Et1" unique_id=1407813614 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5968, -11.099999, -2.7600017)
+script = ExtResource("6_xtoyf")
+door_id = 108
+cabinet_id = 2
+
+[node name="Et2" type="Node3D" parent="Doors" unique_id=107508771]
+
+[node name="4_et_door69" parent="Doors/Et2" unique_id=705723400 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4769, -7.3999996, 0.7599983)
+script = ExtResource("6_xtoyf")
+door_id = 204
+floor_number = 2
+cabinet_id = 5
+
+[node name="4_et_door70" parent="Doors/Et2" unique_id=1019095950 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.56799, -7.3999996, 0.7599983)
+script = ExtResource("6_xtoyf")
+door_id = 205
+floor_number = 2
+
+[node name="4_et_door71" parent="Doors/Et2" unique_id=650008992 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 61.5855, -7.3999996, 0.7599984)
+script = ExtResource("6_xtoyf")
+door_id = 206
+floor_number = 2
+
+[node name="4_et_door72" parent="Doors/Et2" unique_id=528530482 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.603, -7.3999996, 0.75999844)
+script = ExtResource("6_xtoyf")
+door_id = 207
+floor_number = 2
+
+[node name="4_et_door73" parent="Doors/Et2" unique_id=1450112253 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.6205, -7.3999996, 0.7599985)
+script = ExtResource("6_xtoyf")
+door_id = 228
+floor_number = 2
+cabinet_id = 6
+
+[node name="4_et_door74" parent="Doors/Et2" unique_id=1973194110 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.6645, -7.3999996, 0.75999874)
+script = ExtResource("6_xtoyf")
+door_id = 229
+floor_number = 2
+cabinet_id = 5
+
+[node name="4_et_door75" parent="Doors/Et2" unique_id=1936867110 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.8256, -7.3999996, 0.75999916)
+script = ExtResource("6_xtoyf")
+door_id = 208
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door76" parent="Doors/Et2" unique_id=1280050985 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.795498, -7.3999996, 0.7599992)
+script = ExtResource("6_xtoyf")
+door_id = 209
+floor_number = 2
+
+[node name="4_et_door77" parent="Doors/Et2" unique_id=1397315096 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.812998, -7.3999996, 0.7599993)
+script = ExtResource("6_xtoyf")
+door_id = 210
+floor_number = 2
+
+[node name="4_et_door78" parent="Doors/Et2" unique_id=1010079516 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.830498, -7.3999996, 0.75999933)
+script = ExtResource("6_xtoyf")
+door_id = 211
+floor_number = 2
+
+[node name="4_et_door79" parent="Doors/Et2" unique_id=1838608392 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -7.3999996, 0.75999945)
+script = ExtResource("6_xtoyf")
+floor_number = 2
+
+[node name="4_et_door80" parent="Doors/Et2" unique_id=630048932 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.882999, -7.3999996, 0.7599996)
+script = ExtResource("6_xtoyf")
+door_id = 212
+floor_number = 2
+
+[node name="4_et_door81" parent="Doors/Et2" unique_id=130640997 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 7.9005, -7.3999996, 0.75999963)
+script = ExtResource("6_xtoyf")
+door_id = 213
+floor_number = 2
+
+[node name="4_et_door82" parent="Doors/Et2" unique_id=1767641945 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -7.3999996, 0.7599997)
+script = ExtResource("6_xtoyf")
+door_id = 214
+floor_number = 2
+cabinet_id = 5
+
+[node name="4_et_door65" parent="Doors/Et2" unique_id=1478600711 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.428, -7.3999996, 0.7599979)
+script = ExtResource("6_xtoyf")
+door_id = 201
+floor_number = 2
+
+[node name="4_et_door66" parent="Doors/Et2" unique_id=1875947535 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.445496, -7.3999996, 0.7599978)
+script = ExtResource("6_xtoyf")
+door_id = 202
+floor_number = 2
+
+[node name="4_et_door68" parent="Doors/Et2" unique_id=2142464761 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -7.3999996, 0.7599981)
+script = ExtResource("6_xtoyf")
+door_id = 203
+floor_number = 2
+
+[node name="4_et_door67" parent="Doors/Et2" unique_id=953698407 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.48049, -7.3999996, 0.75999796)
+script = ExtResource("6_xtoyf")
+floor_number = 2
+
+[node name="4_et_door90" parent="Doors/Et2" unique_id=14890301 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.600494, -7.3999996, -2.760002)
+script = ExtResource("6_xtoyf")
+door_id = 215
+floor_number = 2
+cabinet_id = 7
+
+[node name="4_et_door91" parent="Doors/Et2" unique_id=99201250 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.6831, -7.3999996, -2.7600017)
+script = ExtResource("6_xtoyf")
+door_id = 218
+floor_number = 2
+cabinet_id = 5
+
+[node name="4_et_door92" parent="Doors/Et2" unique_id=129640448 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5969, -7.3999996, -2.7600017)
+script = ExtResource("6_xtoyf")
+door_id = 219
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door94" parent="Doors/Et2" unique_id=1528844138 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.6494, -7.3999996, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 222
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door93" parent="Doors/Et2" unique_id=546824479 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.679497, -7.3999996, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 220
+floor_number = 2
+
+[node name="4_et_door83" parent="Doors/Et2" unique_id=1654760086 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -7.3999996, -2.76)
+script = ExtResource("6_xtoyf")
+door_id = 227
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door84" parent="Doors/Et2" unique_id=1908221305 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -7.3999996, -2.7600002)
+script = ExtResource("6_xtoyf")
+door_id = 226
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door85" parent="Doors/Et2" unique_id=39591451 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.911899, -7.3999996, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 225
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door86" parent="Doors/Et2" unique_id=944058586 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -7.3999996, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 224
+floor_number = 2
+cabinet_id = 2
+
+[node name="4_et_door87" parent="Doors/Et2" unique_id=1598456073 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.907, -7.3999996, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 223
+floor_number = 2
+
+[node name="4_et_door88" parent="Doors/Et2" unique_id=1087269821 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8895, -7.3999996, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 223
+floor_number = 2
+
+[node name="4_et_door89" parent="Doors/Et2" unique_id=1161623780 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -7.3999996, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 223
+floor_number = 2
+
+[node name="Et3" type="Node3D" parent="Doors" unique_id=1004065106]
+
+[node name="4_et_door32" parent="Doors/Et3" unique_id=1692752093 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.8619003, -3.6999998, 0.7599997)
+script = ExtResource("6_xtoyf")
+door_id = 316
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door33" parent="Doors/Et3" unique_id=1453384983 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.8269, -3.6999998, 0.75999975)
+script = ExtResource("6_xtoyf")
+door_id = 315
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door34" parent="Doors/Et3" unique_id=1691605277 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -3.6999998, 0.75999945)
+script = ExtResource("6_xtoyf")
+floor_number = 3
+
+[node name="4_et_door35" parent="Doors/Et3" unique_id=1844170121 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -3.6999998, 0.7599995)
+script = ExtResource("6_xtoyf")
+door_id = 314
+floor_number = 3
+
+[node name="4_et_door36" parent="Doors/Et3" unique_id=576615473 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.813, -3.6999998, 0.75999945)
+script = ExtResource("6_xtoyf")
+door_id = 313
+floor_number = 3
+
+[node name="4_et_door38" parent="Doors/Et3" unique_id=1082744784 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.721899, -3.6999998, 0.75999916)
+script = ExtResource("6_xtoyf")
+door_id = 312
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door39" parent="Doors/Et3" unique_id=1414098346 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 34.686897, -3.6999998, 0.75999916)
+script = ExtResource("6_xtoyf")
+door_id = 311
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door40" parent="Doors/Et3" unique_id=1382013480 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 40.651897, -3.6999998, 0.75999904)
+script = ExtResource("6_xtoyf")
+door_id = 310
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door41" parent="Doors/Et3" unique_id=495885660 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.616898, -3.6999998, 0.75999886)
+script = ExtResource("6_xtoyf")
+door_id = 309
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door42" parent="Doors/Et3" unique_id=950121208 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 52.581898, -3.6999998, 0.75999874)
+script = ExtResource("6_xtoyf")
+door_id = 308
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door43" parent="Doors/Et3" unique_id=1380639252 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 58.546898, -3.6999998, 0.7599986)
+script = ExtResource("6_xtoyf")
+door_id = 307
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door44" parent="Doors/Et3" unique_id=1794736323 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.5119, -3.6999998, 0.75999844)
+script = ExtResource("6_xtoyf")
+door_id = 306
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door45" parent="Doors/Et3" unique_id=401111852 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4769, -3.6999998, 0.7599983)
+script = ExtResource("6_xtoyf")
+door_id = 305
+floor_number = 3
+cabinet_id = 5
+
+[node name="4_et_door46" parent="Doors/Et3" unique_id=534978620 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.515495, -3.6999998, 0.75999826)
+script = ExtResource("6_xtoyf")
+door_id = 304
+floor_number = 3
+
+[node name="4_et_door47" parent="Doors/Et3" unique_id=620833459 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -3.6999998, 0.7599981)
+script = ExtResource("6_xtoyf")
+floor_number = 3
+
+[node name="4_et_door48" parent="Doors/Et3" unique_id=1468608698 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -3.6999998, 0.759998)
+script = ExtResource("6_xtoyf")
+door_id = 303
+floor_number = 3
+
+[node name="4_et_door49" parent="Doors/Et3" unique_id=2139102840 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.445496, -3.6999998, 0.75999796)
+script = ExtResource("6_xtoyf")
+door_id = 302
+floor_number = 3
+
+[node name="4_et_door50" parent="Doors/Et3" unique_id=576824631 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.428, -3.6999998, 0.7599979)
+script = ExtResource("6_xtoyf")
+door_id = 301
+floor_number = 3
+
+[node name="4_et_door51" parent="Doors/Et3" unique_id=2106548801 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.946899, -3.6999998, -2.7600002)
+script = ExtResource("6_xtoyf")
+door_id = 331
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door52" parent="Doors/Et3" unique_id=943091247 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.911899, -3.6999998, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 330
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door53" parent="Doors/Et3" unique_id=1159678547 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8769, -3.6999998, -2.7600005)
+script = ExtResource("6_xtoyf")
+door_id = 329
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door54" parent="Doors/Et3" unique_id=1934235196 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8419, -3.6999998, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 328
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door55" parent="Doors/Et3" unique_id=1735240713 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8545, -3.6999998, -2.7600007)
+script = ExtResource("6_xtoyf")
+door_id = 327
+floor_number = 3
+
+[node name="4_et_door56" parent="Doors/Et3" unique_id=1992648546 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39.771896, -3.6999998, -2.760001)
+script = ExtResource("6_xtoyf")
+door_id = 326
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door57" parent="Doors/Et3" unique_id=1150301112 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.736897, -3.6999998, -2.7600012)
+script = ExtResource("6_xtoyf")
+door_id = 325
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door58" parent="Doors/Et3" unique_id=2089687509 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.8094, -3.6999998, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 324
+floor_number = 3
+cabinet_id = 3
+
+[node name="4_et_door59" parent="Doors/Et3" unique_id=1890838127 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60.697, -3.6999998, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 322
+floor_number = 3
+
+[node name="4_et_door60" parent="Doors/Et3" unique_id=233561659 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.6795, -3.6999998, -2.7600014)
+script = ExtResource("6_xtoyf")
+door_id = 321
+floor_number = 3
+
+[node name="4_et_door61" parent="Doors/Et3" unique_id=234462069 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.59689, -3.6999998, -2.7600017)
+script = ExtResource("6_xtoyf")
+door_id = 320
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door62" parent="Doors/Et3" unique_id=418401450 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5619, -3.6999998, -2.760002)
+script = ExtResource("6_xtoyf")
+door_id = 319
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door63" parent="Doors/Et3" unique_id=1965760069 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5269, -3.6999998, -2.760002)
+script = ExtResource("6_xtoyf")
+door_id = 319
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door64" parent="Doors/Et3" unique_id=1491547233 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.4919, -3.6999998, -2.7600021)
+script = ExtResource("6_xtoyf")
+door_id = 319
+floor_number = 3
+cabinet_id = 2
+
+[node name="4_et_door37" parent="Doors/Et3" unique_id=711628923 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.9819, -3.6999998, -2.76)
+script = ExtResource("6_xtoyf")
+door_id = 332
+floor_number = 3
+cabinet_id = 2
+
+[node name="Et4" type="Node3D" parent="Doors" unique_id=1696566651]
+
+[node name="4_et_door" parent="Doors/Et4" unique_id=114016261 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 64.637695, 0, 0.7599982)
+script = ExtResource("6_xtoyf")
+door_id = 428
+floor_number = 4
+cabinet_id = 6
+
+[node name="4_et_door17" parent="Doors/Et4" unique_id=851178829 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 55.6128, 0, 0.75999826)
+script = ExtResource("6_xtoyf")
+door_id = 427
+floor_number = 4
+
+[node name="4_et_door18" parent="Doors/Et4" unique_id=1690860777 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 52.6852, 0, 0.7599983)
+script = ExtResource("6_xtoyf")
+door_id = 426
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door19" parent="Doors/Et4" unique_id=1151006643 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 46.7207, 0, 0.7599985)
+script = ExtResource("6_xtoyf")
+door_id = 425
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door20" parent="Doors/Et4" unique_id=738379227 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 40.7563, 0, 0.7599986)
+script = ExtResource("6_xtoyf")
+door_id = 424
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door21" parent="Doors/Et4" unique_id=644408737 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 34.7904, 0, 0.75999874)
+script = ExtResource("6_xtoyf")
+door_id = 423
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door22" parent="Doors/Et4" unique_id=399478308 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 28.826, 0, 0.7599989)
+script = ExtResource("6_xtoyf")
+door_id = 422
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door23" parent="Doors/Et4" unique_id=1685220794 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 22.860098, 0, 0.75999904)
+script = ExtResource("6_xtoyf")
+door_id = 421
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door24" parent="Doors/Et4" unique_id=503833073 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.840399, 0, 0.7599992)
+script = ExtResource("6_xtoyf")
+door_id = 9
+floor_number = 4
+
+[node name="4_et_door25" parent="Doors/Et4" unique_id=196327820 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 10.9312, 0, 0.75999933)
+script = ExtResource("6_xtoyf")
+door_id = 420
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door26" parent="Doors/Et4" unique_id=1991394038 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 4.9653, 0, 0.75999945)
+script = ExtResource("6_xtoyf")
+door_id = 419
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door2" parent="Doors/Et4" unique_id=1829001729 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 70.4778, 0, 0.7599981)
+script = ExtResource("6_xtoyf")
+door_id = 429
+floor_number = 4
+cabinet_id = 5
+
+[node name="4_et_door3" parent="Doors/Et4" unique_id=1784337103 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 73.5077, 0, 0.759998)
+script = ExtResource("6_xtoyf")
+door_id = 403
+floor_number = 4
+
+[node name="4_et_door4" parent="Doors/Et4" unique_id=1223106084 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4722, 0, 0.75999784)
+script = ExtResource("6_xtoyf")
+door_id = 29
+floor_number = 4
+
+[node name="4_et_door5" parent="Doors/Et4" unique_id=512708122 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.454994, 0, 0.75999784)
+script = ExtResource("6_xtoyf")
+door_id = 402
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door6" parent="Doors/Et4" unique_id=38850065 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 88.4196, 0, 0.75999767)
+script = ExtResource("6_xtoyf")
+door_id = 401
+floor_number = 4
+
+[node name="4_et_door7" parent="Doors/Et4" unique_id=1362458665 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.631897, 0, -2.7599258)
+script = ExtResource("6_xtoyf")
+door_id = 409
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door27" parent="Doors/Et4" unique_id=671651161 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5978, 0, -2.759926)
+script = ExtResource("6_xtoyf")
+door_id = 408
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door28" parent="Doors/Et4" unique_id=102313695 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.5623, 0, -2.7599263)
+script = ExtResource("6_xtoyf")
+door_id = 407
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door29" parent="Doors/Et4" unique_id=1841175129 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81.5281, 0, -2.7599263)
+script = ExtResource("6_xtoyf")
+door_id = 406
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door30" parent="Doors/Et4" unique_id=2085333638 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.558, 0, -2.7599266)
+script = ExtResource("6_xtoyf")
+door_id = 405
+floor_number = 4
+
+[node name="4_et_door31" parent="Doors/Et4" unique_id=1820808483 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.539604, 0, -2.7599266)
+script = ExtResource("6_xtoyf")
+door_id = 404
+floor_number = 4
+
+[node name="4_et_door8" parent="Doors/Et4" unique_id=1941572571 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.7328, 0, -2.7599256)
+script = ExtResource("6_xtoyf")
+door_id = 410
+floor_number = 4
+
+[node name="4_et_door9" parent="Doors/Et4" unique_id=1991137982 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51.8052, 0, -2.7599256)
+script = ExtResource("6_xtoyf")
+door_id = 411
+floor_number = 4
+cabinet_id = 2
+
+[node name="4_et_door10" parent="Doors/Et4" unique_id=1903196010 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.7855, 0, -2.7599256)
+script = ExtResource("6_xtoyf")
+door_id = 412
+floor_number = 4
+
+[node name="4_et_door11" parent="Doors/Et4" unique_id=1995850922 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 42.879898, 0, -2.7599254)
+script = ExtResource("6_xtoyf")
+door_id = 413
+floor_number = 4
+cabinet_id = 3
+
+[node name="4_et_door12" parent="Doors/Et4" unique_id=1673705966 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.8551, 0, -2.7599251)
+script = ExtResource("6_xtoyf")
+door_id = 414
+floor_number = 4
+
+[node name="4_et_door13" parent="Doors/Et4" unique_id=1281327215 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.8907, 0, -2.7599251)
+script = ExtResource("6_xtoyf")
+door_id = 415
+floor_number = 4
+cabinet_id = 4
+
+[node name="4_et_door14" parent="Doors/Et4" unique_id=166714143 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.9604, 0, -2.759925)
+script = ExtResource("6_xtoyf")
+door_id = 416
+floor_number = 4
+
+[node name="4_et_door15" parent="Doors/Et4" unique_id=2038635098 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.0548, 0, -2.7599247)
+script = ExtResource("6_xtoyf")
+door_id = 417
+floor_number = 4
+cabinet_id = 3
+
+[node name="4_et_door16" parent="Doors/Et4" unique_id=1092337597 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.0853004, 0, -2.7599244)
+script = ExtResource("6_xtoyf")
+door_id = 418
+floor_number = 4
+cabinet_id = 2
