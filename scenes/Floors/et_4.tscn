@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bo8dayyncafpc" path="res://models/arch/stairs_arch.glb" id="6_v1r83"]
 [ext_resource type="Script" uid="uid://en34l4ysyv8d" path="res://scenes/Doors/door_marker.gd" id="6_xtoyf"]
 [ext_resource type="PackedScene" uid="uid://cb6qq87mv4h7n" path="res://models/arch/kor_arch1.glb" id="11_ifmdl"]
+[ext_resource type="Texture2D" uid="uid://b0wltrxnjgswx" path="res://models/decals/plan_4.png" id="12_2kk41"]
 [ext_resource type="PackedScene" uid="uid://cnnsyykkix431" path="res://models/level/DECAL.glb" id="12_08rnk"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="12_qvswl"]
 [ext_resource type="PackedScene" uid="uid://cwxodws4ep4s0" path="res://models/office/lamp_cor.glb" id="13_adyky"]
@@ -1807,6 +1808,7 @@ transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 74.6
 collision_layer = 2
 script = ExtResource("17_7yfx8")
 floor_number = 4
+plan_texture = ExtResource("12_2kk41")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan4L" unique_id=1622721734]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)
@@ -1818,6 +1820,7 @@ transform = Transform3D(-1, 1.509958e-07, 0, -1.509958e-07, -1, 0, 0, 0, 1, 14.8
 collision_layer = 2
 script = ExtResource("17_7yfx8")
 floor_number = 4
+plan_texture = ExtResource("12_2kk41")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Plans/Plan4R" unique_id=363999341]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0016326904, 1.9550323e-05, 0.0047002807)

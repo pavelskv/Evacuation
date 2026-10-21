@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://b8tcs7k6ucece"]
+
+[ext_resource type="Script" uid="uid://dh7k6vepr0pyi" path="res://scenes/Plan/plan_viewer.gd" id="1_nb6bg"]
+[ext_resource type="Texture2D" uid="uid://dh8k5k81l8x5k" path="res://assets/images/mouse.png" id="2_3xarr"]
+[ext_resource type="Texture2D" uid="uid://d4a4phe23kijh" path="res://assets/images/hand_open.png" id="2_27551"]
+[ext_resource type="Texture2D" uid="uid://dvsb7xg2rqkon" path="res://assets/images/hand_closed.png" id="3_qok4t"]
+
+[node name="PlanViewer" type="CanvasLayer" unique_id=1003663694]
+script = ExtResource("1_nb6bg")
+hand_open = ExtResource("2_27551")
+hand_closed = ExtResource("3_qok4t")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1531402963]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="PlanTexture" type="TextureRect" parent="Background" unique_id=1102839019]
+layout_mode = 0
+offset_left = 960.0
+offset_top = 540.0
+offset_right = 960.0
+offset_bottom = 540.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CenterContainer" type="CenterContainer" parent="Background" unique_id=1969163203]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InfoRoot" type="Control" parent="." unique_id=1922367929]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InfoImage" type="TextureRect" parent="InfoRoot" unique_id=560326047]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -413.0
+offset_top = -231.0
+offset_right = -30.0
+offset_bottom = -23.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture = ExtResource("2_3xarr")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Cursor" type="TextureRect" parent="InfoRoot" unique_id=415691777]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -22.8125
+offset_top = -22.8125
+offset_right = 22.8125
+offset_bottom = 22.8125
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_27551")
+expand_mode = 2
+stretch_mode = 4

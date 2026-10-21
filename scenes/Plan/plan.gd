@@ -13,3 +13,14 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func interact():
+	if plan_texture == null:
+		return
+
+	var viewer := get_tree().get_first_node_in_group(
+		"plan_viewer"
+	)
+
+	if viewer:
+		viewer.show_painting(plan_texture)

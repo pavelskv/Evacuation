@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://bvkywwsk6l5vd" path="res://scenes/Cabinets/cabinet_3.tscn" id="21_pm3ni"]
 [ext_resource type="PackedScene" uid="uid://bbwtp1q8lunii" path="res://scenes/Cabinets/cabinet_4.tscn" id="22_y6deb"]
 [ext_resource type="PackedScene" uid="uid://b430uamxq8han" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="25_2wyq8"]
+[ext_resource type="PackedScene" uid="uid://b8tcs7k6ucece" path="res://scenes/Plan/PlanViewer.tscn" id="26_0aed0"]
 [ext_resource type="PackedScene" uid="uid://57vxupnx85cc" path="res://models/office/firelom.glb" id="37_fuf3a"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_k7ajv"]
@@ -284,3 +285,5 @@ mesh = SubResource("PlaneMesh_ruytr")
 transform = Transform3D(-1, 2.6226832e-07, -1.1464113e-14, 2.6226832e-07, 1, 0, 1.1464113e-14, 0, -1, 52.507, -0.049, -1.99)
 material_override = SubResource("StandardMaterial3D_la3dr")
 mesh = SubResource("PlaneMesh_hcsi8")
+
+[node name="PlanViewer" parent="." unique_id=1003663694 instance=ExtResource("26_0aed0")]
