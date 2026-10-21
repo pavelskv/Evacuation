@@ -6,6 +6,9 @@ env:
   EXPORT_NAME: evacuation
   PROJECT_PATH: .
 
+permissions:
+  contents: write
+
 jobs:
   export-web:
     name: Web Export
@@ -68,3 +71,18 @@ jobs:
         with:
           name: windows
           path: build/windows
+      - name: Extract Version from project.godot
+        id: get_version
+        run: |
+          VERSION=$(grep -oP 'config/version="\K[^"]+' project.godot || echo "0.0.0")
+          echo "tag_name=v$VERSION" >> $GITHUB_OUTPUT
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.get_version.outputs.tag_name }}
+          name: Release ${{ steps.get_version.outputs.tag_name }}
+          files: build/windows/*.exe
+          prerelease: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
