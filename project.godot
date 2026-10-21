@@ -17,6 +17,7 @@ config/version="0.0.1"
 run/main_scene="uid://bswnduq0g73mo"
 config/features=PackedStringArray("4.7")
 boot_splash/bg_color=Color(1, 1, 1, 1)
+boot_splash/stretch_mode=0
 boot_splash/image="uid://ch05wsc6ts0g"
 
 [autoload]
