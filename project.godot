@@ -13,7 +13,7 @@ config_version=5
 [application]
 
 config/name="Evacuation"
-config/version="0.0.1"
+config/version="0.0.2"
 run/main_scene="uid://bswnduq0g73mo"
 config/features=PackedStringArray("4.7")
 boot_splash/bg_color=Color(1, 1, 1, 1)
