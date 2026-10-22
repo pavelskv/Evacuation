@@ -535,16 +535,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.90673, 3.3, -0.98881936)
 
 [node name="lamp_cor6" parent="." unique_id=622999781 instance=ExtResource("13_adyky")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.7871, 3.3, -0.98881936)
+visible = false
 
 [node name="AreaLight3D114" type="AreaLight3D" parent="lamp_cor6" unique_id=1591922494]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 12.674362, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D115" type="AreaLight3D" parent="lamp_cor6" unique_id=955092873]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, 15.620239, -1.1252196, 0.035936117)
-visible = false
 light_energy = 4.507
 light_size = 1.0
 shadow_enabled = true
@@ -553,7 +552,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D116" type="AreaLight3D" parent="lamp_cor6" unique_id=1440823413]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, 15.620239, -4.891536, 0.035936117)
-visible = false
 light_energy = 4.507
 light_size = 1.0
 shadow_enabled = true
@@ -562,7 +560,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D117" type="AreaLight3D" parent="lamp_cor6" unique_id=1431852240]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, 15.620239, -8.695516, 0.035936117)
-visible = false
 light_energy = 4.507
 light_size = 1.0
 shadow_enabled = true
@@ -571,7 +568,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D118" type="AreaLight3D" parent="lamp_cor6" unique_id=1929878130]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, 15.620239, -12.405337, 0.035936117)
-visible = false
 light_energy = 4.507
 light_size = 1.0
 shadow_enabled = true
@@ -580,7 +576,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D119" type="AreaLight3D" parent="lamp_cor6" unique_id=431840337]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, 2.2097397, 0.9876735, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -590,7 +585,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D120" type="AreaLight3D" parent="lamp_cor6" unique_id=1720647959]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, 2.2097397, -2.7252333, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -600,7 +594,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D121" type="AreaLight3D" parent="lamp_cor6" unique_id=901436111]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, 2.2097397, -6.3552704, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -610,7 +603,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D122" type="AreaLight3D" parent="lamp_cor6" unique_id=303040480]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, 2.2097397, -10.118268, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -620,7 +612,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D123" type="AreaLight3D" parent="lamp_cor6" unique_id=248331004]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -60.47782, 0.9876735, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -630,7 +621,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D124" type="AreaLight3D" parent="lamp_cor6" unique_id=1302812711]
 transform = Transform3D(-5.7320566e-15, -1, 1.0133184e-07, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, -1.0133184e-07, -1, -28.894608, -13.596484, -27.229689)
-visible = false
 light_color = Color(0.7736886, 0.93122137, 0.9926612, 1)
 light_energy = 7.454
 light_size = 1.0
@@ -641,7 +631,6 @@ area_size = Vector2(3.215847, 11.079536)
 
 [node name="AreaLight3D125" type="AreaLight3D" parent="lamp_cor6" unique_id=862085406]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -60.47782, -2.7252333, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -651,7 +640,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D126" type="AreaLight3D" parent="lamp_cor6" unique_id=1270144587]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -60.47782, -6.3552704, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -661,7 +649,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D127" type="AreaLight3D" parent="lamp_cor6" unique_id=1609492341]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -60.47782, -10.118268, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -671,7 +658,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D128" type="AreaLight3D" parent="lamp_cor6" unique_id=287104745]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -39.59738, -8.678532, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -681,7 +667,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D129" type="AreaLight3D" parent="lamp_cor6" unique_id=201327956]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -60.47782, -13.895491, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -691,7 +676,6 @@ area_size = Vector2(1.5017204, 1.5201906)
 
 [node name="AreaLight3D130" type="AreaLight3D" parent="lamp_cor6" unique_id=430590836]
 transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -39.59738, -12.455754, 7.970581)
-visible = false
 light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
 light_energy = 4.507
 light_size = 1.0
@@ -699,9 +683,26 @@ shadow_enabled = true
 shadow_reverse_cull_face = true
 area_size = Vector2(1.5017204, 1.5201906)
 
+[node name="AreaLight3D145" type="AreaLight3D" parent="lamp_cor6" unique_id=1463634812]
+transform = Transform3D(1.9106855e-15, 1, -1.3909066e-08, -1, 1.3027009e-15, -4.371139e-08, -4.371139e-08, 1.3909066e-08, 1, -18.463917, -12.455754, 7.970581)
+light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
+light_energy = 4.507
+light_size = 1.0
+shadow_enabled = true
+shadow_reverse_cull_face = true
+area_size = Vector2(1.5017204, 1.5201906)
+
+[node name="AreaLight3D146" type="AreaLight3D" parent="lamp_cor6" unique_id=157650867]
+transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, -20.0937, -12.455754, 10.202666)
+light_color = Color(0.86898917, 0.9652205, 0.95960754, 1)
+light_energy = 4.507
+light_size = 1.0
+shadow_enabled = true
+shadow_reverse_cull_face = true
+area_size = Vector2(1.5017204, 3.7534714)
+
 [node name="AreaLight3D131" type="AreaLight3D" parent="lamp_cor6" unique_id=1892313798]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -15.665554, -1.1252196, -7.9997597)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -712,7 +713,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D132" type="AreaLight3D" parent="lamp_cor6" unique_id=643055447]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -15.665554, -4.925196, -8.280946)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -722,7 +722,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D133" type="AreaLight3D" parent="lamp_cor6" unique_id=1643806950]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -42.529446, -4.925196, -8.280946)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -732,7 +731,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D134" type="AreaLight3D" parent="lamp_cor6" unique_id=1481397074]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -18.716274, -8.8233385, -7.935087)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -742,7 +740,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D135" type="AreaLight3D" parent="lamp_cor6" unique_id=1766649066]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -39.72032, -8.8233385, -7.935087)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -752,7 +749,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D136" type="AreaLight3D" parent="lamp_cor6" unique_id=1740216181]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -18.716274, -12.316886, -7.935087)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -762,7 +758,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D137" type="AreaLight3D" parent="lamp_cor6" unique_id=1763367670]
 transform = Transform3D(-4.371139e-08, -2.9802322e-08, 1, -1, 1.3027009e-15, -4.371139e-08, 0, -1, -2.9802322e-08, -19.939758, -13.420363, -11.042556)
-visible = false
 light_color = Color(0.73684746, 0.9426531, 0.9895707, 1)
 light_energy = 5.188
 light_indirect_energy = 2.263
@@ -773,7 +768,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D138" type="AreaLight3D" parent="lamp_cor6" unique_id=1196085846]
 transform = Transform3D(4.371139e-08, -5.7620454e-08, -1, -1, 1.3027009e-15, -4.371139e-08, 3.821371e-15, 1, -5.7620454e-08, -38.14918, -13.420363, -11.042556)
-visible = false
 light_color = Color(0.73684746, 0.9426531, 0.9895707, 1)
 light_energy = 5.188
 light_indirect_energy = 2.263
@@ -784,7 +778,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D139" type="AreaLight3D" parent="lamp_cor6" unique_id=2039438185]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -39.72032, -12.316886, -7.935087)
-visible = false
 light_energy = 4.473
 light_indirect_energy = 2.263
 light_size = 1.0
@@ -794,7 +787,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D140" type="AreaLight3D" parent="lamp_cor6" unique_id=344166001]
 transform = Transform3D(4.371139e-08, 1.172251e-07, -1, -1, 1.3027013e-15, -4.371139e-08, -3.821371e-15, 1, 1.172251e-07, -73.77168, -1.1252196, -0.0973866)
-visible = false
 light_energy = 5.842
 light_size = 1.0
 shadow_enabled = true
@@ -803,7 +795,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D141" type="AreaLight3D" parent="lamp_cor6" unique_id=277513782]
 transform = Transform3D(4.371139e-08, 1.172251e-07, -1, -1, 1.3027009e-15, -4.371139e-08, -3.821371e-15, 1, 1.172251e-07, -73.77168, -4.970148, -0.0973866)
-visible = false
 light_energy = 5.842
 light_size = 1.0
 shadow_enabled = true
@@ -812,7 +803,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D142" type="AreaLight3D" parent="lamp_cor6" unique_id=1644004829]
 transform = Transform3D(4.371139e-08, 1.172251e-07, -1, -1, 1.3027013e-15, -4.371139e-08, -3.821371e-15, 1, 1.172251e-07, -73.77168, -8.638211, -0.0973866)
-visible = false
 light_energy = 5.842
 light_size = 1.0
 shadow_enabled = true
@@ -821,7 +811,6 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D143" type="AreaLight3D" parent="lamp_cor6" unique_id=1158053597]
 transform = Transform3D(4.371139e-08, 1.172251e-07, -1, -1, 1.3027009e-15, -4.371139e-08, -3.821371e-15, 1, 1.172251e-07, -73.77168, -12.43229, -0.0973866)
-visible = false
 light_energy = 5.842
 light_size = 1.0
 shadow_enabled = true
@@ -830,756 +819,648 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D144" type="AreaLight3D" parent="lamp_cor6" unique_id=866156630]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 12.674362, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D3" type="AreaLight3D" parent="lamp_cor6" unique_id=1187989733]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 6.8508224, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D4" type="AreaLight3D" parent="lamp_cor6" unique_id=1041311809]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 6.8508224, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D" type="AreaLight3D" parent="lamp_cor6" unique_id=1621507338]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.4006805, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D10" type="AreaLight3D" parent="lamp_cor6" unique_id=2039801229]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.43597412, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D11" type="AreaLight3D" parent="lamp_cor6" unique_id=761182413]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -17.213303, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D47" type="AreaLight3D" parent="lamp_cor6" unique_id=353516254]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -15.522392, -0.07543969, -4.0906935)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D48" type="AreaLight3D" parent="lamp_cor6" unique_id=329762158]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -30.22868, -12.076442, -16.56974)
-visible = false
 light_energy = 4.579
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D49" type="AreaLight3D" parent="lamp_cor6" unique_id=621162530]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -27.674541, -12.076442, -16.56974)
-visible = false
 light_energy = 4.684
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D12" type="AreaLight3D" parent="lamp_cor6" unique_id=358676860]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.18983, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D13" type="AreaLight3D" parent="lamp_cor6" unique_id=830066132]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -41.205612, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D14" type="AreaLight3D" parent="lamp_cor6" unique_id=2127906452]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D15" type="AreaLight3D" parent="lamp_cor6" unique_id=80165969]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D9" type="AreaLight3D" parent="lamp_cor6" unique_id=150469866]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -0.06636262, 1.9114811)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D16" type="AreaLight3D" parent="lamp_cor6" unique_id=582686250]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -1.9046677, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="lamp_cor6" unique_id=799284293]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.4006805, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D17" type="AreaLight3D" parent="lamp_cor6" unique_id=1499980491]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 0.43597412, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D18" type="AreaLight3D" parent="lamp_cor6" unique_id=303841428]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -17.213303, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D19" type="AreaLight3D" parent="lamp_cor6" unique_id=696464609]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.18983, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D20" type="AreaLight3D" parent="lamp_cor6" unique_id=1926119010]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -41.205612, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D21" type="AreaLight3D" parent="lamp_cor6" unique_id=1043044062]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D22" type="AreaLight3D" parent="lamp_cor6" unique_id=570498554]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D23" type="AreaLight3D" parent="lamp_cor6" unique_id=1745132632]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -3.750036, 1.9114811)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D24" type="AreaLight3D" parent="lamp_cor6" unique_id=29024658]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -5.5883408, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D41" type="AreaLight3D" parent="lamp_cor6" unique_id=1995308941]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -5.5883408, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D43" type="AreaLight3D" parent="lamp_cor6" unique_id=1920410995]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -9.26795, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D44" type="AreaLight3D" parent="lamp_cor6" unique_id=1935093373]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -7.5018673, 2.3722415)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D45" type="AreaLight3D" parent="lamp_cor6" unique_id=104114055]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -3.7579966, 2.3722415)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D46" type="AreaLight3D" parent="lamp_cor6" unique_id=268217606]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -0.06437135, 2.3722415)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D42" type="AreaLight3D" parent="lamp_cor6" unique_id=1516563904]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -1.8768886, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D26" type="AreaLight3D" parent="lamp_cor6" unique_id=538900916]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -19.28482, -7.4352703, -0.0979135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5529785, 0.54536986)
 
 [node name="AreaLight3D66" type="AreaLight3D" parent="lamp_cor6" unique_id=1457697115]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -21.82623, -7.4352703, -0.0979135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5529785, 0.54536986)
 
 [node name="AreaLight3D67" type="AreaLight3D" parent="lamp_cor6" unique_id=1589981444]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -21.82623, -7.4352703, -2.616343)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5529785, 0.54536986)
 
 [node name="AreaLight3D27" type="AreaLight3D" parent="lamp_cor6" unique_id=1756373268]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.439129, -7.4352703, -0.09962499)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D64" type="AreaLight3D" parent="lamp_cor6" unique_id=2140372069]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.00083, -7.4352703, -0.09962499)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D65" type="AreaLight3D" parent="lamp_cor6" unique_id=475179770]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -34.537136, -7.4352703, -0.09962499)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D35" type="AreaLight3D" parent="lamp_cor6" unique_id=1380673552]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.95766, -7.4352703, -0.09962499)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D57" type="AreaLight3D" parent="lamp_cor6" unique_id=620654068]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642525, -11.120529, 2.4108963)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D58" type="AreaLight3D" parent="lamp_cor6" unique_id=608679434]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642525, -11.120529, 4.9108334)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D61" type="AreaLight3D" parent="lamp_cor6" unique_id=1582738036]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642525, -7.42109, -0.09962499)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D62" type="AreaLight3D" parent="lamp_cor6" unique_id=1032797455]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642525, -7.42109, 2.4108963)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D63" type="AreaLight3D" parent="lamp_cor6" unique_id=1850599415]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642525, -7.42109, 4.9108334)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D59" type="AreaLight3D" parent="lamp_cor6" unique_id=663050801]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -18.636902, -11.120529, 2.4108963)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D60" type="AreaLight3D" parent="lamp_cor6" unique_id=757561849]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -18.636902, -11.120529, 4.9108334)
-visible = false
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D148" type="AreaLight3D" parent="lamp_cor6" unique_id=933840278]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -21.55743, -11.120529, 14.159172)
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D54" type="AreaLight3D" parent="lamp_cor6" unique_id=1707355702]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -36.4511, -11.120529, -2.630853)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D55" type="AreaLight3D" parent="lamp_cor6" unique_id=573285407]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -36.4511, -11.120529, -4.509413)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D28" type="AreaLight3D" parent="lamp_cor6" unique_id=764361022]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -41.205612, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D29" type="AreaLight3D" parent="lamp_cor6" unique_id=1675090724]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D30" type="AreaLight3D" parent="lamp_cor6" unique_id=1893043660]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370567, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D33" type="AreaLight3D" parent="lamp_cor6" unique_id=1464842321]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -19.285, -11.135267, -0.09791827)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5529785, 0.54536986)
 
 [node name="AreaLight3D68" type="AreaLight3D" parent="lamp_cor6" unique_id=1840753458]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -21.826408, -11.135267, -0.09791827)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5529785, 0.54536986)
 
 [node name="AreaLight3D34" type="AreaLight3D" parent="lamp_cor6" unique_id=1936852938]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.439308, -11.135267, -0.09962976)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D69" type="AreaLight3D" parent="lamp_cor6" unique_id=1237317333]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.00101, -11.135267, -0.09962976)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D70" type="AreaLight3D" parent="lamp_cor6" unique_id=986842739]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -34.537315, -11.135267, -0.09962976)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D36" type="AreaLight3D" parent="lamp_cor6" unique_id=1957498497]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.95784, -11.135267, -0.09962976)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D71" type="AreaLight3D" parent="lamp_cor6" unique_id=533383922]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.642704, -11.121087, -0.09962976)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
 [node name="AreaLight3D37" type="AreaLight3D" parent="lamp_cor6" unique_id=139879284]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -41.20579, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D38" type="AreaLight3D" parent="lamp_cor6" unique_id=85596223]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370747, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D50" type="AreaLight3D" parent="lamp_cor6" unique_id=1410632930]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -53.370747, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D31" type="AreaLight3D" parent="lamp_cor6" unique_id=432862691]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -7.426193, 1.9114811)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D32" type="AreaLight3D" parent="lamp_cor6" unique_id=1838332003]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -9.264499, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D39" type="AreaLight3D" parent="lamp_cor6" unique_id=1114954731]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -11.136542, 1.9114811)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D40" type="AreaLight3D" parent="lamp_cor6" unique_id=400394910]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2526093, -12.974848, 7.0911703)
-visible = false
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
 [node name="AreaLight3D5" type="AreaLight3D" parent="lamp_cor6" unique_id=1549792451]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -11.180496, -0.075439215, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D6" type="AreaLight3D" parent="lamp_cor6" unique_id=1781098458]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -11.180496, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D7" type="AreaLight3D" parent="lamp_cor6" unique_id=1410152505]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -10.437656, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D8" type="AreaLight3D" parent="lamp_cor6" unique_id=962569906]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -7.895012, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D25" type="AreaLight3D" parent="lamp_cor6" unique_id=1836153462]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.342865, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D51" type="AreaLight3D" parent="lamp_cor6" unique_id=1489281083]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -2.8164291, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D52" type="AreaLight3D" parent="lamp_cor6" unique_id=1712381314]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -0.3089447, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D53" type="AreaLight3D" parent="lamp_cor6" unique_id=2108325033]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2159195, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D56" type="AreaLight3D" parent="lamp_cor6" unique_id=1613622006]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 4.72995, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D72" type="AreaLight3D" parent="lamp_cor6" unique_id=484412641]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 7.2987137, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D73" type="AreaLight3D" parent="lamp_cor6" unique_id=624526112]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 9.855339, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5380554, 0.5236151)
 
 [node name="AreaLight3D74" type="AreaLight3D" parent="lamp_cor6" unique_id=1374026122]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 12.318344, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5380554, 0.5236151)
 
 [node name="AreaLight3D75" type="AreaLight3D" parent="lamp_cor6" unique_id=890132434]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -12.94965, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D76" type="AreaLight3D" parent="lamp_cor6" unique_id=1187476288]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -15.483643, -7.4352703, -0.10085273)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D77" type="AreaLight3D" parent="lamp_cor6" unique_id=1984677109]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -10.437836, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D78" type="AreaLight3D" parent="lamp_cor6" unique_id=2112413306]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -7.895195, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D79" type="AreaLight3D" parent="lamp_cor6" unique_id=655302130]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -5.3430405, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D80" type="AreaLight3D" parent="lamp_cor6" unique_id=1815028127]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -2.8166122, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D81" type="AreaLight3D" parent="lamp_cor6" unique_id=1036655567]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -0.30912018, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D82" type="AreaLight3D" parent="lamp_cor6" unique_id=1642055119]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 2.2157364, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D83" type="AreaLight3D" parent="lamp_cor6" unique_id=1135443828]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 4.7297745, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D84" type="AreaLight3D" parent="lamp_cor6" unique_id=717585602]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 7.2985306, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.53868103, 0.5236151)
 
 [node name="AreaLight3D85" type="AreaLight3D" parent="lamp_cor6" unique_id=211138648]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 9.855156, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5380554, 0.5236151)
 
 [node name="AreaLight3D86" type="AreaLight3D" parent="lamp_cor6" unique_id=315394533]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, 12.318169, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5380554, 0.5236151)
 
 [node name="AreaLight3D87" type="AreaLight3D" parent="lamp_cor6" unique_id=1463031018]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -12.949829, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D89" type="AreaLight3D" parent="lamp_cor6" unique_id=1723800374]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -23.320473, -0.075439215, 0.035936117)
-visible = false
 light_energy = 2.0
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D90" type="AreaLight3D" parent="lamp_cor6" unique_id=338566344]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -23.320473, -3.759113, 0.035936117)
-visible = false
 light_energy = 2.0
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D91" type="AreaLight3D" parent="lamp_cor6" unique_id=1753985494]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -24.359383, -7.4352703, -0.0908854)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5439911, 0.55388546)
 
 [node name="AreaLight3D92" type="AreaLight3D" parent="lamp_cor6" unique_id=1091317113]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -24.359562, -11.135267, -0.09089017)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5439911, 0.55388546)
 
 [node name="AreaLight3D88" type="AreaLight3D" parent="lamp_cor6" unique_id=1361209391]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -15.483822, -11.135267, -0.100857496)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.56075287, 0.5236151)
 
 [node name="AreaLight3D93" type="AreaLight3D" parent="lamp_cor6" unique_id=859688799]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -35.416233, -0.07543969, 0.035936117)
-visible = false
 light_energy = 2.0
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D94" type="AreaLight3D" parent="lamp_cor6" unique_id=1051060953]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -35.416233, -3.759113, 0.035936117)
-visible = false
 light_energy = 2.0
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D95" type="AreaLight3D" parent="lamp_cor6" unique_id=380873429]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -37.04727, -7.4352703, -0.103479624)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5895386, 0.572423)
 
 [node name="AreaLight3D96" type="AreaLight3D" parent="lamp_cor6" unique_id=1641568031]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -37.04745, -11.135267, -0.10348439)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5895386, 0.572423)
 
 [node name="AreaLight3D97" type="AreaLight3D" parent="lamp_cor6" unique_id=362810379]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -37.04727, -7.4352703, -2.6582642)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5895386, 0.572423)
 
 [node name="AreaLight3D98" type="AreaLight3D" parent="lamp_cor6" unique_id=2019694380]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -39.524582, -7.4352703, -2.6582642)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5895386, 0.572423)
 
 [node name="AreaLight3D99" type="AreaLight3D" parent="lamp_cor6" unique_id=1437742185]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -47.55621, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D100" type="AreaLight3D" parent="lamp_cor6" unique_id=817513233]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -47.55621, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D101" type="AreaLight3D" parent="lamp_cor6" unique_id=1084838606]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -47.55621, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D102" type="AreaLight3D" parent="lamp_cor6" unique_id=1972122788]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -47.55639, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D103" type="AreaLight3D" parent="lamp_cor6" unique_id=860501259]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -58.995895, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D104" type="AreaLight3D" parent="lamp_cor6" unique_id=1702130966]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -64.96373, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D105" type="AreaLight3D" parent="lamp_cor6" unique_id=1500656348]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -70.91499, -0.07543969, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D106" type="AreaLight3D" parent="lamp_cor6" unique_id=1781700366]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -58.995895, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D107" type="AreaLight3D" parent="lamp_cor6" unique_id=52362239]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -64.96373, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D108" type="AreaLight3D" parent="lamp_cor6" unique_id=203252742]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -70.91499, -3.759113, 0.035936117)
-visible = false
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D109" type="AreaLight3D" parent="lamp_cor6" unique_id=160922660]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -58.995895, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D110" type="AreaLight3D" parent="lamp_cor6" unique_id=1052850893]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -64.96373, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D111" type="AreaLight3D" parent="lamp_cor6" unique_id=662015153]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -70.91499, -7.4352703, 0.035936117)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D112" type="AreaLight3D" parent="lamp_cor6" unique_id=1720383982]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -64.96391, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
 
 [node name="AreaLight3D113" type="AreaLight3D" parent="lamp_cor6" unique_id=2098512219]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -70.91518, -11.135267, 0.03593135)
-visible = false
 light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(1.0180664, 0.07069588)
