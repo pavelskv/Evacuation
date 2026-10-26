@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dcpsu7icgoa4g"]
+
+[ext_resource type="PackedScene" uid="uid://cjlvxtixvfw7p" path="res://models/office/PC.glb" id="1_1fyyv"]
+
+[node name="Pc" type="Node3D" unique_id=3153490]
+
+[node name="PC" parent="." unique_id=440107482 instance=ExtResource("1_1fyyv")]
