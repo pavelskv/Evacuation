@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://db1yy4rmch63b"]
+
+[ext_resource type="Script" uid="uid://dn65hf5wuhhky" path="res://scenes/UI/Crosshair/crosshair.gd" id="1_4q10h"]
+[ext_resource type="Texture2D" uid="uid://drkvld8ocqsd3" path="res://Assets/Images/crosshair.png" id="2_klcbi"]
+[ext_resource type="Texture2D" uid="uid://d4a4phe23kijh" path="res://Assets/Images/hand_open.png" id="3_jt6o8"]
+[ext_resource type="Texture2D" uid="uid://dvsb7xg2rqkon" path="res://Assets/Images/hand_closed.png" id="4_8r6qk"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2yddj"]
+light_mode = 1
+
+[node name="CrosshairController" type="CanvasLayer" unique_id=1833091817]
+script = ExtResource("1_4q10h")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=948498310]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CrosshairBasic" type="TextureRect" parent="CenterContainer" unique_id=1906441443]
+material = SubResource("CanvasItemMaterial_2yddj")
+layout_mode = 2
+texture = ExtResource("2_klcbi")
+
+[node name="CrosshairHandOpened" type="TextureRect" parent="CenterContainer" unique_id=911775120]
+visible = false
+material = SubResource("CanvasItemMaterial_2yddj")
+custom_minimum_size = Vector2(42, 42)
+layout_mode = 2
+texture = ExtResource("3_jt6o8")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="CrosshairHandClosed" type="TextureRect" parent="CenterContainer" unique_id=694719307]
+visible = false
+material = SubResource("CanvasItemMaterial_2yddj")
+custom_minimum_size = Vector2(32, 38)
+layout_mode = 2
+texture = ExtResource("4_8r6qk")
+expand_mode = 4
