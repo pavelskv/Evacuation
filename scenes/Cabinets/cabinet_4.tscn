@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bbwtp1q8lunii"]
 
 [ext_resource type="PackedScene" uid="uid://bj0dtmv48q7pr" path="res://models/rooms/room4.glb" id="1_3ia6b"]
+[ext_resource type="Script" uid="uid://blqlodf4isdjq" path="res://scenes/Cabinets/room.gd" id="1_gwsue"]
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="2_03nwn"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="3_yk52i"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="4_1lok2"]
@@ -60,6 +61,7 @@ emission_texture = ExtResource("3_yk52i")
 size = Vector2(0.6020813, 0.60549927)
 
 [node name="Cabinet_4" type="Node3D" unique_id=1684688077]
+script = ExtResource("1_gwsue")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2163236, 0.9845967, -3.7168646)

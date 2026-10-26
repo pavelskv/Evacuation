@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://vdrih3drx5vo"]
 
+[ext_resource type="Script" uid="uid://blqlodf4isdjq" path="res://scenes/Cabinets/room.gd" id="1_2575u"]
 [ext_resource type="PackedScene" uid="uid://ca2fbdc34fhx4" path="res://models/rooms/room3_1.glb" id="1_fb3v6"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="2_2575u"]
 [ext_resource type="PackedScene" uid="uid://cj1ry02ddvs8w" path="res://models/office/table1.glb" id="3_xjq3a"]
@@ -71,6 +72,7 @@ albedo_texture = ExtResource("12_qcebg")
 size = Vector2(1.1379108, 0.7903786)
 
 [node name="Cabinet_4" type="Node3D" unique_id=1684688077]
+script = ExtResource("1_2575u")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0276911, 0.6697426, -2.643258)
@@ -290,12 +292,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47560012, 1.25, -6.0523953
 
 [node name="window_rooms2" parent="." unique_id=1745188863 instance=ExtResource("15_2575u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5068994, 1.25, -6.0523953)
-start_open = true
 
 [node name="window_rooms3" parent="." unique_id=2068476927 instance=ExtResource("15_2575u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4894, 1.25, -6.0523953)
 open_angle = 50.0
-start_open = true
 
 [node name="Pc" parent="." unique_id=3153490 instance=ExtResource("16_2575u")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.4637183, 0.738699, -5.058878)

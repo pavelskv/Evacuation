@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bmyjmi4nsovg8"]
 
+[ext_resource type="Script" uid="uid://blqlodf4isdjq" path="res://scenes/Cabinets/room.gd" id="1_4cvtd"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="1_pvucw"]
 [ext_resource type="PackedScene" uid="uid://cj1ry02ddvs8w" path="res://models/office/table1.glb" id="2_4cvtd"]
 [ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="3_hxjhb"]
@@ -68,6 +69,7 @@ albedo_texture = ExtResource("10_60b3l")
 size = Vector2(1.1379108, 0.7903786)
 
 [node name="Cabinet_4" type="Node3D" unique_id=1684688077]
+script = ExtResource("1_4cvtd")
 
 [node name="room3_2_big_1" parent="." unique_id=350335988 instance=ExtResource("14_4cvtd")]
 

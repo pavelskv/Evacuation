@@ -112,6 +112,8 @@ func _spawn() -> void:
 		return
 		
 	EvacuationManager.spawn_cabinet = spawn_cabinet
+	
+	spawn_cabinet.initialize_room()
 
 	# Создаём игрока один раз
 	var player := player_scene.instantiate() as Node3D

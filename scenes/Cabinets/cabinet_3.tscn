@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bvkywwsk6l5vd"]
 
 [ext_resource type="PackedScene" uid="uid://ct72da4pkdxpt" path="res://models/rooms/room3.glb" id="1_7sdir"]
+[ext_resource type="Script" uid="uid://blqlodf4isdjq" path="res://scenes/Cabinets/room.gd" id="1_qfesn"]
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="2_c4xtk"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="3_ck41y"]
 [ext_resource type="PackedScene" uid="uid://cj1ry02ddvs8w" path="res://models/office/table1.glb" id="4_i3rgc"]
@@ -69,7 +70,8 @@ albedo_texture = ExtResource("8_5ao2w")
 [sub_resource type="PlaneMesh" id="PlaneMesh_v6srv"]
 size = Vector2(1.1379108, 0.7903786)
 
-[node name="Cabinet_4" type="Node3D" unique_id=1684688077]
+[node name="Cabinet_5" type="Node3D" unique_id=1684688077]
+script = ExtResource("1_qfesn")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28336835, 1.1079038, -2.643258)
