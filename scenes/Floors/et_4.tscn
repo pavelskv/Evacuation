@@ -1059,6 +1059,72 @@ light_energy = 2.368
 shadow_enabled = true
 area_size = Vector2(0.5142746, 0.5203512)
 
+[node name="AreaLight3D149" type="AreaLight3D" parent="lamp_cor6" unique_id=76412218]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -24.393612, -11.120529, 14.159172)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D150" type="AreaLight3D" parent="lamp_cor6" unique_id=382934359]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.887741, -11.120529, 14.159172)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D151" type="AreaLight3D" parent="lamp_cor6" unique_id=1797142711]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.887741, -11.120529, 17.862644)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D152" type="AreaLight3D" parent="lamp_cor6" unique_id=1818255780]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.887741, -11.120529, 21.469166)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D153" type="AreaLight3D" parent="lamp_cor6" unique_id=1848041398]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -26.887741, -11.120529, 23.776566)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D154" type="AreaLight3D" parent="lamp_cor6" unique_id=1301669572]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -29.6605, -11.120529, 23.776566)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D155" type="AreaLight3D" parent="lamp_cor6" unique_id=1260377558]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.607765, -11.120529, 23.776566)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D156" type="AreaLight3D" parent="lamp_cor6" unique_id=1166500550]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.607765, -11.120529, 20.92625)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D157" type="AreaLight3D" parent="lamp_cor6" unique_id=2037199780]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.607765, -11.120529, 26.239084)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D158" type="AreaLight3D" parent="lamp_cor6" unique_id=613283339]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.607765, -11.120529, 32.021473)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
+[node name="AreaLight3D159" type="AreaLight3D" parent="lamp_cor6" unique_id=1044187780]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -32.607765, -11.120529, 28.206074)
+light_energy = 2.368
+shadow_enabled = true
+area_size = Vector2(0.5142746, 0.5203512)
+
 [node name="AreaLight3D54" type="AreaLight3D" parent="lamp_cor6" unique_id=1707355702]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -36.4511, -11.120529, -2.630853)
 light_energy = 2.368
