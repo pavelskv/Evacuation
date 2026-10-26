@@ -1,10 +1,17 @@
 [gd_scene format=3 uid="uid://bjyurhpqgq1no"]
 
 [ext_resource type="Script" uid="uid://cp7b45w0dg3hc" path="res://scenes/Player/player.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://db1yy4rmch63b" path="res://scenes/UI/Crosshair/crosshair.tscn" id="2_1kbk7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
 radius = 0.3
 height = 1.8
+
+[sub_resource type="LabelSettings" id="LabelSettings_odrtj"]
+font_size = 24
+outline_size = 1
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 0.50980395)
 
 [node name="Player" type="CharacterBody3D" unique_id=1500151941]
 script = ExtResource("1")
@@ -22,10 +29,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0)
 target_position = Vector3(0, 0, -2)
 collision_mask = 2
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=767201206]
+[node name="CrosshairController" parent="." unique_id=1833091817 instance=ExtResource("2_1kbk7")]
 
-[node name="InteractLabel" type="Label" parent="CanvasLayer" unique_id=1673963404]
-visible = false
+[node name="InteractLabel" type="Label" parent="CrosshairController" unique_id=1673963404]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -36,5 +42,6 @@ offset_top = 50.0
 offset_right = 100.0
 offset_bottom = 90.0
 text = "Нажмите [E]"
+label_settings = SubResource("LabelSettings_odrtj")
 horizontal_alignment = 1
 vertical_alignment = 1

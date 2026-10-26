@@ -11,7 +11,8 @@ const MOUSE_SENSITIVITY = 0.002
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var raycast = $Head/Camera3D/RayCast3D
-@onready var interact_label = $CanvasLayer/InteractLabel
+@onready var interact_label = $CrosshairController/InteractLabel
+@onready var crosshair = $CrosshairController
 
 var current_speed = WALK_SPEED
 var e_pressed = false
@@ -82,9 +83,11 @@ func _check_interact():
 		
 	var interactable = _get_interactable()
 	if interactable:
+		crosshair.set_interactable(true)
 		interact_label.text = interactable.get_message()
 		interact_label.visible = true
 	else:
+		crosshair.set_interactable(false)
 		interact_label.visible = false
 
 func _interact():
