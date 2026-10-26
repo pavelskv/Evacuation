@@ -3,12 +3,19 @@ extends Interactable
 @export var floor_number: int = 1
 @export var plan_texture: Texture2D
 
+var is_viewed: bool = false
+
 func get_message() -> String:
 	return "Посмотреть план эвакуации (%d-й этаж)  [E]" % floor_number
+	
+func get_training_task_id() -> StringName:
+	return &"view_plan"
+	
+func is_task_completed() -> bool:
+	return is_viewed
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	add_to_group("training_task_objects")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -24,3 +31,5 @@ func interact():
 
 	if viewer:
 		viewer.show_painting(plan_texture)
+		is_viewed = true
+		notify_state_changed()

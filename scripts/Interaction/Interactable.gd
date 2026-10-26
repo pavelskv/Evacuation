@@ -1,6 +1,8 @@
 class_name Interactable
 extends Node
 
+signal state_changed
+
 @export var message: String = "Взаимодействовать"
 
 func interact():
@@ -8,3 +10,12 @@ func interact():
 	
 func get_message() -> String:
 	return message
+	
+func get_training_task_id() -> StringName:
+	return &""
+
+func is_task_completed() -> bool:
+	return false
+	
+func notify_state_changed() -> void:
+	state_changed.emit()

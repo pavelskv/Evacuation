@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bv0vta2ogme8i"]
 
 [ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="1_mwc48"]
+[ext_resource type="Script" uid="uid://bsiijppdfmari" path="res://scenes/Windows/window_room.gd" id="2_3k04w"]
 [ext_resource type="Shader" uid="uid://b3dri7nuhkv4n" path="res://new_shader.gdshader" id="2_yuakn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xwkd6"]
@@ -78,8 +79,20 @@ shadow_mesh = SubResource("ArrayMesh_m3v4b")
 render_priority = 0
 shader = ExtResource("2_yuakn")
 
-[node name="window_rooms" unique_id=1587715993 instance=ExtResource("1_mwc48")]
+[sub_resource type="BoxShape3D" id="BoxShape3D_iw65l"]
+size = Vector3(1.6865234, 1.5217285, 0.02443695)
 
-[node name="window" parent="." index="0" unique_id=1079873385]
+[node name="window_rooms" unique_id=1587715993 instance=ExtResource("1_mwc48")]
+script = ExtResource("2_3k04w")
+
+[node name="window" parent="." index="0" unique_id=693437153]
 mesh = SubResource("ArrayMesh_7hner")
 surface_material_override/0 = SubResource("ShaderMaterial_h7xx3")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="window" index="0" unique_id=963355999]
+collision_layer = 3
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="window/StaticBody3D" index="0" unique_id=1649542769]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.853917, 0.7602365, -0.013582721)
+shape = SubResource("BoxShape3D_iw65l")
+debug_color = Color(0, 0.6, 0.69803923, 1)

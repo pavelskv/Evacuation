@@ -4,6 +4,8 @@ extends Node
 @export var cabinet_scenes: Array[PackedScene] = []
 @export var player_scene: PackedScene
 
+@export var evacuation_scenario: EvacuationScenario
+
 @export var use_debug_camera: bool = false
 @export var debug_camera_scene: PackedScene
 
@@ -108,6 +110,8 @@ func _spawn() -> void:
 	if spawn_cabinet == null:
 		push_error("Не удалось определить кабинет для появления игрока!")
 		return
+		
+	EvacuationManager.spawn_cabinet = spawn_cabinet
 
 	# Создаём игрока один раз
 	var player := player_scene.instantiate() as Node3D
@@ -120,3 +124,5 @@ func _spawn() -> void:
 		print("✅ Игрок заспавнен в кабинете: ", spawn_cabinet.name)
 	else:
 		push_warning("В сцене кабинета нет узла PlayerSpawn!")
+		
+	EvacuationManager.start_scenario(evacuation_scenario)

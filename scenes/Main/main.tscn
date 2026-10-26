@@ -22,6 +22,8 @@
 [ext_resource type="PackedScene" uid="uid://bbwtp1q8lunii" path="res://scenes/Cabinets/cabinet_4.tscn" id="22_y6deb"]
 [ext_resource type="PackedScene" uid="uid://b430uamxq8han" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="25_2wyq8"]
 [ext_resource type="PackedScene" uid="uid://b8tcs7k6ucece" path="res://scenes/Plan/PlanViewer.tscn" id="26_0aed0"]
+[ext_resource type="Resource" uid="uid://utj26ju0vv61" path="res://scripts/Evacuation/evacuation.tres" id="28_jti5r"]
+[ext_resource type="PackedScene" uid="uid://drics75ljx3rx" path="res://scripts/Evacuation/EvacuationTasksUI.tscn" id="28_vu8r1"]
 [ext_resource type="PackedScene" uid="uid://57vxupnx85cc" path="res://models/office/firelom.glb" id="37_fuf3a"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_k7ajv"]
@@ -158,6 +160,7 @@ environment = SubResource("Environment_riqys")
 script = ExtResource("18_dp3eg")
 cabinet_scenes = Array[PackedScene]([ExtResource("19_yc10j"), ExtResource("20_jscy8"), ExtResource("21_pm3ni"), ExtResource("22_y6deb"), ExtResource("5_tel4y"), ExtResource("10_ax2h5"), ExtResource("11_jhp5o"), ExtResource("12_jhp5o"), ExtResource("13_ixvot")])
 player_scene = ExtResource("1")
+evacuation_scenario = ExtResource("28_jti5r")
 debug_camera_scene = ExtResource("11_qhn81")
 
 [node name="PauseMenu" parent="." unique_id=674402355 instance=ExtResource("25_2wyq8")]
@@ -224,3 +227,6 @@ material_override = SubResource("StandardMaterial3D_la3dr")
 mesh = SubResource("PlaneMesh_hcsi8")
 
 [node name="PlanViewer" parent="." unique_id=1003663694 instance=ExtResource("26_0aed0")]
+visible = false
+
+[node name="EvacuationTasksUi" parent="." unique_id=1691786361 instance=ExtResource("28_vu8r1")]

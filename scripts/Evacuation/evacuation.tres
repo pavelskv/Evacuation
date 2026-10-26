@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="EvacuationScenario" format=3 uid="uid://utj26ju0vv61"]
+
+[ext_resource type="Script" uid="uid://d2x6qoepk18bo" path="res://scripts/Evacuation/evacuation_scenario.gd" id="1_6tlxe"]
+[ext_resource type="Script" uid="uid://dcrg5xn13gcld" path="res://scripts/Evacuation/evacuation_task.gd" id="2_uf3w4"]
+[ext_resource type="Script" uid="uid://bj2rm08t7lw4m" path="res://scripts/Evacuation/Validators/all_objects_satisfied_validator.gd" id="3_tdus6"]
+[ext_resource type="Script" uid="uid://dcyipujp4bmqq" path="res://scripts/Evacuation/Validators/any_object_confirm_validator.gd" id="4_3glyf"]
+
+[sub_resource type="Resource" id="Resource_dpkif"]
+script = ExtResource("3_tdus6")
+metadata/_custom_type_script = "uid://bj2rm08t7lw4m"
+
+[sub_resource type="Resource" id="Resource_tdus6"]
+script = ExtResource("2_uf3w4")
+id = &"close_windows"
+title = "Закрыть окна"
+validator = SubResource("Resource_dpkif")
+validation_scope = 1
+metadata/_custom_type_script = "uid://dcrg5xn13gcld"
+
+[sub_resource type="Resource" id="Resource_yuakn"]
+script = ExtResource("4_3glyf")
+metadata/_custom_type_script = "uid://dcyipujp4bmqq"
+
+[sub_resource type="Resource" id="Resource_vu8r1"]
+script = ExtResource("2_uf3w4")
+id = &"view_plan"
+title = "Посмотреть план эвакуации"
+validator = SubResource("Resource_yuakn")
+metadata/_custom_type_script = "uid://dcrg5xn13gcld"
+
+[resource]
+script = ExtResource("1_6tlxe")
+tasks = Array[ExtResource("2_uf3w4")]([SubResource("Resource_tdus6"), SubResource("Resource_vu8r1")])
+metadata/_custom_type_script = "uid://d2x6qoepk18bo"

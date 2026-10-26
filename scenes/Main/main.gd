@@ -12,6 +12,9 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		_toggle_pause()
 		
+	if event.is_action_pressed("ui_focus_next"):
+		EvacuationManager.complete_scenario()
+		
 	if event is InputEventMouseButton and event.pressed \
 		and event.button_index == MOUSE_BUTTON_LEFT \
 		and Input.mouse_mode == Input.MOUSE_MODE_VISIBLE:
