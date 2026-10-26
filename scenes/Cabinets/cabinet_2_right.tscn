@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="10_fh8k0"]
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="11_fh8k0"]
 [ext_resource type="PackedScene" uid="uid://bttov4e2qamox" path="res://models/office/kreslo2.glb" id="12_qg25r"]
+[ext_resource type="PackedScene" uid="uid://dbvmwq6j12otm" path="res://scenes/Cabinets/shmot_1.tscn" id="14_x1iyp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pijc"]
 render_priority = 1
@@ -194,3 +195,6 @@ transform = Transform3D(-0.66575634, 0, 0.7461692, 0, 1, 0, -0.7461692, 0, -0.66
 
 [node name="kreslo4" parent="." unique_id=184633850 instance=ExtResource("12_qg25r")]
 transform = Transform3D(-0.3133233, 0, -0.9496465, 0, 1, 0, 0.9496465, 0, -0.3133233, -0.29430914, -1.1324883e-06, -4.845329)
+
+[node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("14_x1iyp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4393682, 0.75749874, -4.5349765)

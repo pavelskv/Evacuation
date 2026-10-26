@@ -13,6 +13,7 @@
 [ext_resource type="LightmapGIData" uid="uid://cr0ya0k3vmmba" path="res://scenes/Cabinets/cabinet_1.lmbake" id="10_s0g4l"]
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="11_evih7"]
 [ext_resource type="PackedScene" uid="uid://bttov4e2qamox" path="res://models/office/kreslo2.glb" id="12_pp1do"]
+[ext_resource type="PackedScene" uid="uid://dbvmwq6j12otm" path="res://scenes/Cabinets/shmot_1.tscn" id="14_tg88c"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3e7xq"]
 render_priority = 1
@@ -120,3 +121,6 @@ transform = Transform3D(1.3113416e-07, 0, 1, 0, 1, 0, -1, 0, 1.3113416e-07, -0.3
 
 [node name="kreslo2" parent="." unique_id=830101170 instance=ExtResource("12_pp1do")]
 transform = Transform3D(-0.9507134, 0, -0.310071, 0, 1, 0, 0.310071, 0, -0.9507134, -0.34658015, -4.172325e-07, -5.2316623)
+
+[node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("14_tg88c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.066352874, 0.7574992, -3.9301884)

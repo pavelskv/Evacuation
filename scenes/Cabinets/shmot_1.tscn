@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dbvmwq6j12otm"]
+
+[ext_resource type="PackedScene" uid="uid://bo3f6ko1rdb2l" path="res://models/office/shmot_1.glb" id="1_l5q6t"]
+
+[node name="Shmot1" type="Node3D" unique_id=800705356]
+
+[node name="shmot_1" parent="." unique_id=1168472749 instance=ExtResource("1_l5q6t")]
