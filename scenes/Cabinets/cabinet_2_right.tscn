@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="8_suk0y"]
 [ext_resource type="LightmapGIData" uid="uid://cbufmp6t7jrli" path="res://scenes/Cabinets/cabinet_2_right.lmbake" id="10_44328"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="10_fh8k0"]
+[ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="11_fh8k0"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6pijc"]
 render_priority = 1
@@ -172,3 +173,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.47560012, 1.25, -6.0355754
 
 [node name="window_rooms2" parent="." unique_id=1965288623 instance=ExtResource("10_fh8k0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5068994, 1.25, -6.0355754)
+
+[node name="Pc" parent="." unique_id=3153490 instance=ExtResource("11_fh8k0")]
+transform = Transform3D(0.9752291, 0, 0.22119725, 0, 1, 0, -0.22119725, 0, 0.9752291, 3.018071, 0.75499886, -3.6461468)
+
+[node name="Pc2" parent="." unique_id=638286096 instance=ExtResource("11_fh8k0")]
+transform = Transform3D(0.98048955, 0, -0.19657125, 0, 1, 0, 0.19657125, 0, 0.98048955, 3.018071, 0.75499886, -4.914364)
+
+[node name="Pc3" parent="." unique_id=1924300506 instance=ExtResource("11_fh8k0")]
+transform = Transform3D(0.9767972, 0, -0.21416615, 0, 1, 0, 0.21416615, 0, 0.9767972, 3.018071, 0.75499886, -0.8658676)
