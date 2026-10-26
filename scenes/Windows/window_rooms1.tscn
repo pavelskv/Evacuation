@@ -4,19 +4,20 @@
 [ext_resource type="Script" uid="uid://bsiijppdfmari" path="res://scenes/Windows/window_room.gd" id="2_3k04w"]
 [ext_resource type="PackedScene" uid="uid://fvkd7p6a745g" path="res://models/rooms/window_active.glb" id="3_yuakn"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_iw65l"]
-size = Vector3(1.6865234, 1.5217285, 0.02443695)
+[sub_resource type="BoxShape3D" id="BoxShape3D_csipu"]
+size = Vector3(0.57714844, 1.4125366, 0.020629883)
 
 [node name="window_rooms" unique_id=1587715993 instance=ExtResource("1_mwc48")]
 script = ExtResource("2_3k04w")
+open_angle = 45.0
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="0" unique_id=1649542769]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.854779, 0.7602365, -0.013582721)
-shape = SubResource("BoxShape3D_iw65l")
-debug_color = Color(0, 0.6, 0.69803923, 1)
+[node name="window_active" parent="." index="1" unique_id=1406424419 instance=ExtResource("3_yuakn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6828716, 0.05404651, 0.00029895455)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="." index="1" unique_id=963355999]
+[node name="StaticBody3D" type="StaticBody3D" parent="window_active" index="1" unique_id=1452166635]
 collision_layer = 3
 
-[node name="window_active" parent="." index="3" unique_id=1406424419 instance=ExtResource("3_yuakn")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1002936, 0.05404651, 0.00029895455)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="window_active/StaticBody3D" index="0" unique_id=1584037888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2945516, 0.71006846, 0.0042352676)
+shape = SubResource("BoxShape3D_csipu")
+debug_color = Color(0, 0.6, 0.69803923, 0.99215686)
