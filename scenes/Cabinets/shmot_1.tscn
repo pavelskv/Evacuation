@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://dbvmwq6j12otm"]
 
 [ext_resource type="PackedScene" uid="uid://bo3f6ko1rdb2l" path="res://models/office/shmot_1.glb" id="1_l5q6t"]
+[ext_resource type="Script" uid="uid://34f01427hpja" path="res://scenes/Cabinets/shmot.gd" id="2_4e5ay"]
 
-[node name="Shmot1" type="Node3D" unique_id=800705356]
+[node name="shmot_1" unique_id=426803212 instance=ExtResource("1_l5q6t")]
+script = ExtResource("2_4e5ay")
+message = "Взять вещи [E]"
 
-[node name="shmot_1" parent="." unique_id=1168472749 instance=ExtResource("1_l5q6t")]
+[node name="StaticBody3D" parent="shmot" parent_id_path=PackedInt32Array(768793440) index="0" unique_id=68981953]
+collision_layer = 3
