@@ -72,6 +72,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.7
 
 [node name="Door_2_L2" parent="." unique_id=1864452623 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.74682, -11.0824995, -1.0405014)
+invert = true
 
 [node name="Door_1_L" parent="." unique_id=716988130 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 50.892162, -11.0824995, -1.0405012)
@@ -86,7 +87,6 @@ invert = true
 
 [node name="Door_2_R2" parent="." unique_id=1544952797 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 32.764214, -11.0824995, -1.0405008)
-invert = true
 
 [node name="Door_1_R" parent="." unique_id=87371949 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 39.084976, -11.0824995, -1.0405009)
