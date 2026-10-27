@@ -69,12 +69,18 @@ func _physics_process(delta):
 func _get_interactable() -> Interactable:
 	if not raycast.is_colliding():
 		return null
+
 	var collider = raycast.get_collider()
 	var node = collider
+
 	while node:
 		if node is Interactable:
-			return node
+			if node.can_interact():
+				return node
+			return null
+
 		node = node.get_parent()
+
 	return null
 
 func _check_interact():

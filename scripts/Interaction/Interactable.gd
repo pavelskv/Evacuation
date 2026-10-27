@@ -5,6 +5,9 @@ signal state_changed
 
 @export var message: String = "Взаимодействовать"
 
+func can_interact() -> bool:
+	return true
+
 func interact():
 	pass
 	
