@@ -17,6 +17,18 @@ validator = SubResource("Resource_dpkif")
 validation_scope = 1
 metadata/_custom_type_script = "uid://dcrg5xn13gcld"
 
+[sub_resource type="Resource" id="Resource_0xmca"]
+script = ExtResource("3_tdus6")
+metadata/_custom_type_script = "uid://bj2rm08t7lw4m"
+
+[sub_resource type="Resource" id="Resource_4e5ay"]
+script = ExtResource("2_uf3w4")
+id = &"pickup_stuff"
+title = "Взять личные вещи"
+validator = SubResource("Resource_0xmca")
+validation_scope = 1
+metadata/_custom_type_script = "uid://dcrg5xn13gcld"
+
 [sub_resource type="Resource" id="Resource_yuakn"]
 script = ExtResource("4_3glyf")
 metadata/_custom_type_script = "uid://dcyipujp4bmqq"
@@ -30,5 +42,5 @@ metadata/_custom_type_script = "uid://dcrg5xn13gcld"
 
 [resource]
 script = ExtResource("1_6tlxe")
-tasks = Array[ExtResource("2_uf3w4")]([SubResource("Resource_tdus6"), SubResource("Resource_vu8r1")])
+tasks = Array[ExtResource("2_uf3w4")]([SubResource("Resource_tdus6"), SubResource("Resource_4e5ay"), SubResource("Resource_vu8r1")])
 metadata/_custom_type_script = "uid://d2x6qoepk18bo"

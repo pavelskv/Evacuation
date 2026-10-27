@@ -1,4 +1,3 @@
-
 extends Node
 
 signal scenario_started(title: String)
@@ -77,6 +76,7 @@ func start_scenario(new_scenario: EvacuationScenario) -> void:
 	scenario_status_changed.emit(scenario_status)
 
 	_connect_task_objects()
+	_validate_setup()
 
 	scenario_started.emit(scenario.title)
 
@@ -92,6 +92,37 @@ func reset_scenario() -> void:
 	violations.clear()
 
 	scenario_status_changed.emit(scenario_status)
+
+
+# =========================================================
+# Проверка настройки сценария (только предупреждения)
+# =========================================================
+
+func _validate_setup() -> void:
+	for task_id: StringName in task_definitions:
+		var task: EvacuationTask = task_definitions[task_id]
+
+		if task.validator == null:
+			push_warning("Задача '%s': не задан валидатор" % task_id)
+			continue
+
+		if task.validator.get_task_objects(task).is_empty() \
+				and not task.can_be_not_applicable:
+			push_warning("Задача '%s': не найдено ни одного объекта" % task_id)
+
+	for node: Node in get_tree().get_nodes_in_group("training_task_objects"):
+		var object := node as Interactable
+
+		if object == null:
+			continue
+
+		var object_task_id := object.get_training_task_id()
+
+		if not task_definitions.has(object_task_id):
+			push_warning(
+				"Объект %s ссылается на неизвестную задачу '%s'"
+				% [object.get_path(), object_task_id]
+			)
 
 
 # =========================================================
@@ -112,8 +143,10 @@ func _connect_task_objects() -> void:
 		if not task_definitions.has(task_id):
 			continue
 
-		if not object.state_changed.is_connected(_on_object_state_changed):
-			object.state_changed.connect(_on_object_state_changed.bind(object))
+		var callback := _on_object_state_changed.bind(object)
+
+		if not object.state_changed.is_connected(callback):
+			object.state_changed.connect(callback)
 
 		if not _connected_objects.has(object):
 			_connected_objects.append(object)
@@ -147,13 +180,19 @@ func _on_object_state_changed(object: Interactable) -> void:
 	if not task_definitions.has(task_id):
 		return
 
-	if get_task_status(task_id) != TaskStatus.PENDING:
+	var status := get_task_status(task_id)
+
+	if status != TaskStatus.PENDING and status != TaskStatus.COMPLETED:
 		return
 
 	var task: EvacuationTask = task_definitions[task_id]
+	var is_done := _validate_task(task)
 
-	if _validate_task(task):
+	if status == TaskStatus.PENDING and is_done:
 		complete_task(task_id)
+	elif status == TaskStatus.COMPLETED and not is_done:
+		# Условие перестало выполняться (например, окно снова открыли)
+		_set_task_status(task_id, TaskStatus.PENDING)
 
 
 # =========================================================
@@ -235,7 +274,13 @@ func _set_task_status(task_id: StringName, new_status: TaskStatus) -> void:
 	if not task_statuses.has(task_id):
 		return
 
-	if get_task_status(task_id) != TaskStatus.PENDING:
+	var current_status := get_task_status(task_id)
+	var is_reopen := (
+		current_status == TaskStatus.COMPLETED
+		and new_status == TaskStatus.PENDING
+	)
+
+	if current_status != TaskStatus.PENDING and not is_reopen:
 		return
 
 	task_statuses[task_id] = new_status
