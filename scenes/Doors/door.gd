@@ -14,7 +14,7 @@ var tween: Tween
 @onready var pivot = $Pivot
 
 func get_message() -> String:
-	return "Закрыть дверь [E]" if is_open else "Открыть дверь [E]"
+	return "Закрыть дверь " if is_open else "Открыть дверь "
 
 func interact():
 	is_open = !is_open

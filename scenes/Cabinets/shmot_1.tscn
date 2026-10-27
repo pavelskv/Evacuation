@@ -5,7 +5,7 @@
 
 [node name="shmot_1" unique_id=426803212 instance=ExtResource("1_l5q6t")]
 script = ExtResource("2_4e5ay")
-message = "Взять вещи [E]"
+message = "Взять вещи"
 
 [node name="StaticBody3D" parent="shmot" parent_id_path=PackedInt32Array(768793440) index="0" unique_id=68981953]
 collision_layer = 3

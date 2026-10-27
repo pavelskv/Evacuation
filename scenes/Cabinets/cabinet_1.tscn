@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="5_3e7xq"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="6_ksou2"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_5jfge"]
-[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="8_ei5io"]
+[ext_resource type="PackedScene" uid="uid://bkl4i33yxmmng" path="res://scenes/Cabinets/wardob.tscn" id="9_tg88c"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="10_evih7"]
 [ext_resource type="LightmapGIData" uid="uid://cr0ya0k3vmmba" path="res://scenes/Cabinets/cabinet_1.lmbake" id="10_s0g4l"]
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="11_evih7"]
@@ -95,7 +95,7 @@ mesh = SubResource("PlaneMesh_anqqv")
 [node name="table2" parent="." unique_id=800755323 instance=ExtResource("7_5jfge")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.3697641, -8.34465e-07, -3.482238)
 
-[node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_ei5io")]
+[node name="wardob1" parent="." unique_id=1816264476 instance=ExtResource("9_tg88c")]
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 1.6450686, 0, -0.67525876)
 
 [node name="AreaLight3D6" type="AreaLight3D" parent="." unique_id=1332859574]

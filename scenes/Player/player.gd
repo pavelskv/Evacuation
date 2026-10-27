@@ -11,7 +11,8 @@ const MOUSE_SENSITIVITY = 0.002
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var raycast = $Head/Camera3D/RayCast3D
-@onready var interact_label = $CrosshairController/InteractLabel
+@onready var interact_container = $CrosshairController/HintContainer
+@onready var interact_label = $CrosshairController/HintContainer/InteractLabel
 @onready var crosshair = $CrosshairController
 
 var current_speed = WALK_SPEED
@@ -20,8 +21,8 @@ var e_pressed = false
 func _ready():
 	add_to_group("player")
 	
-	if interact_label:
-		interact_label.visible = false
+	if interact_container:
+		interact_container.visible = false
 
 func _input(event):
 	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
@@ -30,7 +31,7 @@ func _input(event):
 		camera.rotation.x = clamp(camera.rotation.x, -PI/2, PI/2)
 
 func _physics_process(delta):
-	var e_down = Input.is_physical_key_pressed(KEY_E)
+	var e_down = Input.is_physical_key_pressed(KEY_E) or Input.is_action_pressed("mouse_left")
 	if e_down and not e_pressed:
 		_interact()
 	e_pressed = e_down
@@ -91,10 +92,10 @@ func _check_interact():
 	if interactable:
 		crosshair.set_interactable(true)
 		interact_label.text = interactable.get_message()
-		interact_label.visible = true
+		interact_container.visible = true
 	else:
 		crosshair.set_interactable(false)
-		interact_label.visible = false
+		interact_container.visible = false
 
 func _interact():
 	var interactable = _get_interactable()

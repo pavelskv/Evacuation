@@ -61,7 +61,7 @@ func interact() -> void:
 
 
 func get_message() -> String:
-	return "Закрыть окно [E]" if is_open else ""
+	return "Закрыть окно " if is_open else ""
 
 
 func get_training_task_id() -> StringName:

@@ -11,3 +11,9 @@ func initialize_room() -> void:
 
 	for window in windows:
 		window.set_initial_state(window == open_window)
+		
+		
+	for item in get_tree().get_nodes_in_group("shmot"):
+		if is_ancestor_of(item):
+			item.set_interactable()
+	
