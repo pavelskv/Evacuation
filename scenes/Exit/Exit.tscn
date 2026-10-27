@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cp2kcghm15o75"]
+
+[ext_resource type="Script" uid="uid://d2fhyxat217sa" path="res://scenes/Exit/exit.gd" id="1_fas0v"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ctynm"]
+size = Vector3(1.1260071, 0.6883545, 0.90722656)
+
+[node name="Exit" type="Area3D" unique_id=1762837628]
+collision_layer = 3
+script = ExtResource("1_fas0v")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=716966356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0486908, 1.6315308, -0.89171314)
+shape = SubResource("BoxShape3D_ctynm")
+debug_color = Color(0, 0.6, 0.69803923, 1)
