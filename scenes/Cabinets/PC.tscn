@@ -1,7 +1,24 @@
 [gd_scene format=3 uid="uid://dcpsu7icgoa4g"]
 
 [ext_resource type="PackedScene" uid="uid://cjlvxtixvfw7p" path="res://models/office/PC.glb" id="1_1fyyv"]
+[ext_resource type="Script" uid="uid://dqdxrhb1a4lc6" path="res://scenes/Cabinets/pc.gd" id="2_r7meb"]
+[ext_resource type="Texture2D" uid="uid://dnbsjtejw0e1q" path="res://assets/images/astra.png" id="3_louq6"]
 
-[node name="Pc" type="Node3D" unique_id=3153490]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r7meb"]
+shading_mode = 0
+albedo_texture = ExtResource("3_louq6")
 
-[node name="PC" parent="." unique_id=440107482 instance=ExtResource("1_1fyyv")]
+[sub_resource type="QuadMesh" id="QuadMesh_csipu"]
+size = Vector2(0.5, 0.29)
+
+[node name="PC" unique_id=1000085423 instance=ExtResource("1_1fyyv")]
+script = ExtResource("2_r7meb")
+message = "Выключить"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="monitor_2" parent_id_path=PackedInt32Array(1113867137) index="0" unique_id=792563859]
+transform = Transform3D(-0.9999989, 0, -0.0007680329, 0, 1, 0, 0.0007680329, 0, -0.9999989, 0.0013914248, 0.31895953, -0.066515096)
+material_override = SubResource("StandardMaterial3D_r7meb")
+mesh = SubResource("QuadMesh_csipu")
+
+[node name="StaticBody3D" parent="monitor_2" parent_id_path=PackedInt32Array(1113867137) index="1" unique_id=521844719]
+collision_layer = 3

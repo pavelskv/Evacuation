@@ -13,17 +13,27 @@ var is_open = false
 var tween: Tween
 @onready var pivot = $Pivot
 
+func _ready() -> void:
+	add_to_group("training_task_objects")
+
 func get_message() -> String:
 	return "Закрыть дверь " if is_open else "Открыть дверь "
 
+func get_training_task_id() -> StringName:
+	return &"close_door"
+
+func is_task_completed() -> bool:
+	return not is_open
+
 func interact():
 	is_open = !is_open
+	notify_state_changed()
+	
 	if tween and tween.is_valid():
 		tween.kill()
 	tween = create_tween()
 	tween.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 
-	
 	var target_angle = 0.0
 	if is_open:
 		if hinge_side == HingeSide.LEFT:

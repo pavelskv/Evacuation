@@ -32,7 +32,6 @@ func set_initial_state(opened: bool) -> void:
 	if is_node_ready():
 		pivot.rotation_degrees.y = _get_target_angle()
 
-
 func _get_target_angle() -> float:
 	if not is_open:
 		return 0.0
