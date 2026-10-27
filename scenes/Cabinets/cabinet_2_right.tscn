@@ -167,7 +167,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6139998, -1.1920929e-06, -4
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1.4041232)
 
 [node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_suk0y")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.48082858, 0, -1.2976139)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7111832, 0, -0.72419965)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
 light_data = ExtResource("10_44328")

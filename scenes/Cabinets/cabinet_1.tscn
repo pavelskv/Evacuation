@@ -96,7 +96,7 @@ mesh = SubResource("PlaneMesh_anqqv")
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0.3697641, -8.34465e-07, -3.482238)
 
 [node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_ei5io")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.9105482, 0, -1.2896805)
+transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 1.6450686, 0, -0.67525876)
 
 [node name="AreaLight3D6" type="AreaLight3D" parent="." unique_id=1332859574]
 transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 0.7515612, 1.9536664, -6.210804)

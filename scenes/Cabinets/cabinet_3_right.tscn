@@ -126,7 +126,7 @@ transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, 6.
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.597561, -0.016301095, -3.4973092)
 
 [node name="wardob1" parent="." unique_id=1042671750 instance=ExtResource("4_tx0la")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9254632, 0, -0.09563167)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7517365, 0, -0.6894291)
 
 [node name="wardob2" parent="." unique_id=1339258080 instance=ExtResource("5_bog2f")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.65192133, 1.024999, -4.907655)

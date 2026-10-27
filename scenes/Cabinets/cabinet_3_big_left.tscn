@@ -118,7 +118,7 @@ transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, 6.
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.6806192, 0.04999882, -3.4598312)
 
 [node name="wardob1" parent="room3_2_big_1" unique_id=1042671750 instance=ExtResource("3_hxjhb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.80966234, 0.066299915, -0.058153696)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.6119925, 0.066299915, -0.6737052)
 
 [node name="wardob2" parent="room3_2_big_1" unique_id=1339258080 instance=ExtResource("4_dlo6n")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.5688629, 1.0912989, -4.8320208)
