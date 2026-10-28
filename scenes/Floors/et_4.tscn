@@ -75,6 +75,14 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.7
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 56.74682, -11.0824995, -1.0405014)
 invert = true
 
+[node name="Door_2_L3" parent="." unique_id=1851065837 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-1.1247388, 0, -8.742278e-08, 0, 0.8430996, 0, 9.832778e-08, 0, -1, 76.038284, -11.9414, 5.066198)
+invert = true
+
+[node name="Door_2_L4" parent="." unique_id=379143457 instance=ExtResource("3_fbsdc")]
+transform = Transform3D(-1.1247388, 0, -8.742278e-08, 0, 0.8430996, 0, 9.832778e-08, 0, -1, 13.401462, -11.9414, 5.0998993)
+invert = true
+
 [node name="Door_1_L" parent="." unique_id=716988130 instance=ExtResource("3_fbsdc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 50.892162, -11.0824995, -1.0405012)
 
@@ -732,7 +740,7 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D134" type="AreaLight3D" parent="lamp_cor6" unique_id=1481397074]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -18.716274, -8.8233385, -7.935087)
-light_energy = 4.473
+light_energy = 2.578
 light_indirect_energy = 2.263
 light_size = 1.0
 shadow_enabled = true
@@ -741,7 +749,7 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D135" type="AreaLight3D" parent="lamp_cor6" unique_id=1766649066]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -39.72032, -8.8233385, -7.935087)
-light_energy = 4.473
+light_energy = 2.578
 light_indirect_energy = 2.263
 light_size = 1.0
 shadow_enabled = true
@@ -750,7 +758,7 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D136" type="AreaLight3D" parent="lamp_cor6" unique_id=1740216181]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -18.716274, -12.316886, -7.935087)
-light_energy = 4.473
+light_energy = 2.578
 light_indirect_energy = 2.263
 light_size = 1.0
 shadow_enabled = true
@@ -779,7 +787,7 @@ area_size = Vector2(1.7671163, 1.808197)
 
 [node name="AreaLight3D139" type="AreaLight3D" parent="lamp_cor6" unique_id=2039438185]
 transform = Transform3D(1.9106855e-15, -1, -7.351371e-08, -1, 1.3027009e-15, -4.371139e-08, 4.371139e-08, 7.351371e-08, -1, -39.72032, -12.316886, -7.935087)
-light_energy = 4.473
+light_energy = 2.578
 light_indirect_energy = 2.263
 light_size = 1.0
 shadow_enabled = true
