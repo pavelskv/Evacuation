@@ -1836,6 +1836,7 @@ debug_color = Color(0.7137255, 0.12156863, 0, 0.9843137)
 quality = 2
 supersampling = true
 bounces = 4
+texel_scale = 2.0
 light_data = ExtResource("16_2kk41")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("18_jk051")]

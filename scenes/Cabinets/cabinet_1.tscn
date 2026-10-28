@@ -70,11 +70,13 @@ mesh = SubResource("PlaneMesh_ksou2")
 [node name="AreaLight3D" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=1256355778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, 1.4044712, 1.5272205, -0.57155967)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=8306778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, -1.610991, 1.577302, -0.57155967)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="Decal2_Plane" type="MeshInstance3D" parent="." unique_id=871752946]
@@ -111,6 +113,8 @@ area_range = 8.182
 area_size = Vector2(1.657333, 1.5202823)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=992640099]
+interior = true
+texel_scale = 2.0
 light_data = ExtResource("10_s0g4l")
 
 [node name="window_rooms2" parent="." unique_id=1587715993 instance=ExtResource("10_evih7")]

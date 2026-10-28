@@ -133,21 +133,25 @@ mesh = SubResource("PlaneMesh_xb5gs")
 [node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1351344714]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.43340242, 2.7335918, -1.4276211)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="." unique_id=646433127]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.7445881, 2.7335918, -1.4276211)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="AreaLight3D3" type="AreaLight3D" parent="." unique_id=599911212]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.43340242, 2.7335918, -4.713274)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="AreaLight3D4" type="AreaLight3D" parent="." unique_id=1000752313]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -2.7445881, 2.7335918, -4.713274)
 visible = false
+shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="table2" parent="." unique_id=800755323 instance=ExtResource("7_w6ap4")]
@@ -166,6 +170,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9679086, -1.1920929e-06, -
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 1.5929384, 0, -0.6927459)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=653574304]
+texel_scale = 2.0
 light_data = ExtResource("10_ctkn7")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("10_c82bl")]

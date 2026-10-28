@@ -170,6 +170,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7111832, 0, -0.72419965)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
+interior = true
+texel_scale = 2.0
 light_data = ExtResource("10_44328")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("10_fh8k0")]
