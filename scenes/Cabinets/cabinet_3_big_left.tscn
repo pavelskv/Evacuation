@@ -70,11 +70,12 @@ albedo_texture = ExtResource("10_60b3l")
 [sub_resource type="PlaneMesh" id="PlaneMesh_v6srv"]
 size = Vector2(1.1379108, 0.7903786)
 
-[node name="Cabinet_4" type="Node3D" unique_id=1684688077]
+[node name="Cabinet_4" type="Node3D" unique_id=1684688077 node_paths=PackedStringArray("player_computer")]
 script = ExtResource("1_4cvtd")
+player_computer = NodePath("Pc")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7988224, 1.1742038, -2.6057801)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.991329, 0.6131594, -0.83858734)
 
 [node name="room3_2_big_1" parent="." unique_id=350335988 instance=ExtResource("14_4cvtd")]
 

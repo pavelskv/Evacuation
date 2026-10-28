@@ -16,6 +16,7 @@
 [ext_resource type="LightmapGIData" uid="uid://f2tthfvu4pv6" path="res://scenes/Cabinets/cabinet_3_big.lmbake" id="14_qetji"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="15_5ht8k"]
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="15_qetji"]
+[ext_resource type="PackedScene" uid="uid://dbvmwq6j12otm" path="res://scenes/Cabinets/shmot_1.tscn" id="17_ylkx8"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjrci"]
 render_priority = 1
@@ -69,11 +70,12 @@ albedo_texture = ExtResource("12_s8aak")
 [sub_resource type="PlaneMesh" id="PlaneMesh_v6srv"]
 size = Vector2(1.1379108, 0.7903786)
 
-[node name="Cabinet_5" type="Node3D" unique_id=1684688077]
+[node name="Cabinet_5" type="Node3D" unique_id=1684688077 node_paths=PackedStringArray("player_computer")]
 script = ExtResource("1_3y5we")
+player_computer = NodePath("Pc3")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.28336835, 1.1079038, -2.643258)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70973533, 0.8043487, -0.9312848)
 
 [node name="table2" parent="." unique_id=1289605029 instance=ExtResource("2_3y5we")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.349003, -0.016301095, -1.65087)
@@ -291,3 +293,6 @@ transform = Transform3D(0.8660253, 0, 0.5000001, 0, 1, 0, -0.5000001, 0, 0.86602
 
 [node name="Pc3" parent="." unique_id=1890067154 instance=ExtResource("15_qetji")]
 transform = Transform3D(0.5000001, 0, -0.86602527, 0, 1, 0, 0.86602527, 0, 0.5000001, -1.4118075, 0.7386989, -1.9123243)
+
+[node name="shmot_1" parent="." unique_id=426803212 instance=ExtResource("17_ylkx8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9754347, 0.74654984, -0.9154301)

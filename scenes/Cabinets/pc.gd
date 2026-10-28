@@ -10,10 +10,6 @@ var _tween: Tween
 
 var enabled := false
 
-func set_interactable() -> void:
-	enabled = true
-	set_screen(true)
-
 func _ready() -> void:
 	add_to_group("training_task_objects")
 	add_to_group("pc")
@@ -26,6 +22,7 @@ func can_interact() -> bool:
 	return enabled
 	
 func set_screen(on: bool, animated := true) -> void:
+	enabled = on
 	var target := Color.WHITE if on else Color.BLACK
 
 	if _tween:

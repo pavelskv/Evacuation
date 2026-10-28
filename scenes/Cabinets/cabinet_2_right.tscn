@@ -57,11 +57,12 @@ emission_texture = ExtResource("6_80toc")
 [sub_resource type="PlaneMesh" id="PlaneMesh_xb5gs"]
 size = Vector2(0.6020813, 0.60549927)
 
-[node name="Cabinet_2" type="Node3D" unique_id=1684688077]
+[node name="Cabinet_2" type="Node3D" unique_id=1684688077 node_paths=PackedStringArray("player_computer")]
 script = ExtResource("1_5mlrv")
+player_computer = NodePath("Pc")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.086693, 1.4710801, -2.4908412)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.016197, 1.4710801, -3.2360864)
 
 [node name="room2_1" parent="." unique_id=2005838381 instance=ExtResource("1_gytgy")]
 
@@ -199,4 +200,4 @@ transform = Transform3D(-0.66575634, 0, 0.7461692, 0, 1, 0, -0.7461692, 0, -0.66
 transform = Transform3D(-0.3133233, 0, -0.9496465, 0, 1, 0, 0.9496465, 0, -0.3133233, -0.29430914, -1.1324883e-06, -4.845329)
 
 [node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("14_x1iyp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4393682, 0.75749874, -4.5349765)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.159632, 0.75749874, -3.164295)
