@@ -3,6 +3,8 @@ extends Interactable
 var taken := false
 var interactable:= false
 
+@onready var shmot = $shmot
+
 func _ready() -> void:
 	add_to_group("training_task_objects")
 	add_to_group("shmot")
@@ -12,6 +14,10 @@ func set_interactable() -> void:
 	
 func can_interact() -> bool:
 	return interactable
+	
+func on_focus(value: bool) -> void:
+	shmot.material_overlay = outline if value else null
+	pass
 	
 func interact():
 	if taken:

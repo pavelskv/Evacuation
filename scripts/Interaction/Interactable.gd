@@ -4,9 +4,18 @@ extends Node
 signal state_changed
 
 @export var message: String = "Взаимодействовать"
+@export var outline: Material = preload("res://assets/shaders/outline.tres")
+
+var is_focused: bool = false
 
 func can_interact() -> bool:
 	return true
+	
+func on_focus(value: bool) -> void:
+	if is_focused == value:
+		return
+
+	is_focused = value
 
 func interact():
 	pass

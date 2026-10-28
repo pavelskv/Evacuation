@@ -1,0 +1,17 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://7fbdht2g7vv3"]
+
+[ext_resource type="Shader" uid="uid://e7xjit3tk25t" path="res://assets/shaders/outline.gdshader" id="1_531eh"]
+[ext_resource type="Shader" uid="uid://pqdxphmumhpx" path="res://assets/shaders/outline_spatial.gdshader" id="2_g4hei"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o77ln"]
+resource_local_to_scene = true
+render_priority = 1
+shader = ExtResource("1_531eh")
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/width_px = 5.0
+shader_parameter/from_center = false
+
+[resource]
+render_priority = 0
+next_pass = SubResource("ShaderMaterial_o77ln")
+shader = ExtResource("2_g4hei")

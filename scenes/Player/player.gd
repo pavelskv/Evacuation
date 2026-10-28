@@ -18,6 +18,8 @@ const MOUSE_SENSITIVITY = 0.002
 var current_speed = WALK_SPEED
 var e_pressed = false
 
+var _focused: Interactable = null
+
 func _ready():
 	add_to_group("player")
 	
@@ -85,10 +87,18 @@ func _get_interactable() -> Interactable:
 	return null
 
 func _check_interact():
+	var interactable = _get_interactable()
+
+	if interactable != _focused:
+		if is_instance_valid(_focused):
+			_focused.on_focus(false)
+		_focused = interactable
+		if _focused:
+			_focused.on_focus(true)
+
 	if not interact_label:
 		return
-		
-	var interactable = _get_interactable()
+
 	if interactable:
 		crosshair.set_interactable(true)
 		interact_label.text = interactable.get_message()

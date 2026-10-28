@@ -15,6 +15,9 @@ var tween: Tween
 
 func _ready() -> void:
 	add_to_group("training_task_objects")
+	
+func on_focus(value: bool) -> void:
+	$"Pivot/4_et_door_1/wall_door_038".material_overlay = outline if value else null
 
 func get_message() -> String:
 	return "Закрыть дверь " if is_open else "Открыть дверь "

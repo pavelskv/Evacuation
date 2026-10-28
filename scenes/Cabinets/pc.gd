@@ -7,6 +7,7 @@ var _mat: StandardMaterial3D
 var _tween: Tween
 
 @onready var screen = $monitor_2/Screen
+@onready var monitor = $monitor_2
 
 var enabled := false
 
@@ -20,6 +21,10 @@ func _ready() -> void:
 	
 func can_interact() -> bool:
 	return enabled
+	
+func on_focus(value: bool) -> void:
+	monitor.material_overlay = outline if value else null
+	pass
 	
 func set_screen(on: bool, animated := true) -> void:
 	enabled = on

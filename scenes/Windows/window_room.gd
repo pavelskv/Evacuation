@@ -11,6 +11,7 @@ enum HingeSide {
 @export var start_open: bool = false
 
 @onready var pivot: Node3D = $window_active
+@onready var window: Node3D = $"window_active/4et_020"
 
 var is_open: bool = false
 var tween: Tween
@@ -22,6 +23,10 @@ func _ready() -> void:
 
 	is_open = start_open
 	pivot.rotation_degrees.y = _get_target_angle()
+	
+func on_focus(value: bool) -> void:
+	window.material_overlay = outline if value else null
+	pass
 	
 func can_interact() -> bool:
 	return is_open

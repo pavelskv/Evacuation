@@ -13,7 +13,7 @@ script = ExtResource("1_kgkxw")
 [node name="4_et_door_1" parent="Pivot" unique_id=1627872669 instance=ExtResource("2_kgkxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0013810396, 0.041404724)
 
-[node name="StaticBody3D" parent="Pivot/4_et_door_1/wall_door_038" parent_id_path=PackedInt32Array(1627872669, 1873589355) index="0" unique_id=1728960656]
+[node name="StaticBody3D" parent="Pivot/4_et_door_1/wall_door_038" parent_id_path=PackedInt32Array(1627872669, 159683018) index="0" unique_id=1419598927]
 collision_layer = 3
 
 [editable path="Pivot/4_et_door_1"]

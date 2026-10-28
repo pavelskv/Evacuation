@@ -22,6 +22,10 @@ func _ready() -> void:
 		pivot_left.rotation_degrees.y = open_angle * dir
 		pivot_right.rotation_degrees.y = -open_angle * dir
 
+func on_focus(value: bool) -> void:
+	$PivotLeft/kor_L/door_11_003.material_overlay = outline if value else null
+	$PivotRight/kor_R/door_11_002.material_overlay = outline if value else null
+
 func interact() -> void:
 	is_open = not is_open
 	if tween and tween.is_valid():
