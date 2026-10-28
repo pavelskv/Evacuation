@@ -4,8 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://ca2fbdc34fhx4" path="res://models/rooms/room3_1.glb" id="1_fb3v6"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="2_2575u"]
 [ext_resource type="PackedScene" uid="uid://cj1ry02ddvs8w" path="res://models/office/table1.glb" id="3_xjq3a"]
-[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="4_tx0la"]
 [ext_resource type="PackedScene" uid="uid://c0uj6os6656a0" path="res://models/office/wardob2.glb" id="5_bog2f"]
+[ext_resource type="PackedScene" uid="uid://bkl4i33yxmmng" path="res://scenes/Cabinets/wardob.tscn" id="5_cbx0w"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="6_cbx0w"]
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="7_8cvnm"]
 [ext_resource type="PackedScene" uid="uid://bgmpksahtt0ch" path="res://models/office/rozetka.glb" id="8_obfak"]
@@ -125,7 +125,7 @@ transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, 6.
 [node name="table8" parent="." unique_id=1549233698 instance=ExtResource("3_xjq3a")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 5.597561, -0.016301095, -3.4973092)
 
-[node name="wardob1" parent="." unique_id=1042671750 instance=ExtResource("4_tx0la")]
+[node name="wardob1" parent="." unique_id=1816264476 instance=ExtResource("5_cbx0w")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7517365, 0, -0.6894291)
 
 [node name="wardob2" parent="." unique_id=1339258080 instance=ExtResource("5_bog2f")]

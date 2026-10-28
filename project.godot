@@ -28,6 +28,10 @@ InputModeManager="*uid://qsxmssn7bly3"
 BrowserInputFixes="*uid://bnlh1pvstbo4v"
 EvacuationManager="*uid://bfhxkvodgxrf1"
 
+[dialogue_manager]
+
+runtime/balloon_path="res://assets/balloon.tscn"
+
 [display]
 
 window/size/viewport_width=1920

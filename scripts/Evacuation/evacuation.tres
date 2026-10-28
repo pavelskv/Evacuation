@@ -5,6 +5,18 @@
 [ext_resource type="Script" uid="uid://bj2rm08t7lw4m" path="res://scripts/Evacuation/Validators/all_objects_satisfied_validator.gd" id="3_tdus6"]
 [ext_resource type="Script" uid="uid://dcyipujp4bmqq" path="res://scripts/Evacuation/Validators/any_object_confirm_validator.gd" id="4_3glyf"]
 
+[sub_resource type="Resource" id="Resource_toaj6"]
+script = ExtResource("3_tdus6")
+metadata/_custom_type_script = "uid://bj2rm08t7lw4m"
+
+[sub_resource type="Resource" id="Resource_r7meb"]
+script = ExtResource("2_uf3w4")
+id = &"turn_off_electrical"
+title = "Отключить все электроприборы"
+validator = SubResource("Resource_toaj6")
+validation_scope = 1
+metadata/_custom_type_script = "uid://dcrg5xn13gcld"
+
 [sub_resource type="Resource" id="Resource_dpkif"]
 script = ExtResource("3_tdus6")
 metadata/_custom_type_script = "uid://bj2rm08t7lw4m"
@@ -21,11 +33,23 @@ metadata/_custom_type_script = "uid://dcrg5xn13gcld"
 script = ExtResource("3_tdus6")
 metadata/_custom_type_script = "uid://bj2rm08t7lw4m"
 
-[sub_resource type="Resource" id="Resource_4e5ay"]
+[sub_resource type="Resource" id="Resource_3glyf"]
 script = ExtResource("2_uf3w4")
 id = &"pickup_stuff"
 title = "Взять личные вещи"
 validator = SubResource("Resource_0xmca")
+validation_scope = 1
+metadata/_custom_type_script = "uid://dcrg5xn13gcld"
+
+[sub_resource type="Resource" id="Resource_7yfx8"]
+script = ExtResource("4_3glyf")
+metadata/_custom_type_script = "uid://dcyipujp4bmqq"
+
+[sub_resource type="Resource" id="Resource_2kk41"]
+script = ExtResource("2_uf3w4")
+id = &"close_door"
+title = "Закрыть дверь"
+validator = SubResource("Resource_7yfx8")
 validation_scope = 1
 metadata/_custom_type_script = "uid://dcrg5xn13gcld"
 
@@ -42,5 +66,5 @@ metadata/_custom_type_script = "uid://dcrg5xn13gcld"
 
 [resource]
 script = ExtResource("1_6tlxe")
-tasks = Array[ExtResource("2_uf3w4")]([SubResource("Resource_tdus6"), SubResource("Resource_4e5ay"), SubResource("Resource_vu8r1")])
+tasks = Array[ExtResource("2_uf3w4")]([SubResource("Resource_r7meb"), SubResource("Resource_tdus6"), SubResource("Resource_3glyf"), SubResource("Resource_2kk41"), SubResource("Resource_vu8r1")])
 metadata/_custom_type_script = "uid://d2x6qoepk18bo"

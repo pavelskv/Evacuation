@@ -32,7 +32,6 @@ func set_initial_state(opened: bool) -> void:
 	if is_node_ready():
 		pivot.rotation_degrees.y = _get_target_angle()
 
-
 func _get_target_angle() -> float:
 	if not is_open:
 		return 0.0
@@ -61,7 +60,7 @@ func interact() -> void:
 
 
 func get_message() -> String:
-	return "Закрыть окно [E]" if is_open else ""
+	return "Закрыть окно " if is_open else ""
 
 
 func get_training_task_id() -> StringName:

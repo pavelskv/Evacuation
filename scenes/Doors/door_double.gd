@@ -12,7 +12,7 @@ var tween: Tween
 @onready var pivot_right: Node3D = $PivotRight
 
 func get_message() -> String:
-	return "Закрыть дверь [E]" if is_open else "Открыть дверь [E]"
+	return "Закрыть дверь " if is_open else "Открыть дверь "
 	
 func _ready() -> void:
 	is_open = opened

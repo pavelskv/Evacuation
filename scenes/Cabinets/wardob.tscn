@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bkl4i33yxmmng"]
+
+[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="1_byo4u"]
+[ext_resource type="Script" uid="uid://b0f3vccy3ig6b" path="res://scenes/Cabinets/wardob.gd" id="2_d3jaq"]
+
+[node name="wardob1" unique_id=1816264476 instance=ExtResource("1_byo4u")]
+script = ExtResource("2_d3jaq")
+
+[node name="StaticBody3D" parent="shkaf_006" parent_id_path=PackedInt32Array(896841220) index="0" unique_id=1861974641]
+collision_layer = 3
+
+[node name="StaticBody3D" parent="shkaf_007" parent_id_path=PackedInt32Array(1546849746) index="0" unique_id=1506150909]
+collision_layer = 3

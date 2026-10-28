@@ -1,9 +1,17 @@
 extends Interactable
 
 var taken := false
+var interactable:= false
 
 func _ready() -> void:
 	add_to_group("training_task_objects")
+	add_to_group("shmot")
+	
+func set_interactable() -> void:
+	interactable = true
+	
+func can_interact() -> bool:
+	return interactable
 	
 func interact():
 	if taken:

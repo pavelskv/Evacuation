@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="2_c4xtk"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="3_ck41y"]
 [ext_resource type="PackedScene" uid="uid://cj1ry02ddvs8w" path="res://models/office/table1.glb" id="4_i3rgc"]
-[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="5_dro5e"]
+[ext_resource type="PackedScene" uid="uid://bkl4i33yxmmng" path="res://scenes/Cabinets/wardob.tscn" id="5_jqm5s"]
 [ext_resource type="PackedScene" uid="uid://c0uj6os6656a0" path="res://models/office/wardob2.glb" id="6_6gxtu"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="7_i3rgc"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="8_5ao2w"]
@@ -115,7 +115,7 @@ transform = Transform3D(-1, 0, 2.6226832e-07, 0, 1, 0, -2.6226832e-07, 0, -1, -0
 [node name="table8" parent="." unique_id=1549233698 instance=ExtResource("4_i3rgc")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.8465233, -0.016301095, -3.4973092)
 
-[node name="wardob1" parent="." unique_id=1042671750 instance=ExtResource("5_dro5e")]
+[node name="wardob1" parent="." unique_id=1816264476 instance=ExtResource("5_jqm5s")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.599835, 0, -0.71814793)
 
 [node name="wardob2" parent="." unique_id=1339258080 instance=ExtResource("6_6gxtu")]

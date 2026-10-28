@@ -6,7 +6,7 @@ extends Interactable
 var is_viewed: bool = false
 
 func get_message() -> String:
-	return "Посмотреть план эвакуации (%d-й этаж)  [E]" % floor_number
+	return "Посмотреть план эвакуации (%d-й этаж)  " % floor_number
 	
 func get_training_task_id() -> StringName:
 	return &"view_plan"

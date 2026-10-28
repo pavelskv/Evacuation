@@ -8,7 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="5_mwqbk"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="6_80toc"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_chn0m"]
-[ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="8_suk0y"]
+[ext_resource type="PackedScene" uid="uid://bkl4i33yxmmng" path="res://scenes/Cabinets/wardob.tscn" id="9_x1iyp"]
 [ext_resource type="LightmapGIData" uid="uid://cbufmp6t7jrli" path="res://scenes/Cabinets/cabinet_2_right.lmbake" id="10_44328"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="10_fh8k0"]
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="11_fh8k0"]
@@ -166,7 +166,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6139998, -1.1920929e-06, -4
 [node name="table3" parent="." unique_id=1773307804 instance=ExtResource("7_chn0m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1.4041232)
 
-[node name="wardob1" parent="." unique_id=1828334649 instance=ExtResource("8_suk0y")]
+[node name="wardob1" parent="." unique_id=1816264476 instance=ExtResource("9_x1iyp")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7111832, 0, -0.72419965)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
