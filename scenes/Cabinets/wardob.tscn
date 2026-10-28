@@ -2,12 +2,31 @@
 
 [ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="1_byo4u"]
 [ext_resource type="Script" uid="uid://b0f3vccy3ig6b" path="res://scenes/Cabinets/wardob.gd" id="2_d3jaq"]
+[ext_resource type="LightmapGIData" uid="uid://csgdjb2o25xtt" path="res://scenes/Cabinets/wardob.lmbake" id="3_w31mu"]
 
 [node name="wardob1" unique_id=1816264476 instance=ExtResource("1_byo4u")]
 script = ExtResource("2_d3jaq")
 
-[node name="StaticBody3D" parent="shkaf_006" parent_id_path=PackedInt32Array(896841220) index="0" unique_id=1861974641]
+[node name="StaticBody3D" parent="shkaf_006" parent_id_path=PackedInt32Array(176387059) index="0" unique_id=1035249562]
 collision_layer = 3
 
-[node name="StaticBody3D" parent="shkaf_007" parent_id_path=PackedInt32Array(1546849746) index="0" unique_id=1506150909]
+[node name="StaticBody3D" parent="shkaf_007" parent_id_path=PackedInt32Array(635592940) index="0" unique_id=1457539776]
 collision_layer = 3
+
+[node name="LightmapGI" type="LightmapGI" parent="." index="3" unique_id=1224342096]
+light_data = ExtResource("3_w31mu")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="LightmapGI" index="0" unique_id=1282748943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.824802, 0)
+visible = false
+light_energy = 0.474
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="LightmapGI" index="1" unique_id=754862328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93750036, -0.24844503)
+visible = false
+light_energy = 0.474
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="LightmapGI" index="2" unique_id=322867575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93750036, 0.30928802)
+visible = false
+light_energy = 0.474
