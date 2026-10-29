@@ -1921,10 +1921,10 @@ interior = true
 transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.69676, 1.23, -1.8127021)
 
 [node name="window_rooms17" parent="." unique_id=470521379 instance=ExtResource("18_jk051")]
-transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.83461, -2.5455296, -1.875674)
+transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.86255, -2.47, -1.8227609)
 
 [node name="window_rooms18" parent="." unique_id=2145707122 instance=ExtResource("18_jk051")]
-transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.83461, -6.17, -1.8127021)
+transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.75653, -6.17, -1.8227609)
 
 [node name="window_rooms19" parent="." unique_id=1500671349 instance=ExtResource("18_jk051")]
 transform = Transform3D(-4.151725e-08, 0, -1, 0, 1.13921, 0, 0.94980395, 0, -4.371139e-08, 89.83461, -9.87, -1.8127021)

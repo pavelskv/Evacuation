@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cp7b45w0dg3hc" path="res://scenes/Player/player.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://db1yy4rmch63b" path="res://scenes/UI/Crosshair/crosshair.tscn" id="2_1kbk7"]
 [ext_resource type="Texture2D" uid="uid://p44x0n14erls" path="res://assets/images/free-icon-left-click-3645852.png" id="3_gqjuk"]
+[ext_resource type="Shader" uid="uid://dv3g4ha5luhqy" path="res://scenes/Player/player.gdshader" id="4_c4h5g"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
 radius = 0.3
@@ -13,6 +14,17 @@ font_size = 24
 outline_size = 1
 shadow_size = 5
 shadow_color = Color(0, 0, 0, 0.50980395)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bhunq"]
+shader = ExtResource("4_c4h5g")
+shader_parameter/vignette_intensity = 0.1
+shader_parameter/grain_intensity = 0.15
+shader_parameter/aberration_strength = 0.02
+shader_parameter/flicker_intensity = 0.05
+shader_parameter/sepia_amount = 0.3
+shader_parameter/fade_blacks = 0.1
+shader_parameter/barrel_distortion = 1.2
+shader_parameter/zoom_scale = 0.85
 
 [node name="Player" type="CharacterBody3D" unique_id=1500151941]
 script = ExtResource("1")
@@ -59,3 +71,13 @@ layout_mode = 2
 texture = ExtResource("3_gqjuk")
 expand_mode = 1
 stretch_mode = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=44884311]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=1192542839]
+material = SubResource("ShaderMaterial_bhunq")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
