@@ -138,4 +138,5 @@ func _spawn() -> void:
 		"Вы находитесь в кабинете №%d здания ПЛК на %d этаже" % [cab_id, floor_num],
 	"	Местоположение"
 	)
+	EvacuationDebugger.run_and_draw()
 	EvacuationManager.start_scenario(evacuation_scenario)

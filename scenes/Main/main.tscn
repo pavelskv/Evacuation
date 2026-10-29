@@ -164,6 +164,7 @@ evacuation_scenario = ExtResource("28_jti5r")
 debug_camera_scene = ExtResource("11_qhn81")
 
 [node name="PauseMenu" parent="." unique_id=674402355 instance=ExtResource("25_2wyq8")]
+layer = 11
 
 [node name="firelom" parent="." unique_id=128627928 instance=ExtResource("37_fuf3a")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 59.46843, 4.7683716e-06, -0.1506989)
