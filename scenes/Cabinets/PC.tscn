@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cjlvxtixvfw7p" path="res://models/office/PC.glb" id="1_1fyyv"]
 [ext_resource type="Script" uid="uid://dqdxrhb1a4lc6" path="res://scenes/Cabinets/pc.gd" id="2_r7meb"]
-[ext_resource type="Texture2D" uid="uid://dnbsjtejw0e1q" path="res://assets/images/astra.png" id="3_louq6"]
+[ext_resource type="Texture2D" uid="uid://brfcnarihjcvh" path="res://assets/images/astra.webp" id="3_louq6"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_louq6"]
 shading_mode = 0

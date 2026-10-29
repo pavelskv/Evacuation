@@ -5,6 +5,10 @@ extends Interactable
 
 var is_viewed: bool = false
 
+func on_focus(value: bool) -> void:
+	#$MeshInstance3D.material_overlay = outline if value else null
+	pass
+
 func get_message() -> String:
 	return "Посмотреть план эвакуации (%d-й этаж)  " % floor_number
 	
