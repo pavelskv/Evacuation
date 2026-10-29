@@ -46,6 +46,8 @@ func start_scenario(new_scenario: EvacuationScenario) -> void:
 	if new_scenario == null:
 		push_warning("EvacuationManager: сценарий не задан")
 		return
+		
+	Notify.alarm("Пожарная тревога!\nВсем сотрудникам необходимо покинуть здание!", "Внимание!")
 
 	scenario = new_scenario
 
@@ -336,7 +338,7 @@ func complete_scenario() -> void:
 	scenario_status_changed.emit(scenario_status)
 
 	scenario_finished.emit(get_result())
-
+	Notify.clear_alarm()
 
 # =========================================================
 # Результат и вспомогательные методы

@@ -27,6 +27,7 @@ Debug="*uid://byjioor5wh6pa"
 InputModeManager="*uid://qsxmssn7bly3"
 BrowserInputFixes="*uid://bnlh1pvstbo4v"
 EvacuationManager="*uid://bfhxkvodgxrf1"
+Notify="*uid://dc3t8c7feaa64"
 
 [dialogue_manager]
 

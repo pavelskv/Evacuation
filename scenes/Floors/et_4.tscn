@@ -20,6 +20,7 @@
 [ext_resource type="Script" uid="uid://c78qvdnlnv3w5" path="res://scenes/Plan/plan.gd" id="17_7yfx8"]
 [ext_resource type="PackedScene" uid="uid://cp2kcghm15o75" path="res://scenes/Exit/Exit.tscn" id="17_jk051"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="18_jk051"]
+[ext_resource type="Script" uid="uid://ddmtoq6dix03b" path="res://scripts/Evacuation/EvacuationDebugger.gd" id="21_6dw0v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
 render_priority = 1
@@ -50,6 +51,9 @@ size = Vector3(1.1209717, 0.01184082, 1.5447693)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ksqf0"]
 size = Vector3(0.41549683, 0.29061508, 0.001)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x15ny"]
+size = Vector3(11.263552, 0.6883545, 0.90722656)
 
 [node name="Et_4" type="Node3D" unique_id=196528262]
 
@@ -2710,3 +2714,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.24966, -13.18107, 5.289892
 
 [node name="Exit2" parent="Exits" unique_id=701660749 instance=ExtResource("17_jk051")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608941, -13.193311, 5.35114)
+
+[node name="Exit3" parent="Exits" unique_id=1153160365 instance=ExtResource("17_jk051")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.72779, -11.203014, -26.625912)
+
+[node name="CollisionShape3D" parent="Exits/Exit3" index="0" unique_id=716966356]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88895416, -0.31214046, 3.6750793)
+shape = SubResource("BoxShape3D_x15ny")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1544744011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.24966, -13.18107, 5.289892)
+script = ExtResource("21_6dw0v")
+
+[editable path="Exits/Exit3"]

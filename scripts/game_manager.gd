@@ -67,6 +67,9 @@ func _spawn() -> void:
 
 		get_tree().current_scene.add_child(cabinet)
 		cabinet.global_transform = door.global_transform
+		
+		cabinet.set_meta("cabinet_id", door.door_id)
+		cabinet.set_meta("floor_number", door.floor_number)
 
 		spawned_cabinets.append(cabinet)
 
@@ -127,4 +130,12 @@ func _spawn() -> void:
 	else:
 		push_warning("В сцене кабинета нет узла PlayerSpawn!")
 		
+		
+	var cab_id: int = spawn_cabinet.get_meta("cabinet_id")
+	var floor_num: int = spawn_cabinet.get_meta("floor_number")
+
+	Notify.info(
+		"Вы находитесь в кабинете №%d здания ПЛК на %d этаже" % [cab_id, floor_num],
+	"	Местоположение"
+	)
 	EvacuationManager.start_scenario(evacuation_scenario)
