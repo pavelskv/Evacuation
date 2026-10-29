@@ -1,70 +1,66 @@
 shader_type canvas_item;
 
-uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, repeat_disable, filter_nearest;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, repeat_disable, filter_linear;
 
-uniform float vignette_intensity : hint_range(0.0, 2.0) = 0.1;
+uniform float vignette_intensity : hint_range(0.0, 2.0) = 0.6;
 uniform float grain_intensity : hint_range(0.0, 1.0) = 0.15;
-uniform float aberration_strength : hint_range(0.0, 0.05) = 0.02;
+uniform float aberration_strength : hint_range(0.0, 0.05) = 0.015;
 uniform float flicker_intensity : hint_range(0.0, 0.3) = 0.05;
 uniform float sepia_amount : hint_range(0.0, 1.0) = 0.3;
 uniform float fade_blacks : hint_range(0.0, 0.5) = 0.1;
-uniform float barrel_distortion : hint_range(0.0, 3.0) = 1.2;
-uniform float zoom_scale : hint_range(0.5, 1.5) = 0.85;
+
+uniform float barrel_strength : hint_range(0.0, 0.8) = 0.35;
+// Зум: >1 приближает картинку и скрывает растянутые края
+uniform float zoom : hint_range(1.0, 1.5) = 1.15;
 
 float random(vec2 st) {
     return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
 }
 
-vec2 barrel_distort(vec2 uv, float k) {
-    vec2 centered = uv - 0.5;
-    float r2 = dot(centered, centered);
-    centered *= 1.0 + k * r2;
-    return centered + 0.5;
-}
-
 void fragment() {
     vec2 uv = SCREEN_UV;
 
-    // Применяем бочкообразную дисторсию (очень сильную для дверного глазка)
-    uv = barrel_distort(uv, barrel_distortion);
+    // 1. Зум (приближение) — применяем ДО искажения
+    vec2 centered = uv - vec2(0.5);
+    centered /= zoom; // делим на zoom => картинка крупнее
 
-    // Масштабируем, чтобы картинка вписывалась в экран (компенсация дисторсии)
-    uv = (uv - 0.5) * zoom_scale + 0.5;
+    // 2. Эффект бочки (Fisheye / Barrel distortion)
+    float r2 = dot(centered, centered);
+    centered *= (1.0 + barrel_strength * r2);
+    vec2 distorted_uv = centered + vec2(0.5);
 
-    // Хроматическая аберрация с радиальным градиентом
-    vec2 to_center = uv - 0.5;
-    float dist = length(to_center);
-    vec2 dir = normalize(to_center + 0.0001);
-    float current_aberration = aberration_strength * dist;
+    // Клампим, чтобы не было чёрных краёв
+    vec2 final_uv = clamp(distorted_uv, vec2(0.0), vec2(1.0));
 
-    float r = texture(SCREEN_TEXTURE, uv + dir * current_aberration).r;
-    float g = texture(SCREEN_TEXTURE, uv).g;
-    float b = texture(SCREEN_TEXTURE, uv - dir * current_aberration).b;
-    vec3 col = vec3(r, g, b);
+    // 3. Хроматическая аберрация
+    vec2 to_center = final_uv - vec2(0.5);
+    float dist_from_center = length(to_center);
+    float aberr = aberration_strength * dist_from_center;
 
-    // Лёгкая виньетка (почти незаметная)
-    vec2 center = uv - 0.5;
-    float vignette_dist = dot(center, center);
-    col *= 1.0 - vignette_dist * vignette_intensity;
+    vec3 color;
+    color.r = texture(SCREEN_TEXTURE, final_uv + to_center * aberr).r;
+    color.g = texture(SCREEN_TEXTURE, final_uv).g;
+    color.b = texture(SCREEN_TEXTURE, final_uv - to_center * aberr).b;
 
-    // Зерно пленки
-    float grain = random(uv * TIME * 50.0) * grain_intensity;
-    col += grain - (grain_intensity * 0.5);
+    // 4. Зерно
+    float grain = random(final_uv + vec2(TIME * 0.1, TIME * 0.05));
+    color += (grain - 0.5) * grain_intensity;
 
-    // Мерцание экспозиции
-    float flicker = 1.0 + (random(vec2(TIME * 15.0, 0.0)) - 0.5) * flicker_intensity;
-    col *= flicker;
+    // 5. Мерцание
+    float flicker = 1.0 + (random(vec2(TIME, 0.0)) - 0.5) * flicker_intensity;
+    color *= flicker;
 
-    // Выцветание
-    col = mix(col, vec3(0.4, 0.38, 0.35), fade_blacks);
+    // 6. Сепия
+    float sepia_lum = dot(color, vec3(0.299, 0.587, 0.114));
+    vec3 sepia_color = vec3(sepia_lum * 1.07, sepia_lum * 0.74, sepia_lum * 0.43);
+    color = mix(color, sepia_color, sepia_amount);
 
-    // Сепия
-    vec3 sepia = vec3(
-        dot(col, vec3(0.393, 0.769, 0.189)),
-        dot(col, vec3(0.349, 0.686, 0.168)),
-        dot(col, vec3(0.272, 0.534, 0.131))
-    );
-    col = mix(col, sepia, sepia_amount);
+    // 7. Fade blacks
+    color = mix(color, color + vec3(fade_blacks), 1.0 - smoothstep(0.0, 0.2, dot(color, vec3(0.333))));
 
-    COLOR = vec4(col, 1.0);
+    // 8. Виньетка
+    float vignette = smoothstep(0.8, 0.3, dist_from_center * 1.5);
+    color *= mix(1.0, vignette, vignette_intensity);
+
+    COLOR = vec4(color, 1.0);
 }
