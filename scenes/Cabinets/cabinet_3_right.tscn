@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dcpsu7icgoa4g" path="res://scenes/Cabinets/PC.tscn" id="16_2575u"]
 [ext_resource type="PackedScene" uid="uid://bttov4e2qamox" path="res://models/office/kreslo2.glb" id="17_xjq3a"]
 [ext_resource type="PackedScene" uid="uid://dbvmwq6j12otm" path="res://scenes/Cabinets/shmot_1.tscn" id="19_bog2f"]
+[ext_resource type="Script" uid="uid://cs0tvaq21kvfx" path="res://scripts/Evacuation/Points/waypoint.gd" id="20_cbx0w"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjrci"]
 render_priority = 1
@@ -349,3 +350,23 @@ transform = Transform3D(-0.04237479, 0, 0.99910176, 0, 1, 0, -0.99910176, 0, -0.
 
 [node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("19_bog2f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9087744, 0.7411989, -1.8225663)
+
+[node name="Waypoints" type="Node3D" parent="." unique_id=1042504731]
+
+[node name="Waypoint" type="Marker3D" parent="Waypoints" unique_id=1501399216 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.175605, 0, -2.768395)
+script = ExtResource("20_cbx0w")
+neighbors = [NodePath("../Waypoint2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint2" type="Marker3D" parent="Waypoints" unique_id=646639408 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5243652, 0, -2.768395)
+script = ExtResource("20_cbx0w")
+neighbors = [NodePath("../Waypoint"), NodePath("../Waypoint3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint3" type="Marker3D" parent="Waypoints" unique_id=1157915694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.42147076, 0, 0)
+script = ExtResource("20_cbx0w")
+is_door = true
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"

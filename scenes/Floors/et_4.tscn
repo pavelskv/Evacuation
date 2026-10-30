@@ -20,7 +20,7 @@
 [ext_resource type="Script" uid="uid://c78qvdnlnv3w5" path="res://scenes/Plan/plan.gd" id="17_7yfx8"]
 [ext_resource type="PackedScene" uid="uid://cp2kcghm15o75" path="res://scenes/Exit/Exit.tscn" id="17_jk051"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="18_jk051"]
-[ext_resource type="Script" uid="uid://ddmtoq6dix03b" path="res://scripts/Evacuation/EvacuationDebugger.gd" id="21_6dw0v"]
+[ext_resource type="Script" uid="uid://cs0tvaq21kvfx" path="res://scripts/Evacuation/Points/waypoint.gd" id="21_6dw0v"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1lok2"]
 render_priority = 1
@@ -2722,8 +2722,892 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 45.72779, -11.203014, -26.625
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.88895416, -0.31214046, 3.6750793)
 shape = SubResource("BoxShape3D_x15ny")
 
-[node name="Node3D" type="Node3D" parent="." unique_id=1544744011]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.24966, -13.18107, 5.289892)
+[node name="Waypoints4" type="Node3D" parent="." unique_id=1052314425]
+
+[node name="Waypoint" type="Marker3D" parent="Waypoints4" unique_id=343088830 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.75394464, 0, -0.9016601)
 script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint2" type="Marker3D" parent="Waypoints4" unique_id=1846293329 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.532516, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint"), NodePath("../Waypoint3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint3" type="Marker3D" parent="Waypoints4" unique_id=1029918016 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.473764, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2"), NodePath("../Waypoint4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint4" type="Marker3D" parent="Waypoints4" unique_id=775398971 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.39669, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint3"), NodePath("../Waypoint5"), NodePath("../Waypoint24")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint5" type="Marker3D" parent="Waypoints4" unique_id=1491948849 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.396868, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint6")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint6" type="Marker3D" parent="Waypoints4" unique_id=372939348 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.448616, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint5"), NodePath("../Waypoint7")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint7" type="Marker3D" parent="Waypoints4" unique_id=2088069129 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.411682, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint6"), NodePath("../Waypoint8")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint8" type="Marker3D" parent="Waypoints4" unique_id=1188408341 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.332397, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint7"), NodePath("../Waypoint9")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint9" type="Marker3D" parent="Waypoints4" unique_id=780512881 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.336163, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint8"), NodePath("../Waypoint10")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint10" type="Marker3D" parent="Waypoints4" unique_id=756984775 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43.30147, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint9"), NodePath("../Waypoint11")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint11" type="Marker3D" parent="Waypoints4" unique_id=997516616 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.287354, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint10"), NodePath("../Waypoint12")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint12" type="Marker3D" parent="Waypoints4" unique_id=1630549605 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.233727, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint11"), NodePath("../Waypoint13")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint13" type="Marker3D" parent="Waypoints4" unique_id=1995983473 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.212566, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint12"), NodePath("../Waypoint14")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint14" type="Marker3D" parent="Waypoints4" unique_id=1942896300 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.15447, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint13"), NodePath("../Waypoint15")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint15" type="Marker3D" parent="Waypoints4" unique_id=1672851074 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.04266, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint14"), NodePath("../Waypoint16")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint16" type="Marker3D" parent="Waypoints4" unique_id=1536858789 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.10915, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint15"), NodePath("../Waypoint17")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint17" type="Marker3D" parent="Waypoints4" unique_id=723841939 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.999176, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint16"), NodePath("../Waypoint18"), NodePath("../Waypoint22")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint18" type="Marker3D" parent="Waypoints4" unique_id=1747734762 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.04597, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint17"), NodePath("../Waypoint19")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint19" type="Marker3D" parent="Waypoints4" unique_id=815546973 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.05657, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint18"), NodePath("../Waypoint20")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint20" type="Marker3D" parent="Waypoints4" unique_id=367510372 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.04109, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint19"), NodePath("../Waypoint21")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint21" type="Marker3D" parent="Waypoints4" unique_id=2028133348 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88.01085, 0, -0.9016601)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint20")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint22" type="Marker3D" parent="Waypoints4" unique_id=664148289 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.999176, 0, 0.75259006)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint23"), NodePath("../Waypoint17")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint23" type="Marker3D" parent="Waypoints4" unique_id=94194258 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.248146, 0, 2.1310606)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint22"), NodePath("../Waypoint26Stair3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair3" type="Marker3D" parent="Waypoints4" unique_id=2021220813 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.4896, -1.5678456, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint23"), NodePath("../Waypoint26Stair4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair4" type="Marker3D" parent="Waypoints4" unique_id=1894042220 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.71986, -1.5678456, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair3"), NodePath("../../Waypoints3/Waypoint26")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint24" type="Marker3D" parent="Waypoints4" unique_id=673068930 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.39669, 0.19389868, 0.76132977)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint25")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint25" type="Marker3D" parent="Waypoints4" unique_id=183243331 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.69701, 0.11862725, 2.147369)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint24"), NodePath("../Waypoint26")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26" type="Marker3D" parent="Waypoints4" unique_id=1040646078 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.69701, -1.6868765, 5.7766724)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint25"), NodePath("../Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint27" type="Marker3D" parent="Waypoints4" unique_id=920382930 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.192286, -1.6275294, 5.7766724)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26"), NodePath("../../Waypoints3/Waypoint28")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoints3" type="Node3D" parent="." unique_id=1675959871]
+
+[node name="Waypoint" type="Marker3D" parent="Waypoints3" unique_id=1896566773 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.22529179, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint2" type="Marker3D" parent="Waypoints3" unique_id=248944164 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.309067, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint"), NodePath("../Waypoint3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint3" type="Marker3D" parent="Waypoints3" unique_id=188564679 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.297318, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2"), NodePath("../Waypoint4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint4" type="Marker3D" parent="Waypoints3" unique_id=1218828712 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.359404, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint3"), NodePath("../Waypoint5"), NodePath("../Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint5" type="Marker3D" parent="Waypoints3" unique_id=1730365683 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.276619, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint6")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint6" type="Marker3D" parent="Waypoints3" unique_id=1554719761 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.323334, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint5"), NodePath("../Waypoint7")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint7" type="Marker3D" parent="Waypoints3" unique_id=784528789 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.292303, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint6"), NodePath("../Waypoint8")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint8" type="Marker3D" parent="Waypoints3" unique_id=2138765507 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.239763, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint7"), NodePath("../Waypoint9")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint9" type="Marker3D" parent="Waypoints3" unique_id=2069645110 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.1703, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint8"), NodePath("../Waypoint10")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint10" type="Marker3D" parent="Waypoints3" unique_id=523470494 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40.173965, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint9"), NodePath("../Waypoint11")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint11" type="Marker3D" parent="Waypoints3" unique_id=428944152 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.133873, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint10"), NodePath("../Waypoint12")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint12" type="Marker3D" parent="Waypoints3" unique_id=171864429 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.18187, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint11"), NodePath("../Waypoint13")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint13" type="Marker3D" parent="Waypoints3" unique_id=1022370628 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55.177433, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint12"), NodePath("../Waypoint14")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint14" type="Marker3D" parent="Waypoints3" unique_id=832317350 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.04917, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint13"), NodePath("../Waypoint15")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint15" type="Marker3D" parent="Waypoints3" unique_id=1178824090 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.221508, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint14"), NodePath("../Waypoint16")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint16" type="Marker3D" parent="Waypoints3" unique_id=696881782 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.0673, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint15"), NodePath("../Waypoint17")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint17" type="Marker3D" parent="Waypoints3" unique_id=805457723 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.05534, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint16"), NodePath("../Waypoint18")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint18" type="Marker3D" parent="Waypoints3" unique_id=343925378 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.0245, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint17"), NodePath("../Waypoint19")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint19" type="Marker3D" parent="Waypoints3" unique_id=644660180 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.00421, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint18"), NodePath("../Waypoint20"), NodePath("../Waypoint24")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint20" type="Marker3D" parent="Waypoints3" unique_id=918781027 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 78.98395, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint19"), NodePath("../Waypoint21")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint21" type="Marker3D" parent="Waypoints3" unique_id=1121980862 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.00347, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint20"), NodePath("../Waypoint22")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint22" type="Marker3D" parent="Waypoints3" unique_id=966651461 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84.95877, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint21"), NodePath("../Waypoint23")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint23" type="Marker3D" parent="Waypoints3" unique_id=133016296 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.98808, -3.2207072, -0.9500861)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint22")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint24" type="Marker3D" parent="Waypoints3" unique_id=121645894 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.0272, -3.5113504, 0.7955384)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint19"), NodePath("../Waypoint25"), NodePath("../Waypoint26")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint25" type="Marker3D" parent="Waypoints3" unique_id=787888464 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.34067, -3.4640903, 1.9885767)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint24"), NodePath("../../Waypoints2/Waypoint26Stair3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26" type="Marker3D" parent="Waypoints3" unique_id=1405717942 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.788025, -3.4640903, 1.9885767)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint24"), NodePath("../../Waypoints4/Waypoint26Stair4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint27" type="Marker3D" parent="Waypoints3" unique_id=16698190 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.359404, -3.2207072, 0.7349623)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint28"), NodePath("../Waypoint29")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint28" type="Marker3D" parent="Waypoints3" unique_id=2041641541 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.088614, -3.2207072, 1.5447688)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint27"), NodePath("../../Waypoints4/Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint29" type="Marker3D" parent="Waypoints3" unique_id=1568403330 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.714091, -3.2207072, 1.5447688)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint27"), NodePath("../Waypoint30")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint30" type="Marker3D" parent="Waypoints3" unique_id=1574336781 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.714091, -5.4523554, 5.6788325)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint31"), NodePath("../Waypoint29")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint31" type="Marker3D" parent="Waypoints3" unique_id=1046394866 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.177319, -5.4523554, 5.6788325)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint30"), NodePath("../../Waypoints2/Waypoint28")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoints2" type="Node3D" parent="." unique_id=268269954]
+
+[node name="Waypoint" type="Marker3D" parent="Waypoints2" unique_id=536964871 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.32977122, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint2" type="Marker3D" parent="Waypoints2" unique_id=1241520950 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4526634, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint"), NodePath("../Waypoint3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint3" type="Marker3D" parent="Waypoints2" unique_id=380393410 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.499918, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2"), NodePath("../Waypoint4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint4" type="Marker3D" parent="Waypoints2" unique_id=1881411949 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.464337, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint3"), NodePath("../Waypoint5")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint5" type="Marker3D" parent="Waypoints2" unique_id=624438163 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.454466, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint6"), NodePath("../Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint6" type="Marker3D" parent="Waypoints2" unique_id=1495698081 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.396698, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint5"), NodePath("../Waypoint7")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint7" type="Marker3D" parent="Waypoints2" unique_id=1929003576 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.409908, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint6"), NodePath("../Waypoint8")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint8" type="Marker3D" parent="Waypoints2" unique_id=1721840664 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.36785, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint7"), NodePath("../Waypoint9")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint9" type="Marker3D" parent="Waypoints2" unique_id=1120984702 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.342388, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint8"), NodePath("../Waypoint10")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint10" type="Marker3D" parent="Waypoints2" unique_id=1884309211 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.42852, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint9"), NodePath("../Waypoint11")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint11" type="Marker3D" parent="Waypoints2" unique_id=318885741 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.329481, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint10"), NodePath("../Waypoint12")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint12" type="Marker3D" parent="Waypoints2" unique_id=1981392483 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.99121, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint11"), NodePath("../Waypoint13"), NodePath("../../Waypoints1/Waypoint42")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint13" type="Marker3D" parent="Waypoints2" unique_id=1861846530 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.238033, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint12"), NodePath("../Waypoint14")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint14" type="Marker3D" parent="Waypoints2" unique_id=1657066513 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.526436, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint13"), NodePath("../Waypoint15"), NodePath("../Waypoint30")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint15" type="Marker3D" parent="Waypoints2" unique_id=1391300330 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.18474, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint14"), NodePath("../Waypoint16")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint16" type="Marker3D" parent="Waypoints2" unique_id=2121545624 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.202675, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint15"), NodePath("../Waypoint17")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint17" type="Marker3D" parent="Waypoints2" unique_id=1274432286 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.13454, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint16"), NodePath("../Waypoint18")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint18" type="Marker3D" parent="Waypoints2" unique_id=601407733 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 67.15834, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint17"), NodePath("../Waypoint19")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint19" type="Marker3D" parent="Waypoints2" unique_id=1967594093 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.06735, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint18"), NodePath("../Waypoint20")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint20" type="Marker3D" parent="Waypoints2" unique_id=1540999929 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.02969, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint19"), NodePath("../Waypoint21")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint21" type="Marker3D" parent="Waypoints2" unique_id=189554349 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.10221, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint20"), NodePath("../Waypoint22"), NodePath("../Waypoint26")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint22" type="Marker3D" parent="Waypoints2" unique_id=1202356181 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.05342, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint21"), NodePath("../Waypoint23")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint23" type="Marker3D" parent="Waypoints2" unique_id=57950534 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.025925, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint22"), NodePath("../Waypoint24")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint24" type="Marker3D" parent="Waypoints2" unique_id=885465664 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.02307, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint23"), NodePath("../Waypoint25")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint25" type="Marker3D" parent="Waypoints2" unique_id=1692617116 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.98996, -7.321815, -0.90723735)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint24")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair" type="Marker3D" parent="Waypoints2" unique_id=1299503728 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.37966, -7.321815, 1.6660049)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26"), NodePath("../Waypoint26Stair2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair2" type="Marker3D" parent="Waypoints2" unique_id=264194484 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.27197, -9.044742, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair"), NodePath("../Waypoint26Stair6")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair3" type="Marker3D" parent="Waypoints2" unique_id=1361003390 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.4896, -5.369894, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair4"), NodePath("../../Waypoints3/Waypoint25")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair4" type="Marker3D" parent="Waypoints2" unique_id=65267616 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.78687, -5.369894, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair5"), NodePath("../Waypoint26Stair3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair5" type="Marker3D" parent="Waypoints2" unique_id=1798669953 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.865524, -7.321815, 1.6660049)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26"), NodePath(".")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26" type="Marker3D" parent="Waypoints2" unique_id=1502730197 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.10221, -7.321815, 0.78526443)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair"), NodePath("../Waypoint26Stair5"), NodePath("../Waypoint21")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26Stair6" type="Marker3D" parent="Waypoints2" unique_id=261930702 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.71614, -9.044742, 5.587412)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26Stair2"), NodePath("../../Waypoints1/Waypoint_L_Exit4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint27" type="Marker3D" parent="Waypoints2" unique_id=1008455073 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.454466, -7.321815, 0.76772267)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint5"), NodePath("../Waypoint28"), NodePath("../Waypoint29")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint28" type="Marker3D" parent="Waypoints2" unique_id=766684888 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.224137, -7.321815, 1.5537112)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint27"), NodePath("../../Waypoints3/Waypoint31")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint29" type="Marker3D" parent="Waypoints2" unique_id=2144781523 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.708666, -7.321815, 1.5537112)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint27"), NodePath("../../Waypoints1/Waypoint34")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint30" type="Marker3D" parent="Waypoints2" unique_id=283303625 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.526436, -7.1283984, -4.212102)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint31"), NodePath("../Waypoint14")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint31" type="Marker3D" parent="Waypoints2" unique_id=1195604747 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 54.526436, -8.989717, -8.037438)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint30"), NodePath("../Waypoint32")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint32" type="Marker3D" parent="Waypoints2" unique_id=494070897 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.019756, -9.030459, -8.037438)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint33"), NodePath("../Waypoint31")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint33" type="Marker3D" parent="Waypoints2" unique_id=968982022 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.019756, -10.975277, -3.8346734)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../../Waypoints1/Waypoint15"), NodePath("../Waypoint32")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoints1" type="Node3D" parent="." unique_id=72509268]
+
+[node name="Waypoint" type="Marker3D" parent="Waypoints1" unique_id=408136585 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.422288, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint2" type="Marker3D" parent="Waypoints1" unique_id=2026201047 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4807568, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint"), NodePath("../Waypoint3")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint3" type="Marker3D" parent="Waypoints1" unique_id=1620643098 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.397937, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint2"), NodePath("../Waypoint4")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint4" type="Marker3D" parent="Waypoints1" unique_id=1305132225 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.412391, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint3"), NodePath("../Waypoint5"), NodePath("../Waypoint29")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint5" type="Marker3D" parent="Waypoints1" unique_id=1925603118 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.390768, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint6")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint6" type="Marker3D" parent="Waypoints1" unique_id=1785243561 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19.472593, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint5"), NodePath("../Waypoint7")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint7" type="Marker3D" parent="Waypoints1" unique_id=2006491680 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.434439, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint6"), NodePath("../Waypoint8")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint8" type="Marker3D" parent="Waypoints1" unique_id=750636012 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.361944, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint7"), NodePath("../Waypoint9")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint9" type="Marker3D" parent="Waypoints1" unique_id=1010398197 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.281345, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint8"), NodePath("../Waypoint10")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint10" type="Marker3D" parent="Waypoints1" unique_id=1338267694 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.534843, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint9"), NodePath("../Waypoint11"), NodePath("../Waypoint39")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint11" type="Marker3D" parent="Waypoints1" unique_id=513875964 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.702618, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint10"), NodePath("../Waypoint12"), NodePath("../Waypoint35")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint12" type="Marker3D" parent="Waypoints1" unique_id=61481405 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.601414, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint11"), NodePath("../Waypoint13")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint13" type="Marker3D" parent="Waypoints1" unique_id=1971666834 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 48.054874, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint12"), NodePath("../Waypoint14")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint14" type="Marker3D" parent="Waypoints1" unique_id=1426404955 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.054813, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint13"), NodePath("../Waypoint15"), NodePath("../Waypoint25")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint15" type="Marker3D" parent="Waypoints1" unique_id=863643283 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56.020935, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint14"), NodePath("../Waypoint16"), NodePath("../../Waypoints2/Waypoint33")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint16" type="Marker3D" parent="Waypoints1" unique_id=1347353054 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58.1915, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint15"), NodePath("../Waypoint17")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint17" type="Marker3D" parent="Waypoints1" unique_id=106839972 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64.12195, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint16"), NodePath("../Waypoint18")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint18" type="Marker3D" parent="Waypoints1" unique_id=480468058 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.04311, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint17"), NodePath("../Waypoint19")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint19" type="Marker3D" parent="Waypoints1" unique_id=1874907113 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.018906, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint18"), NodePath("../Waypoint20")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint20" type="Marker3D" parent="Waypoints1" unique_id=1717127601 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.08287, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint19"), NodePath("../Waypoint21"), NodePath("../Waypoint_L_Exit")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint21" type="Marker3D" parent="Waypoints1" unique_id=1561678770 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.075485, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint20"), NodePath("../Waypoint22")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint22" type="Marker3D" parent="Waypoints1" unique_id=574530901 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 82.002846, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint21"), NodePath("../Waypoint23")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint23" type="Marker3D" parent="Waypoints1" unique_id=1563384512 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85.08771, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint22"), NodePath("../Waypoint24")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint24" type="Marker3D" parent="Waypoints1" unique_id=283751035 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.62959, -11.038879, -0.9325764)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint23")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint_L_Exit" type="Marker3D" parent="Waypoints1" unique_id=2083344142 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.06267, -11.038879, 0.83781075)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint_L_Exit3"), NodePath("../Waypoint_L_Exit4"), NodePath("../Waypoint20")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint_L_Exit2" type="Marker3D" parent="Waypoints1" unique_id=902693424 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.08287, -11.587192, 5.3476114)
+script = ExtResource("21_6dw0v")
+is_exit = true
+neighbors = [NodePath("../Waypoint_L_Exit5")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint25" type="Marker3D" parent="Waypoints1" unique_id=916374080 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.02382, -10.956986, -8.838334)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint14"), NodePath("../Waypoint26")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint26" type="Marker3D" parent="Waypoints1" unique_id=1907629638 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 52.02382, -11.782126, -12.021695)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint25"), NodePath("../Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint27" type="Marker3D" parent="Waypoints1" unique_id=1656094485 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.624958, -11.782126, -12.021695)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint26"), NodePath("../Waypoint28")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint28" type="Marker3D" parent="Waypoints1" unique_id=1841381174 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.624958, -11.782126, -22.899597)
+script = ExtResource("21_6dw0v")
+is_exit = true
+neighbors = [NodePath("../Waypoint27")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint_L_Exit3" type="Marker3D" parent="Waypoints1" unique_id=98737354 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.2902, -11.038879, 1.7969198)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint_L_Exit"), NodePath("../Waypoint_L_Exit5")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint_L_Exit4" type="Marker3D" parent="Waypoints1" unique_id=1773143317 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.77472, -11.038879, 1.7969198)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../../Waypoints2/Waypoint26Stair6"), NodePath("../Waypoint_L_Exit")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint_L_Exit5" type="Marker3D" parent="Waypoints1" unique_id=638960328 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.293045, -11.587192, 4.1666903)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint_L_Exit3"), NodePath("../Waypoint_L_Exit2")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint29" type="Marker3D" parent="Waypoints1" unique_id=828585698 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.412391, -11.038879, 0.7423141)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint4"), NodePath("../Waypoint30"), NodePath("../Waypoint31")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint30" type="Marker3D" parent="Waypoints1" unique_id=468998157 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.216185, -11.038879, 1.6387322)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint29"), NodePath("../Waypoint33")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint31" type="Marker3D" parent="Waypoints1" unique_id=273802212 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.654831, -11.038879, 1.6387322)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint29"), NodePath("../Waypoint32")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint32" type="Marker3D" parent="Waypoints1" unique_id=1485403112 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.661435, -11.803957, 4.313161)
+script = ExtResource("21_6dw0v")
+is_exit = true
+neighbors = [NodePath("../Waypoint31")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint33" type="Marker3D" parent="Waypoints1" unique_id=1263261336 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.216185, -8.894606, 5.574962)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint30"), NodePath("../Waypoint34")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint34" type="Marker3D" parent="Waypoints1" unique_id=976177855 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.602327, -8.894606, 5.574962)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint33"), NodePath("../../Waypoints2/Waypoint29")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint35" type="Marker3D" parent="Waypoints1" unique_id=1547930315 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.702618, -11.038879, -8.804898)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint11"), NodePath("../Waypoint36")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint36" type="Marker3D" parent="Waypoints1" unique_id=842630452 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.702618, -11.786755, -12.037889)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint35"), NodePath("../Waypoint37")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint37" type="Marker3D" parent="Waypoints1" unique_id=398049689 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.99458, -11.786755, -12.037889)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint36"), NodePath("../Waypoint38")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint38" type="Marker3D" parent="Waypoints1" unique_id=686024299 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41.99458, -11.786755, -22.913296)
+script = ExtResource("21_6dw0v")
+is_exit = true
+neighbors = [NodePath("../Waypoint37")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint39" type="Marker3D" parent="Waypoints1" unique_id=1168834573 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.534843, -11.038879, -3.8724825)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint10"), NodePath("../Waypoint40")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint40" type="Marker3D" parent="Waypoints1" unique_id=1186980588 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.534843, -9.027431, -8.147375)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint39"), NodePath("../Waypoint41")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint41" type="Marker3D" parent="Waypoints1" unique_id=1592564542 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.981087, -9.027431, -8.147375)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint40"), NodePath("../Waypoint42")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
+
+[node name="Waypoint42" type="Marker3D" parent="Waypoints1" unique_id=1394007066 node_paths=PackedStringArray("neighbors")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 34.981087, -7.0520167, -4.119271)
+script = ExtResource("21_6dw0v")
+neighbors = [NodePath("../Waypoint41"), NodePath("../../Waypoints2/Waypoint12")]
+metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
 
 [editable path="Exits/Exit3"]

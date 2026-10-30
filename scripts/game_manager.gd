@@ -9,6 +9,8 @@ extends Node
 @export var use_debug_camera: bool = false
 @export var debug_camera_scene: PackedScene
 
+var evacuation_tracker: EvacuationTracker
+
 func _setup_debug_camera() -> void:
 	if not use_debug_camera:
 		return
@@ -42,6 +44,9 @@ func _spawn() -> void:
 
 	var selected_door: Node3D = null
 	var spawned_cabinets: Array[Node3D] = []
+	
+	EvacGraph.reset()
+	EvacGraph.register_group(get_tree().current_scene)
 
 	# Создаём кабинеты на месте всех дверей
 	for door in doors:
@@ -117,9 +122,12 @@ func _spawn() -> void:
 	EvacuationManager.spawn_cabinet = spawn_cabinet
 	
 	spawn_cabinet.initialize_room()
+	
+	EvacGraph.attach_room(spawn_cabinet)
 
 	# Создаём игрока один раз
 	var player := player_scene.instantiate() as Node3D
+	player.add_to_group("player")  
 	get_tree().current_scene.add_child(player)
 
 	var player_spawn := spawn_cabinet.get_node_or_null("PlayerSpawn")
@@ -129,7 +137,17 @@ func _spawn() -> void:
 		print("✅ Игрок заспавнен в кабинете: ", spawn_cabinet.name)
 	else:
 		push_warning("В сцене кабинета нет узла PlayerSpawn!")
-		
+	
+	EvacGraph.build_route(player.global_position)
+	
+	evacuation_tracker = EvacuationTracker.new()
+	add_child(evacuation_tracker)
+
+	evacuation_tracker.tracking_finished.connect(
+		_on_evacuation_tracking_finished
+	)
+
+	evacuation_tracker.start_tracking(player, EvacGraph)
 		
 	var cab_id: int = spawn_cabinet.get_meta("cabinet_id")
 	var floor_num: int = spawn_cabinet.get_meta("floor_number")
@@ -138,5 +156,21 @@ func _spawn() -> void:
 		"Вы находитесь в кабинете №%d здания ПЛК на %d этаже" % [cab_id, floor_num],
 	"	Местоположение"
 	)
-	EvacuationDebugger.run_and_draw()
 	EvacuationManager.start_scenario(evacuation_scenario)
+
+func _on_evacuation_tracking_finished(result: Dictionary) -> void:
+	print("=== РЕЗУЛЬТАТ ЭВАКУАЦИИ ===")
+
+	print("Выход достигнут: ", result["reached_exit"])
+	print("Время: %.1f сек." % result["elapsed_time"])
+	print("Оптимальный путь: %.1f м" % result["optimal_distance"])
+	print("Пройденный путь: %.1f м" % result["actual_distance"])
+	print("Эффективность: %.1f%%" % result["efficiency"])
+	print("Отклонения: ", result["deviation_count"])
+
+	if result["route_correct"]:
+		print("Результат: маршрут без отклонений")
+	elif result["reached_exit"]:
+		print("Результат: эвакуация завершена с отклонениями")
+	else:
+		print("Результат: эвакуация не завершена")
