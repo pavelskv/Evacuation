@@ -235,4 +235,3 @@ visible = false
 
 [node name="GraphDebug" type="Node3D" parent="." unique_id=1358938395]
 script = ExtResource("26_qcehk")
-enabled = false
