@@ -72,12 +72,16 @@ mesh = SubResource("PlaneMesh_ksou2")
 [node name="AreaLight3D" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=1256355778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, 1.4044712, 1.5272205, -0.57155967)
 visible = false
+light_energy = 0.704
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=8306778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, -1.610991, 1.577302, -0.57155967)
 visible = false
+light_energy = 0.704
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.62540746, 0.5814543)
 
@@ -106,8 +110,9 @@ transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 1.64
 transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, 0.7515612, 1.9536664, -6.210804)
 visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
-light_energy = 6.896
+light_energy = 0.704
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -116,7 +121,7 @@ area_size = Vector2(1.657333, 1.5202823)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=992640099]
 interior = true
-texel_scale = 2.0
+texel_scale = 30.7
 light_data = ExtResource("10_s0g4l")
 
 [node name="window_rooms2" parent="." unique_id=1587715993 instance=ExtResource("10_evih7")]
