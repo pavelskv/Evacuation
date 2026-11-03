@@ -111,6 +111,7 @@ mesh = SubResource("PlaneMesh_xb5gs")
 [node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=1351344714]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 3.0232158, 2.7335918, -1.4276211)
 visible = false
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
@@ -120,18 +121,21 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9652333, -1.1920929e-06, -5
 [node name="AreaLight3D2" type="AreaLight3D" parent="." unique_id=646433127]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.15477514, 2.7335918, -1.4276211)
 visible = false
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="AreaLight3D3" type="AreaLight3D" parent="." unique_id=1746741310]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 3.0232158, 2.7335918, -4.6119485)
 visible = false
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="AreaLight3D4" type="AreaLight3D" parent="." unique_id=582563599]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.15477514, 2.7335918, -4.6119485)
 visible = false
+light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.5237906, 0.5635803)
 
@@ -141,6 +145,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -153,6 +158,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -172,8 +178,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5792348, -1.1920929e-06, -1
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.7111832, 0, -0.72419965)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=2141668683]
+bounces = 2
 interior = true
-texel_scale = 2.0
+texel_scale = 15.81
 light_data = ExtResource("10_44328")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("10_fh8k0")]

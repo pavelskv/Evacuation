@@ -121,7 +121,7 @@ area_size = Vector2(1.657333, 1.5202823)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=992640099]
 interior = true
-texel_scale = 30.7
+texel_scale = 35.96
 light_data = ExtResource("10_s0g4l")
 
 [node name="window_rooms2" parent="." unique_id=1587715993 instance=ExtResource("10_evih7")]

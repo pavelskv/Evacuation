@@ -133,6 +133,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane14" unique_id=1610984537]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane15" type="MeshInstance3D" parent="room3_2_big_1" unique_id=822593222]
@@ -143,6 +144,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane15" unique_id=637262607]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane16" type="MeshInstance3D" parent="room3_2_big_1" unique_id=434216367]
@@ -153,6 +155,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane16" unique_id=606523212]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane17" type="MeshInstance3D" parent="room3_2_big_1" unique_id=1531313900]
@@ -163,6 +166,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane17" unique_id=1934650464]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane19" type="MeshInstance3D" parent="room3_2_big_1" unique_id=17577268]
@@ -173,6 +177,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane19" unique_id=971449169]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane20" type="MeshInstance3D" parent="room3_2_big_1" unique_id=1624249494]
@@ -183,6 +188,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane20" unique_id=1186540002]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane21" type="MeshInstance3D" parent="room3_2_big_1" unique_id=460980563]
@@ -193,6 +199,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane21" unique_id=448130400]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="Decal2_Plane18" type="MeshInstance3D" parent="room3_2_big_1" unique_id=923697948]
@@ -203,6 +210,7 @@ mesh = SubResource("PlaneMesh_dg1d0")
 [node name="AreaLight3D" type="AreaLight3D" parent="room3_2_big_1/Decal2_Plane18" unique_id=1973156222]
 transform = Transform3D(-1, 8.742277e-08, 2.1316282e-14, -1.0658141e-14, -4.3711417e-08, 1, 8.742277e-08, 1, 4.3711378e-08, 0.015034676, -0.036407948, 0.009127617)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.5237906, 0.5635803)
 
 [node name="wardob3" parent="room3_2_big_1" unique_id=2103056444 instance=ExtResource("4_dlo6n")]
@@ -246,6 +254,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -258,6 +267,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -270,6 +280,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -286,6 +297,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6432996, 1.25, -5.9928007)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6607995, 1.25, -5.9928007)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=611727306]
+bounce_indirect_energy = 0.5
+texel_scale = 33.89
 light_data = ExtResource("13_pvucw")
 
 [node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("16_dlo6n")]
