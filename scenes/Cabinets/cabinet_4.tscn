@@ -69,7 +69,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2163236, 0.9845967, -3.716
 [node name="room4" parent="." unique_id=258013172 instance=ExtResource("1_3ia6b")]
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("2_03nwn")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88019997, -0.0013810396, 0.0414047)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88019997, -0.0013810396, -0.017301105)
 
 [node name="Decal14_Plane" type="MeshInstance3D" parent="." unique_id=1529007356]
 transform = Transform3D(1, -8.742278e-08, -8.742277e-08, -8.742278e-08, -4.371139e-08, -1, 8.742277e-08, 1, -4.3711395e-08, 0.536, 0.609, -5.72)
@@ -94,26 +94,31 @@ mesh = SubResource("PlaneMesh_0kfkr")
 [node name="AreaLight3D" type="AreaLight3D" parent="." unique_id=988586579]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.8894139, 2.739171, -4.070113)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D4" type="AreaLight3D" parent="." unique_id=159777455]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -0.8894139, 2.739171, -1.5421259)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D5" type="AreaLight3D" parent="." unique_id=704181313]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -6.6079993, 2.739171, -1.5421259)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D2" type="AreaLight3D" parent="." unique_id=322877023]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -4.661724, 2.739171, -4.070113)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="AreaLight3D3" type="AreaLight3D" parent="." unique_id=1501477193]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, -8.459965, 2.739171, -4.070113)
 visible = false
+light_bake_mode = 1
 area_size = Vector2(0.62540746, 0.5814543)
 
 [node name="Decal2_Plane2" type="MeshInstance3D" parent="." unique_id=1245154447]
@@ -182,6 +187,20 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_reverse_cull_face = true
+shadow_blur = 0.474
+area_range = 8.182
+area_size = Vector2(1.5990992, 1.3608465)
+
+[node name="AreaLight3D10" type="AreaLight3D" parent="." unique_id=1672716902]
+transform = Transform3D(1, 0, 0, 0, 0.97992754, 0.19935398, 0, -0.19935398, 0.97992754, 0.4654702, 2.0116353, 1.7320585)
+visible = false
+light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
+light_energy = 3.843
+light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -194,6 +213,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -206,6 +226,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474
@@ -218,6 +239,7 @@ visible = false
 light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
 light_energy = 3.843
 light_size = 1.0
+light_bake_mode = 1
 shadow_enabled = true
 shadow_reverse_cull_face = true
 shadow_blur = 0.474

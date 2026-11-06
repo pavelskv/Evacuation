@@ -90,6 +90,19 @@ shadow_blur = 0.474
 area_range = 8.182
 area_size = Vector2(1.5990992, 1.3608465)
 
+[node name="AreaLight3D7" type="AreaLight3D" parent="room2" unique_id=1053113039]
+transform = Transform3D(1, 0, 0, 0, 0.9222308, 0.38663986, 0, -0.38663986, 0.9222308, 0.55593085, 1.9536664, 2.1244612)
+visible = false
+light_color = Color(0.8260999, 0.9407724, 0.9302226, 1)
+light_energy = 3.843
+light_size = 1.0
+light_bake_mode = 1
+shadow_enabled = true
+shadow_reverse_cull_face = true
+shadow_blur = 0.474
+area_range = 8.182
+area_size = Vector2(1.5990992, 1.3608465)
+
 [node name="AreaLight3D6" type="AreaLight3D" parent="room2" unique_id=318789620]
 transform = Transform3D(1, 0, 0, 0, -1, -8.742278e-08, 0, 8.742278e-08, -1, -2.311549, 1.9536664, -6.210804)
 visible = false
