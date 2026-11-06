@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://c6icnag2adbqd"]
+
+[ext_resource type="Texture2D" uid="uid://gdak41cbv6ws" path="res://scenes/fire/smoke_soft.png" id="1_smoke_tex"]
+[ext_resource type="Script" uid="uid://c08ktto66k2g" path="res://scenes/fire/smoke.gd" id="2_script"]
+
+[sub_resource type="Gradient" id="Gradient_alpha"]
+offsets = PackedFloat32Array(0, 0.3, 1)
+colors = PackedColorArray(0.25, 0.25, 0.25, 0, 0.25, 0.25, 0.25, 0.6, 0.25, 0.25, 0.25, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_alpha"]
+gradient = SubResource("Gradient_alpha")
+
+[sub_resource type="Curve" id="Curve_scale"]
+
+[sub_resource type="CurveTexture" id="CurveTexture_scale"]
+curve = SubResource("Curve_scale")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_smoke"]
+direction = Vector3(0, 1, 0)
+spread = 15.0
+initial_velocity_min = 0.3
+initial_velocity_max = 0.5
+gravity = Vector3(0, 0.25, 0)
+damping_min = 2.0
+damping_max = 3.0
+scale_curve = SubResource("CurveTexture_scale")
+color_ramp = SubResource("GradientTexture1D_alpha")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smoke"]
+transparency = 1
+cull_mode = 2
+shading_mode = 0
+albedo_texture = ExtResource("1_smoke_tex")
+billboard_mode = 2
+
+[sub_resource type="QuadMesh" id="QuadMesh_smoke"]
+material = SubResource("StandardMaterial3D_smoke")
+size = Vector2(0.6, 0.6)
+
+[node name="Smoke" type="GPUParticles3D" unique_id=39044403]
+amount = 15
+lifetime = 5.0
+randomness = 0.1
+visibility_aabb = AABB(-3, 0, -3, 6, 8, 6)
+process_material = SubResource("ParticleProcessMaterial_smoke")
+draw_pass_1 = SubResource("QuadMesh_smoke")
+script = ExtResource("2_script")
+smoke_texture = ExtResource("1_smoke_tex")
+intensity = 0.1
