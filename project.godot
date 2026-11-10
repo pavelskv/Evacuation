@@ -29,6 +29,7 @@ BrowserInputFixes="*uid://bnlh1pvstbo4v"
 EvacuationManager="*uid://bfhxkvodgxrf1"
 Notify="*uid://dc3t8c7feaa64"
 EvacGraph="*uid://1ept7x2tmi0k"
+RBCM_GameClient="*uid://dcmecimbjtiud"
 
 [dialogue_manager]
 
@@ -39,6 +40,10 @@ runtime/balloon_path="res://assets/balloon.tscn"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/rb_condition_manager/plugin.cfg")
 
 [file_customization]
 
