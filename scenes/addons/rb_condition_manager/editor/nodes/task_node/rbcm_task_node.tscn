@@ -1,0 +1,218 @@
+[gd_scene load_steps=6 format=3 uid="uid://cyiq4ublpuaav"]
+
+[ext_resource type="Script" path="res://addons/rb_condition_manager/editor/nodes/task_node/rbcm_task_node.gd" id="1_0p0ht"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5udln"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.154663, 0.448109, 0.707031, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+
+[sub_resource type="SystemFont" id="SystemFont_mxmuo"]
+font_names = PackedStringArray("Monospace")
+
+[sub_resource type="SystemFont" id="SystemFont_44csq"]
+font_names = PackedStringArray("Monospace")
+
+[sub_resource type="SystemFont" id="SystemFont_mnmvl"]
+font_names = PackedStringArray("Monospace")
+
+[node name="rb_task_node" type="GraphNode"]
+offset_right = 533.0
+offset_bottom = 528.0
+theme_override_styles/titlebar = SubResource("StyleBoxFlat_5udln")
+title = "Задача"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+slot/2/left_enabled = false
+slot/2/left_type = 0
+slot/2/left_color = Color(1, 1, 1, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+slot/3/left_enabled = false
+slot/3/left_type = 0
+slot/3/left_color = Color(1, 1, 1, 1)
+slot/3/left_icon = null
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color(1, 1, 1, 1)
+slot/3/right_icon = null
+slot/3/draw_stylebox = true
+slot/4/left_enabled = false
+slot/4/left_type = 0
+slot/4/left_color = Color(1, 1, 1, 1)
+slot/4/left_icon = null
+slot/4/right_enabled = false
+slot/4/right_type = 0
+slot/4/right_color = Color(1, 1, 1, 1)
+slot/4/right_icon = null
+slot/4/draw_stylebox = true
+slot/5/left_enabled = false
+slot/5/left_type = 0
+slot/5/left_color = Color(1, 1, 1, 1)
+slot/5/left_icon = null
+slot/5/right_enabled = false
+slot/5/right_type = 0
+slot/5/right_color = Color(1, 1, 1, 1)
+slot/5/right_icon = null
+slot/5/draw_stylebox = true
+script = ExtResource("1_0p0ht")
+
+[node name="InOutContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="InputLabel" type="Label" parent="InOutContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Вход"
+
+[node name="PriorityCheckBox" type="CheckBox" parent="InOutContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+tooltip_text = "Приоритетные задачи образуют группу. В ней - только первая задача
+достигшая выполнения условия становится активной, в то время как остальные 
+\"Приоритетные\" задачи (напрямую подключенные к общему предку) будут отключены."
+text = "Приоритетная"
+
+[node name="OutputLabel" type="Label" parent="InOutContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Выход
+"
+horizontal_alignment = 2
+
+[node name="HSeparator1" type="HSeparator" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="InfoContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="StateLabel" type="Label" parent="InfoContainer"]
+layout_mode = 2
+text = "Состояние:"
+
+[node name="StateValue" type="Label" parent="InfoContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="IDLabel" type="Label" parent="InfoContainer"]
+layout_mode = 2
+text = "ID:"
+
+[node name="CopyIDButton" type="LinkButton" parent="InfoContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+tooltip_text = "ЛКМ чтобы скопировать ID"
+theme_override_colors/font_color = Color(0.423251, 0.880103, 0.970299, 1)
+text = "123123"
+
+[node name="DescriptionContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="DescriptionLabel" type="Label" parent="DescriptionContainer"]
+layout_mode = 2
+text = "Описание:"
+
+[node name="DescriptionTextEdit" type="TextEdit" parent="DescriptionContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+placeholder_text = "Описание задачи в свободной форме"
+context_menu_enabled = false
+wrap_mode = 1
+
+[node name="HSeparator3" type="HSeparator" parent="."]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="ScriptsContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="TabBar" type="TabBar" parent="ScriptsContainer"]
+layout_mode = 2
+tab_count = 3
+clip_tabs = false
+scrolling_enabled = false
+scroll_to_selected = false
+tab_0/title = "Код условия"
+tab_1/title = "При активации"
+tab_2/title = "При выполнении условия"
+
+[node name="ConditionTextEdit" type="TextEdit" parent="ScriptsContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_fonts/font = SubResource("SystemFont_mxmuo")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "GDScript-код, который будет проверяться каждые 0.5 сек.
+
+Когда условие выполнится, данная задача перейдет в состояние \"Выполнена\". 
+
+Пустое условие трактуется как TRUE и задача сразу перейдет в состояние \"Выполнена\"."
+context_menu_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[node name="OnBecomeActiveTextEdit" type="TextEdit" parent="ScriptsContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_44csq")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "GDScript-код, который будет единоразово выполнен, когда данная задача станет активной (т.е. когда другая задача, подключенная к \"Входу\" текущей, перейдет в состояние \"Выполнена\")."
+context_menu_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[node name="OnCompletedTextEdit" type="TextEdit" parent="ScriptsContainer"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 210)
+layout_mode = 2
+theme_override_fonts/font = SubResource("SystemFont_mnmvl")
+theme_override_font_sizes/font_size = 18
+placeholder_text = "GDScript-код, который будет единоразово исполнен при выполнении \"Условия\" из первой вкладки."
+context_menu_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+wrap_mode = 1
+
+[connection signal="toggled" from="InOutContainer/PriorityCheckBox" to="." method="_on_priority_check_box_toggled"]
+[connection signal="pressed" from="InfoContainer/CopyIDButton" to="." method="_on_copy_id_button_pressed"]
+[connection signal="text_changed" from="DescriptionContainer/DescriptionTextEdit" to="." method="_description_text_changed"]
+[connection signal="tab_changed" from="ScriptsContainer/TabBar" to="." method="_on_tab_bar_tab_changed"]
+[connection signal="text_changed" from="ScriptsContainer/ConditionTextEdit" to="." method="_condition_text_changed"]
+[connection signal="text_changed" from="ScriptsContainer/OnBecomeActiveTextEdit" to="." method="_on_become_active_text_changed"]
+[connection signal="text_changed" from="ScriptsContainer/OnCompletedTextEdit" to="." method="_on_complete_text_changed"]

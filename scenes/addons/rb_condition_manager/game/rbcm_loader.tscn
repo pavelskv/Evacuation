@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://db1dspe101kt5"]
+
+[ext_resource type="Script" path="res://addons/rb_condition_manager/game/rbcm_loader.gd" id="1_x6up7"]
+
+[node name="RBCM_Loader" type="Node"]
+script = ExtResource("1_x6up7")

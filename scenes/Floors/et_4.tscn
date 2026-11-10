@@ -2064,6 +2064,12 @@ interior = true
 texel_scale = 3.0
 light_data = ExtResource("16_2kk41")
 
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="LightmapGI" unique_id=251163327]
+transform = Transform3D(-0.7321602, 0.5179257, -0.44237357, -1.8972077e-08, 0.64946777, 0.76038915, 0.6811325, 0.5567266, -0.47551444, 0, 0, -25.333908)
+visible = false
+light_energy = 1.842
+light_angular_distance = 62.76
+
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("18_jk051")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.249397, 1.25, -8.637697)
 
@@ -2247,7 +2253,7 @@ cabinet_id = 2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.872, -11.099999, -2.7600007)
 script = ExtResource("6_xtoyf")
 door_id = 121
-cabinet_id = 2
+cabinet_id = 3
 
 [node name="4_et_door100" parent="Doors/Et1" unique_id=1748651662 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57.7145, -11.099999, -2.7600014)

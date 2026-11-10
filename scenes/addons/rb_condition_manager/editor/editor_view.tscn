@@ -1,0 +1,156 @@
+[gd_scene format=3 uid="uid://e2gkk40dtvtj"]
+
+[ext_resource type="Script" uid="uid://b2rrf0bht4m38" path="res://addons/rb_condition_manager/editor/editor_view.gd" id="1_km6qu"]
+[ext_resource type="Script" uid="uid://byrutdgeuuhhx" path="res://addons/rb_condition_manager/editor/base_classes/rbcm_graph_editor.gd" id="2_p3vsw"]
+
+[sub_resource type="DPITexture" id="DPITexture_8vnd2"]
+_source = "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\"><path fill=\"#ff5d5d\" d=\"M2 1v8.586l1.293-1.293a1 1 0 0 1 1.414 0L7 10.587l2.293-2.293a1 1 0 0 1 1.414 0L13 10.586l1-1V6H9V1H2zm8 0v4h4zm-6 9.414-2 2V15h12v-2.586l-.293.293a1 1 0 0 1-1.414 0L10 10.414l-2.293 2.293a1 1 0 0 1-1.414 0L4 10.414z\"/></svg>
+"
+
+[node name="EditorView" type="Control" unique_id=1394189203]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_km6qu")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1616585448]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionsPanel" type="Panel" parent="VBoxContainer" unique_id=1077971454]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/OptionsPanel" unique_id=531931180]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/OptionsPanel/MarginContainer" unique_id=2008542224]
+layout_mode = 2
+
+[node name="SyncCheckbox" type="CheckBox" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=1772610311]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Синхронизировать с прохождением"
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=579089926]
+layout_mode = 2
+
+[node name="SaveButton" type="Button" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=1193600592]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Сохранить"
+icon = SubResource("DPITexture_8vnd2")
+
+[node name="SaveAsButton" type="Button" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=1727666350]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Сохранить как..."
+icon = SubResource("DPITexture_8vnd2")
+
+[node name="LoadButton" type="Button" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=1054295739]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Загрузить"
+icon = SubResource("DPITexture_8vnd2")
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=688487972]
+layout_mode = 2
+
+[node name="ClearButton" type="Button" parent="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer" unique_id=348691137]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Очистить"
+icon = SubResource("DPITexture_8vnd2")
+
+[node name="GraphPanel" type="Panel" parent="VBoxContainer" unique_id=122137625]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RBCM_GraphEditor" type="GraphEdit" parent="VBoxContainer/GraphPanel" unique_id=161121934]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/activity = Color(0.196078, 0.803922, 0.196078, 1)
+right_disconnects = true
+minimap_enabled = false
+show_zoom_label = true
+show_arrange_button = false
+script = ExtResource("2_p3vsw")
+
+[node name="LogPanel" type="Panel" parent="VBoxContainer" unique_id=588982010]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="LogRichTextLabel" type="RichTextLabel" parent="VBoxContainer/LogPanel" unique_id=345423932]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+scroll_following = true
+
+[node name="PopupMenu" type="PopupMenu" parent="." unique_id=1442163386]
+item_count = 2
+item_0/text = "Старт"
+item_0/id = 0
+item_1/text = "Задача"
+item_1/id = 1
+
+[node name="SaveFileDialog" type="FileDialog" parent="." unique_id=1310683753]
+unique_name_in_owner = true
+title = "Сохранить"
+initial_position = 2
+size = Vector2i(500, 400)
+filters = PackedStringArray("*.rbcm ; RBCM Data")
+
+[node name="LoadFileDialog" type="FileDialog" parent="." unique_id=352128478]
+unique_name_in_owner = true
+title = "Open a File"
+initial_position = 2
+size = Vector2i(500, 400)
+ok_button_text = "Open"
+file_mode = 0
+filters = PackedStringArray("*.rbcm ; RBCM Data")
+
+[connection signal="toggled" from="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer/SyncCheckbox" to="." method="_on_debug_checkbox_toggled"]
+[connection signal="pressed" from="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer/SaveButton" to="." method="_save_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer/SaveAsButton" to="." method="_on_save_as_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer/LoadButton" to="." method="_load_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsPanel/MarginContainer/HBoxContainer/ClearButton" to="." method="_clear_button_pressed"]
+[connection signal="connection_request" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_connection_request"]
+[connection signal="delete_nodes_request" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_delete_nodes_request"]
+[connection signal="disconnection_request" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_disconnection_request"]
+[connection signal="end_node_move" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_end_node_move"]
+[connection signal="node_deselected" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_node_deselected"]
+[connection signal="node_selected" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="VBoxContainer/GraphPanel/RBCM_GraphEditor" method="_on_node_selected"]
+[connection signal="popup_request" from="VBoxContainer/GraphPanel/RBCM_GraphEditor" to="." method="_on_popup_request"]
+[connection signal="index_pressed" from="PopupMenu" to="." method="_on_popup_menu_index_pressed"]
+[connection signal="file_selected" from="SaveFileDialog" to="." method="_on_save_file_dialog_file_selected"]
+[connection signal="file_selected" from="LoadFileDialog" to="." method="_on_load_file_dialog_file_selected"]
