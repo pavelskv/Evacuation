@@ -117,7 +117,7 @@ area_range = 8.182
 area_size = Vector2(1.657333, 1.5202823)
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("1_3alag")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0414047)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0010832325)
 
 [node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("5_njlgv")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 1.9314418, 2.4003906, -2.3080902)

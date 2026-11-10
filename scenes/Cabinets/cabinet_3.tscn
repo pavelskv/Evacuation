@@ -223,7 +223,7 @@ area_size = Vector2(0.5237906, 0.5635803)
 transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, 1.6003399, 1.024999, -4.8895845)
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("2_c4xtk")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.8809676, -0.0013810396, 0.0414047)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.8809676, -0.0013810396, -0.011080168)
 
 [node name="rozetka2" parent="." unique_id=1381656676 instance=ExtResource("9_1qtwt")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -6.3362565, 1.4919147, -0.06908889)

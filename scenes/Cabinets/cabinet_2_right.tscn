@@ -78,7 +78,7 @@ material_override = SubResource("StandardMaterial3D_w6ap4")
 mesh = SubResource("PlaneMesh_w4dt6")
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("3_ooc1h")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0414047)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0012343898)
 
 [node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("4_d3myk")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 4.8097787, 2.4003906, -2.3080902)

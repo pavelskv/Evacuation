@@ -59,7 +59,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0037156343, -0.00055933, 0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3008728, 0.34935534, -4.9575386)
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("2_68ffn")]
-transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88, -0.0013810396, 0.0414047)
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88, -0.0013810396, -0.0068818554)
 
 [node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("5_3e7xq")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 1.8908224, 2.491732, -2.7981455)
