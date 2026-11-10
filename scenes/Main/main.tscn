@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://c6icnag2adbqd" path="res://scenes/fire/smoke.tscn" id="27_qcehk"]
 [ext_resource type="Resource" uid="uid://utj26ju0vv61" path="res://scripts/Evacuation/evacuation.tres" id="28_jti5r"]
 [ext_resource type="PackedScene" uid="uid://drics75ljx3rx" path="res://scripts/Evacuation/EvacuationTasksUI.tscn" id="28_vu8r1"]
-[ext_resource type="Script" uid="uid://b2rrf0bht4m38" path="res://addons/rb_condition_manager/editor/editor_view.gd" id="28_w5pvf"]
+[ext_resource type="Script" uid="uid://byrutdgeuuhhx" path="res://addons/rb_condition_manager/editor/base_classes/rbcm_graph_editor.gd" id="28_w5pvf"]
 [ext_resource type="PackedScene" uid="uid://57vxupnx85cc" path="res://models/office/firelom.glb" id="37_fuf3a"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_k7ajv"]
@@ -242,10 +242,8 @@ script = ExtResource("26_qcehk")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.410572, 0.4205488, -0.42606434)
 intensity = null
 
-[node name="RBCM" type="Control" parent="." unique_id=1453828212]
-layout_mode = 3
-anchors_preset = 0
+[node name="RBCM" type="GraphEdit" parent="." unique_id=1085520527]
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("28_w5pvf")
-metadata/_custom_type_script = "uid://b2rrf0bht4m38"
+metadata/_custom_type_script = "uid://byrutdgeuuhhx"
