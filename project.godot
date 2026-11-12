@@ -30,6 +30,7 @@ EvacuationManager="*uid://bfhxkvodgxrf1"
 Notify="*uid://dc3t8c7feaa64"
 EvacGraph="*uid://1ept7x2tmi0k"
 RBCM_GameClient="*uid://dcmecimbjtiud"
+Scorm="*uid://862j463br33s"
 
 [dialogue_manager]
 
@@ -43,7 +44,7 @@ window/size/mode=3
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/rb_condition_manager/plugin.cfg")
+enabled=PackedStringArray("res://addons/rb_condition_manager/plugin.cfg", "res://addons/scorm/plugin.cfg")
 
 [file_customization]
 
