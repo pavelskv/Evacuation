@@ -31,7 +31,6 @@ func interact():
 	var tween = create_tween()
 	tween.tween_property(self, "scale", Vector3.ZERO, 0.3) \
 		.set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
-	tween.tween_callback(queue_free)
 	
 func get_training_task_id() -> StringName:
 	return &"pickup_stuff"

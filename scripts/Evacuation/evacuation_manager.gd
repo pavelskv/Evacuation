@@ -1,19 +1,9 @@
 extends Node
 
-# Список задач и их свойства лежат в TASKS.
-# Условия и порядок открытия задач описаны в графе rbcm.
-# Узел графа при выполнении вызывает из on_completed:
-#   EvacuationManager.complete_task(&"close_windows")
-
 signal tasks_reset
 signal task_completed(task_id: StringName)
 signal evacuation_finished(result: Dictionary)
 
-# id должен совпадать с id в узле графа (complete_task и all_done/any_done)
-# и с get_training_task_id() у объектов.
-# required: false = необязательная задача, на оценку не влияет.
-# points: вес задачи (по умолчанию 1). Это относительный вес: баллы за задачу
-# считаются как доля от (100 - ROUTE_POINTS). Учитывается только у обязательных.
 const TASKS: Array = [
 	{"id": &"turn_off_electrical", "title": "Отключить все электроприборы", "required": true, "points": 10},
 	{"id": &"close_windows", "title": "Закрыть окна", "required": true, "points": 10},
@@ -97,6 +87,11 @@ func finish(route_result: Dictionary = {}) -> void:
 	
 	var data := get_scorm_data()
 	print("[SCORM] данные результата:\n", JSON.stringify(data, "  "))
+
+	Scorm.set_score(data.score_raw)
+	Scorm.set_lesson_status(
+		Scorm.LessonStatus.PASSED if data.passed else Scorm.LessonStatus.FAILED
+	)
 
 	evacuation_finished.emit(get_result())
 	Notify.clear_alarm()
