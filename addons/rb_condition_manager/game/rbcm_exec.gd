@@ -72,5 +72,3 @@ func check(code: String) -> bool:
 	script.reload()
 	var result = script.check()
 	return result
-
-

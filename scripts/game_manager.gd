@@ -4,8 +4,6 @@ extends Node
 @export var cabinet_scenes: Array[PackedScene] = []
 @export var player_scene: PackedScene
 
-@export var evacuation_scenario: EvacuationScenario
-
 @export var use_debug_camera: bool = false
 @export var debug_camera_scene: PackedScene
 
@@ -156,9 +154,10 @@ func _spawn() -> void:
 		"Вы находитесь в кабинете №%d здания ПЛК на %d этаже" % [cab_id, floor_num],
 	"	Местоположение"
 	)
-	EvacuationManager.start_scenario(evacuation_scenario)
+	EvacuationManager.start()
 
 func _on_evacuation_tracking_finished(result: Dictionary) -> void:
+	EvacuationManager.finish(result)
 	print("=== РЕЗУЛЬТАТ ЭВАКУАЦИИ ===")
 
 	print("Выход достигнут: ", result["reached_exit"])
@@ -166,7 +165,7 @@ func _on_evacuation_tracking_finished(result: Dictionary) -> void:
 	print("Оптимальный путь: %.1f м" % result["optimal_distance"])
 	print("Пройденный путь: %.1f м" % result["actual_distance"])
 	print("Эффективность: %.1f%%" % result["efficiency"])
-	print("Отклонения: ", result["deviation_count"])
+	#print("Отклонения: ", result["deviation_count"])
 
 	if result["route_correct"]:
 		print("Результат: маршрут без отклонений")

@@ -7,5 +7,5 @@
 script = ExtResource("2_4e5ay")
 message = "Взять вещи"
 
-[node name="StaticBody3D" parent="shmot" parent_id_path=PackedInt32Array(768793440) index="0" unique_id=68981953]
+[node name="StaticBody3D" parent="shmot" parent_id_path=PackedInt32Array(1605570240) index="0" unique_id=111262026]
 collision_layer = 3

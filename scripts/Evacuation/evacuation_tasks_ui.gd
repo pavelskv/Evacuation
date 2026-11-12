@@ -1,118 +1,50 @@
-
 extends CanvasLayer
 
-@onready var stage_label: Label = $PanelContainer/VBoxContainer/StageLabel
-@onready var summary_label: Label = $PanelContainer/VBoxContainer/SummaryLabel
-@onready var task_list: VBoxContainer = $PanelContainer/VBoxContainer/TaskList
+@export var title: String = "Эвакуация при пожаре"
+@export var color_completed: Color = Color(0.45, 0.9, 0.45)
+
+@onready var _panel: PanelContainer = $PanelContainer
+@onready var _stage_label: Label = $PanelContainer/VBoxContainer/StageLabel
+@onready var _summary_label: Label = $PanelContainer/VBoxContainer/SummaryLabel
+@onready var _task_list: VBoxContainer = $PanelContainer/VBoxContainer/TaskList
 
 
 func _ready() -> void:
-	if not EvacuationManager.scenario_started.is_connected(_on_scenario_started):
-		EvacuationManager.scenario_started.connect(_on_scenario_started)
+	EvacuationManager.tasks_reset.connect(_rebuild)
+	EvacuationManager.task_completed.connect(_on_task_completed)
+	EvacuationManager.evacuation_finished.connect(_refresh_header.unbind(1))
 
-	if not EvacuationManager.scenario_status_changed.is_connected(_on_scenario_status_changed):
-		EvacuationManager.scenario_status_changed.connect(_on_scenario_status_changed)
-
-	if not EvacuationManager.task_added.is_connected(_on_task_changed):
-		EvacuationManager.task_added.connect(_on_task_changed)
-
-	if not EvacuationManager.task_updated.is_connected(_on_task_updated):
-		EvacuationManager.task_updated.connect(_on_task_updated)
-
-	if not EvacuationManager.scenario_finished.is_connected(_on_scenario_finished):
-		EvacuationManager.scenario_finished.connect(_on_scenario_finished)
-
-	refresh()
+	_rebuild()
 
 
-func _on_scenario_started(_title: String) -> void:
-	refresh()
-
-
-func _on_scenario_status_changed(_status: int) -> void:
-	refresh()
-
-
-func _on_task_changed(_task_id: StringName) -> void:
-	refresh()
-
-
-func _on_task_updated(_task_id: StringName, _status: int) -> void:
-	refresh()
-
-
-func _on_scenario_finished(result: Dictionary) -> void:
-	refresh()
-
-	summary_label.text = (
-		"Тренировка завершена\n"
-		+ "Выполнено: %d\n" % result.get("completed", 0)
-		+ "Нарушений: %d\n" % result.get("failed", 0)
-		+ "Пропущено: %d" % result.get("skipped", 0)
-	)
-
-
-func refresh() -> void:
-	if not is_node_ready():
-		return
-
-	var status := EvacuationManager.scenario_status
-
-	match status:
-		EvacuationManager.ScenarioStatus.NOT_STARTED:
-			stage_label.text = "Тренировка не начата"
-
-		EvacuationManager.ScenarioStatus.RUNNING:
-			stage_label.text = "Эвакуация: выполнение заданий"
-
-		EvacuationManager.ScenarioStatus.COMPLETED:
-			stage_label.text = "Тренировка завершена"
-
-	_clear_task_list()
-
-	var tasks: Array[EvacuationTask] = EvacuationManager.get_tasks()
-
-	for task: EvacuationTask in tasks:
-		var task_status: int = EvacuationManager.get_task_status(task.id)
-
-		var row := Label.new()
-		row.text = "%s — %s" % [
-			task.title,
-			_get_status_text(task_status)
-		]
-		row.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-
-		task_list.add_child(row)
-
-	if status != EvacuationManager.ScenarioStatus.COMPLETED:
-		summary_label.text = "Заданий: %d" % tasks.size()
-
-
-func _clear_task_list() -> void:
-	for child in task_list.get_children():
-		task_list.remove_child(child)
+func _rebuild() -> void:
+	for child in _task_list.get_children():
 		child.queue_free()
 
+	for task_id in EvacuationManager.completed_tasks:
+		_add_row(task_id)
 
-func _get_status_text(status: int) -> String:
-	match status:
-		EvacuationManager.TaskStatus.UNAVAILABLE:
-			return "ещё не требуется"
+	_refresh_header()
 
-		EvacuationManager.TaskStatus.PENDING:
-			return "ожидает выполнения"
 
-		EvacuationManager.TaskStatus.COMPLETED:
-			return "выполнено"
+func _on_task_completed(task_id: StringName) -> void:
+	_add_row(task_id)
+	_refresh_header()
 
-		EvacuationManager.TaskStatus.FAILED:
-			return "нарушение"
 
-		EvacuationManager.TaskStatus.SKIPPED:
-			return "пропущено"
+func _add_row(task_id: StringName) -> void:
+	var label := Label.new()
+	label.text = "[x] %s" % EvacuationManager.completed_tasks[task_id]
+	label.add_theme_color_override("font_color", color_completed)
+	_task_list.add_child(label)
 
-		EvacuationManager.TaskStatus.NOT_APPLICABLE:
-			return "не требовалось"
 
-		_:
-			return "неизвестно"
+func _refresh_header() -> void:
+	_panel.visible = EvacuationManager.is_running or EvacuationManager.is_finished
+
+	_stage_label.text = (
+		"%s: завершено" % title
+		if EvacuationManager.is_finished
+		else title
+	)
+	_summary_label.text = "Выполнено: %d" % EvacuationManager.completed_tasks.size()
