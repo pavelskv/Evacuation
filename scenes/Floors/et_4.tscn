@@ -2075,7 +2075,7 @@ quality = 2
 supersampling = true
 bounces = 4
 interior = true
-texel_scale = 3.0
+texel_scale = 1.5
 light_data = ExtResource("16_2kk41")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="LightmapGI" unique_id=251163327]
