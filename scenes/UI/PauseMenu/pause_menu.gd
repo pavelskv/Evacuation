@@ -45,7 +45,7 @@ func _on_resume_button_pressed() -> void:
 
 func _on_restart_button_pressed() -> void:
 	Debug.i("Выход в главное меню")
-	
+
 	get_tree().paused = false
 	GameState.set_state(GameState.State.PAUSED)
 	get_tree().change_scene_to_file("res://scenes/UI/MainMenu/main_menu.tscn")

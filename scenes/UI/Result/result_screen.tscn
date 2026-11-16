@@ -1,0 +1,175 @@
+[gd_scene format=3 uid="uid://dpf4rw0xl48pd"]
+
+[ext_resource type="Script" uid="uid://bwn48jhhai4v7" path="res://scenes/UI/Result/result_screen.gd" id="1_i5djn"]
+[ext_resource type="Texture2D" uid="uid://dsog5fptamgw5" path="res://assets/images/images.jpeg" id="2_htooj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csipu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iw65l"]
+
+[node name="ResultScreen" type="Control" unique_id=44331903]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i5djn")
+menu_scene = "uid://bswnduq0g73mo"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1858417279]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_htooj")
+stretch_mode = 6
+
+[node name="Background" type="ColorRect" parent="." unique_id=1566931682]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05490196, 0.05882353, 0.07450981, 0.87058824)
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=814319058]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 100
+
+[node name="Content" type="VBoxContainer" parent="Margin" unique_id=1955014222]
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="Title" type="Label" parent="Margin/Content" unique_id=1126733067]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
+theme_override_font_sizes/font_size = 64
+text = "Вы проиграли"
+
+[node name="ReasonBlock" type="VBoxContainer" parent="Margin/Content" unique_id=855572250]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="ReasonHeader" type="Label" parent="Margin/Content/ReasonBlock" unique_id=804468324]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_font_sizes/font_size = 16
+text = "ПРИЧИНА"
+
+[node name="Reason" type="Label" parent="Margin/Content/ReasonBlock" unique_id=1619786871]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.9, 0.9, 0.93, 1)
+theme_override_font_sizes/font_size = 28
+text = "Причина не указана"
+autowrap_mode = 3
+
+[node name="SeparatorTop" type="HSeparator" parent="Margin/Content" unique_id=192444765]
+layout_mode = 2
+theme_override_constants/separation = 16
+theme_override_styles/separator = SubResource("StyleBoxEmpty_csipu")
+
+[node name="Columns" type="HBoxContainer" parent="Margin/Content" unique_id=932110828]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 96
+
+[node name="DoneColumn" type="VBoxContainer" parent="Margin/Content/Columns" unique_id=1308991954]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="DoneHeader" type="Label" parent="Margin/Content/Columns/DoneColumn" unique_id=1515252991]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_font_sizes/font_size = 16
+text = "ВЫПОЛНЕНО"
+
+[node name="DoneList" type="VBoxContainer" parent="Margin/Content/Columns/DoneColumn" unique_id=869034508]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MissedColumn" type="VBoxContainer" parent="Margin/Content/Columns" unique_id=1217472584]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="MissedHeader" type="Label" parent="Margin/Content/Columns/MissedColumn" unique_id=839413589]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_font_sizes/font_size = 16
+text = "НЕ ВЫПОЛНЕНО"
+
+[node name="MissedList" type="VBoxContainer" parent="Margin/Content/Columns/MissedColumn" unique_id=140218329]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SeparatorBottom" type="HSeparator" parent="Margin/Content" unique_id=388759675]
+layout_mode = 2
+theme_override_constants/separation = 16
+theme_override_styles/separator = SubResource("StyleBoxEmpty_iw65l")
+
+[node name="Footer" type="HBoxContainer" parent="Margin/Content" unique_id=1179026649]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="ScoreBlock" type="VBoxContainer" parent="Margin/Content/Footer" unique_id=613054055]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+
+[node name="ScoreCaption" type="Label" parent="Margin/Content/Footer/ScoreBlock" unique_id=664360015]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_font_sizes/font_size = 16
+text = "РЕЗУЛЬТАТ"
+
+[node name="ScoreValue" type="Label" parent="Margin/Content/Footer/ScoreBlock" unique_id=1926835161]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
+theme_override_font_sizes/font_size = 44
+text = "0 / 100"
+
+[node name="ScoreCaption2" type="Label" parent="Margin/Content/Footer/ScoreBlock" unique_id=858260103]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "Результат отправлен в СДО \"Норматив\""
+
+[node name="Buttons" type="HBoxContainer" parent="Margin/Content/Footer" unique_id=1663028554]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 16
+alignment = 2
+
+[node name="RestartButton" type="Button" parent="Margin/Content/Footer/Buttons" unique_id=1439596287]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+text = "Начать заново"
+
+[node name="MenuButton" type="Button" parent="Margin/Content/Footer/Buttons" unique_id=1374703631]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 52)
+layout_mode = 2
+text = "В главное меню"

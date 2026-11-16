@@ -44,7 +44,7 @@ func _ready() -> void:
 	_icon_style = icon_circle.get_theme_stylebox("panel")
 	_rest_pos = panel.position  # место, где плашка стоит в сцене
 
-
+	
 # ------------------------------------------------------------ API
 
 func info(text: String, title := "", icon: Texture2D = null, duration := 6.0) -> void:

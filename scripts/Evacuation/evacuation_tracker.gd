@@ -9,7 +9,7 @@ const WAYPOINT_RADIUS := 3.0
 const EXIT_RADIUS := 1.5
 
 # Допустимое отклонение от кратчайшего маршрута
-const ROUTE_TOLERANCE := 1.15
+const ROUTE_TOLERANCE := 1.2
 const EXTRA_DISTANCE := 10.0
 
 @export var max_evacuation_time: float = 120.0
@@ -121,9 +121,9 @@ func _physics_process(delta: float) -> void:
 		return
 
 	# Ограничение времени
-	if _elapsed_time >= max_evacuation_time:
-		finish_tracking(false)
-		return
+	#if _elapsed_time >= max_evacuation_time:
+		#finish_tracking(false)
+		#return
 
 	# Запись посещённых точек
 	_sample_timer += delta

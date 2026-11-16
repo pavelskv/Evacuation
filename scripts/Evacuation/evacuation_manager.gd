@@ -5,23 +5,28 @@ signal task_completed(task_id: StringName)
 signal evacuation_finished(result: Dictionary)
 
 const TASKS: Array = [
-	{"id": &"turn_off_electrical", "title": "Отключить все электроприборы", "required": true, "points": 10},
-	{"id": &"close_windows", "title": "Закрыть окна", "required": true, "points": 10},
-	{"id": &"pickup_stuff", "title": "Взять личные вещи", "required": true, "points": 10},
-	{"id": &"close_door", "title": "Закрыть дверь", "required": true, "points": 10},
+	{"id": &"turn_off_electrical", "title": "Отключить все электроприборы", "required": true, "points": 3},
+	{"id": &"close_windows", "title": "Закрыть окна", "required": true, "points": 2},
+	{"id": &"pickup_stuff", "title": "Взять личные вещи", "required": true, "points": 2},
+	{"id": &"close_door", "title": "Закрыть дверь", "required": true, "points": 3},
 	{"id": &"view_plan", "title": "Посмотреть план эвакуации", "required": false},
 ]
 
 # Порог сдачи в процентах (для passed/failed).
-const PASS_SCORE: float = 80.0
+const PASS_SCORE: float = 70.0
+
+# Экран результата: открывается в конце finish().
+const RESULT_SCENE := "res://scenes/UI/Result/result_screen.tscn"
 
 # Сколько из 100 баллов даёт маршрут. Остальное делится между обязательными задачами.
 # Максимум всегда 100. Если результата маршрута нет, все 100 идут на задачи.
-const ROUTE_POINTS: int = 40
+const ROUTE_POINTS: int = 50
 
 var completed_tasks: Dictionary = {}	# id -> true
 var is_running: bool = false
 var is_finished: bool = false
+var fail_reason: String = ""	# почему проиграл (пусто, если вышел)
+var is_failed: bool = false	# жёсткий проигрыш (дым и т.п.): итог 0 баллов
 
 var spawn_cabinet: Node3D
 
@@ -56,6 +61,8 @@ func set_spawn_cabinet(cabinet: Node3D) -> void:
 func start() -> void:
 	completed_tasks.clear()
 	_route_result.clear()
+	fail_reason = ""
+	is_failed = false
 	_was_not_done.clear()
 	_bounds_cabinet = null
 
@@ -72,6 +79,17 @@ func start() -> void:
 # Можно вызывать откуда угодно без аргументов (например, из зоны выхода).
 # Если идёт отслеживание маршрута, трекер сначала завершается сам, а его
 # результат возвращается сюда через сигнал tracking_finished.
+# Жёсткий проигрыш (смерть в дыму и т.п.): итог 0 баллов, что бы ни было выполнено.
+# reason покажет экран результата.
+func fail(reason: String = "") -> void:
+	if not is_running:
+		return
+
+	fail_reason = reason
+	is_failed = true
+	finish({"reached_exit": false})
+
+
 func finish(route_result: Dictionary = {}) -> void:
 	if not is_running:
 		return
@@ -81,10 +99,20 @@ func finish(route_result: Dictionary = {}) -> void:
 		return
 
 	_route_result = route_result.duplicate(true)
+
+	# Причина проигрыша: заданная через fail(), либо пришедшая от трекера,
+	# либо общая, если игрок так и не вышел.
+	if fail_reason.is_empty():
+		fail_reason = str(route_result.get("fail_reason", ""))
+
+	if fail_reason.is_empty() and not route_result.get("reached_exit", true):
+		fail_reason = "Вы не вышли из здания"
+
 	_elapsed_sec = (Time.get_ticks_msec() - _start_msec) / 1000.0
 	is_running = false
 	is_finished = true
-	
+
+	# Отправка результата в LMS (сначала оценка, потом статус)
 	var data := get_scorm_data()
 	print("[SCORM] данные результата:\n", JSON.stringify(data, "  "))
 
@@ -96,6 +124,11 @@ func finish(route_result: Dictionary = {}) -> void:
 	evacuation_finished.emit(get_result())
 	Notify.clear_alarm()
 
+	get_tree().change_scene_to_file(RESULT_SCENE)
+
+
+# Вызывается из on_completed узла графа. Второй аргумент оставлен
+# для совместимости со старыми узлами и игнорируется.
 func complete_task(task_id: StringName) -> void:
 	if not is_running or completed_tasks.has(task_id):
 		return
@@ -107,6 +140,10 @@ func complete_task(task_id: StringName) -> void:
 	completed_tasks[task_id] = true
 	task_completed.emit(task_id)
 
+
+# =========================================================
+# Задачи
+# =========================================================
 
 func get_task_ids() -> Array[StringName]:
 	var result: Array[StringName] = []
@@ -160,9 +197,13 @@ func get_result() -> Dictionary:
 	var points_max := 0
 	var missed_required: Array[String] = []
 	var missed_optional: Array[String] = []
+	var done_titles: Array[String] = []
 
 	for task: Dictionary in TASKS:
 		var done := completed_tasks.has(task.id)
+
+		if done:
+			done_titles.append(task.title)
 
 		if task.get("required", true):
 			var points: int = task.get("points", 1)
@@ -197,12 +238,18 @@ func get_result() -> Dictionary:
 		route_points = ROUTE_POINTS * route_score / 100.0
 
 	var total_points := roundi(tasks_points + route_points)
+
+	# При жёстком проигрыше результат обнуляется, выполненное остаётся только в списках
+	if is_failed:
+		total_points = 0
+
 	var score := float(total_points)
 
 	var reached_exit: bool = _route_result.is_empty() or _route_result.get("reached_exit", false)
 
 	return {
 		"finished": is_finished,
+		"failed": is_failed,
 		"points_earned": total_points,
 		"points_max": 100,
 		"score": score,
@@ -218,6 +265,8 @@ func get_result() -> Dictionary:
 		"optional_total": optional_total,
 		"missed_required": missed_required,
 		"missed_optional": missed_optional,
+		"done_titles": done_titles,
+		"fail_reason": fail_reason,
 		"elapsed_sec": _elapsed_sec
 	}
 
@@ -250,6 +299,7 @@ func _calc_route_score() -> float:
 	return clampf(_route_result.get("score", 0.0), 0.0, 100.0)
 
 
+# Данные в форме, удобной для SCORM (см. scorm_bridge.gd).
 func get_scorm_data() -> Dictionary:
 	var result := get_result()
 	var interactions: Array[Dictionary] = []
@@ -279,6 +329,10 @@ func get_scorm_data() -> Dictionary:
 		"interactions": interactions
 	}
 
+
+# =========================================================
+# Условия для узлов rbcm (используются в code.condition)
+# =========================================================
 
 func objects_of(task_id: StringName, starting_room: bool = false) -> Array[Interactable]:
 	var result: Array[Interactable] = []
@@ -327,6 +381,8 @@ func any_done(task_id: StringName, starting_room: bool = false) -> bool:
 	return false
 
 
+# Игрок находится снаружи стартовой комнаты (по горизонтали).
+# Границы комнаты берутся по мешам внутри spawn_cabinet.
 func player_outside_room() -> bool:
 	var player := get_tree().get_first_node_in_group("player") as Node3D
 
@@ -366,3 +422,59 @@ func _calc_room_aabb(room: Node3D) -> AABB:
 		push_warning("EvacuationManager: в стартовой комнате нет мешей, границы не определены")
 
 	return result
+
+
+# Для объектов, которые в начале уже в «выполненном» состоянии
+# (дверь закрыта по умолчанию). Задача засчитается, только если сначала
+# состояние было «не выполнено» (дверь открыли), а потом стало «выполнено».
+func all_done_after_change(task_id: StringName, starting_room: bool = false) -> bool:
+	return _after_change(task_id, all_done(task_id, starting_room))
+
+
+func any_done_after_change(task_id: StringName, starting_room: bool = false) -> bool:
+	return _after_change(task_id, any_done(task_id, starting_room))
+
+
+func _after_change(task_id: StringName, is_done: bool) -> bool:
+	if not is_done:
+		_was_not_done[task_id] = true
+		return false
+
+	return _was_not_done.get(task_id, false)
+
+
+# Для отладки: то же, что all_done, но печатает в консоль, что видит менеджер
+# (только когда цифры меняются). Временно поставьте в условие узла:
+#   EvacuationManager.all_done_debug(&"pickup_stuff", true)
+var _debug_last: Dictionary = {}
+
+func all_done_debug(task_id: StringName, starting_room: bool = false) -> bool:
+	var objects := objects_of(task_id, starting_room)
+	var done := 0
+
+	for object in objects:
+		if object.is_task_completed():
+			done += 1
+
+	var line := "найдено объектов: %d, выполнено: %d" % [objects.size(), done]
+
+	if _debug_last.get(task_id, "") != line:
+		_debug_last[task_id] = line
+		print("[debug %s] %s" % [task_id, line])
+
+	return all_done(task_id, starting_room)
+
+
+# Для отладки: вызовите из on_active узла, чтобы увидеть в консоли,
+# что видит менеджер: EvacuationManager.debug_task(&"view_plan")
+func debug_task(task_id: StringName) -> void:
+	var everywhere := objects_of(task_id)
+	var in_room := objects_of(task_id, true)
+	var done := 0
+
+	for object in everywhere:
+		if object.is_task_completed():
+			done += 1
+
+	print("[debug_task %s] объектов в здании: %d, в стартовой комнате: %d, выполнено: %d"
+		% [task_id, everywhere.size(), in_room.size(), done])
