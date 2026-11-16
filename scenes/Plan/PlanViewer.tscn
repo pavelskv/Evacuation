@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b8tcs7k6ucece"]
 
 [ext_resource type="Script" uid="uid://dh7k6vepr0pyi" path="res://scenes/Plan/plan_viewer.gd" id="1_nb6bg"]
-[ext_resource type="Texture2D" uid="uid://dh8k5k81l8x5k" path="res://assets/images/mouse.png" id="2_3xarr"]
 [ext_resource type="Texture2D" uid="uid://d4a4phe23kijh" path="res://assets/images/hand_open.png" id="2_27551"]
 [ext_resource type="Texture2D" uid="uid://dvsb7xg2rqkon" path="res://assets/images/hand_closed.png" id="3_qok4t"]
+[ext_resource type="Texture2D" uid="uid://b18ky8coy8egw" path="res://assets/images/mouse_plan.png" id="4_dpkif"]
 
 [node name="PlanViewer" type="CanvasLayer" unique_id=1003663694]
 script = ExtResource("1_nb6bg")
@@ -58,7 +58,7 @@ grow_horizontal = 0
 grow_vertical = 0
 size_flags_horizontal = 8
 size_flags_vertical = 8
-texture = ExtResource("2_3xarr")
+texture = ExtResource("4_dpkif")
 expand_mode = 2
 stretch_mode = 4
 

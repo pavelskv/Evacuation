@@ -1,320 +1,414 @@
-[gd_scene format=3 uid="uid://bswnduq0g73mo"]
+[gd_scene format=3 uid="uid://c14gwgoe4r44h"]
 
-[ext_resource type="Script" uid="uid://dmp1sybikwuht" path="res://scenes/UI/MainMenu/main_menu.gd" id="1_ct1fd"]
 [ext_resource type="FontFile" uid="uid://dy0ub7rsgjjg2" path="res://assets/fonts/BAHNSCHRIFT.TTF" id="1_hs3dm"]
-[ext_resource type="FontVariation" uid="uid://drfiep1yn45dh" path="res://assets/fonts/bold_font_variation.tres" id="1_q1qrs"]
+[ext_resource type="Script" uid="uid://dmp1sybikwuht" path="res://scenes/UI/MainMenu/main_menu.gd" id="1_script"]
 [ext_resource type="StyleBox" uid="uid://bnk0jfjrg8vlo" path="res://scenes/UI/MainMenu/button_style_box_flat.tres" id="2_5t5jj"]
 [ext_resource type="Resource" uid="uid://dq7yq43kx5q0r" path="res://assets/cabinets.tres" id="2_scq8j"]
-[ext_resource type="FontVariation" uid="uid://dighmt70mnp3g" path="res://assets/fonts/semibold_font_variation.tres" id="3_7l1tg"]
-[ext_resource type="Texture2D" uid="uid://ce483bntdp7rf" path="res://assets/images/controls.png" id="3_qf0qt"]
+[ext_resource type="Theme" uid="uid://c7w1l20y3a7s6" path="res://scenes/UI/MainMenu/main_menu_theme.tres" id="2_theme"]
+[ext_resource type="Texture2D" uid="uid://dsog5fptamgw5" path="res://assets/images/images.jpeg" id="3_lwpty"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fsmjx"]
-bg_color = Color(0.403922, 0.317647, 0.219608, 0.823529)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csipu"]
 
-[node name="MainMenu" type="CanvasLayer" unique_id=2018361327]
-script = ExtResource("1_ct1fd")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sahmk"]
+
+[node name="MainMenu" type="CanvasLayer" unique_id=1981894413]
+script = ExtResource("1_script")
 cabinets_list = ExtResource("2_scq8j")
 
-[node name="Control" type="Control" parent="." unique_id=721739062]
+[node name="Control" type="Control" parent="." unique_id=1998259894]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("2_theme")
 
-[node name="Blur" type="ColorRect" parent="Control" unique_id=1462167966]
+[node name="TextureRect" type="TextureRect" parent="Control" unique_id=1772237602]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 1, 0.368627)
+texture = ExtResource("3_lwpty")
+stretch_mode = 6
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=1129959815]
+[node name="Background2" type="ColorRect" parent="Control" unique_id=1025689245]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+color = Color(0.05490196, 0.05882353, 0.07450981, 0.87058824)
 
-[node name="MarginContainerCaption" type="MarginContainer" parent="Control/VBoxContainer" unique_id=622204239]
+[node name="Margin" type="MarginContainer" parent="Control" unique_id=2008789407]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 120
+theme_override_constants/margin_top = 100
+theme_override_constants/margin_right = 120
+theme_override_constants/margin_bottom = 100
+
+[node name="Content" type="VBoxContainer" parent="Control/Margin" unique_id=1836479261]
+layout_mode = 2
+theme_override_constants/separation = 48
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/Margin/Content" unique_id=1609884127]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="SubTitle" type="Label" parent="Control/Margin/Content/VBoxContainer" unique_id=1372810621]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 38
+text = "Интерактивный тренажер"
+
+[node name="Title" type="Label" parent="Control/Margin/Content/VBoxContainer" unique_id=91110140]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 64
+text = "Эвакуация офисных работников при пожаре"
+
+[node name="SeparatorTop" type="HSeparator" parent="Control/Margin/Content" unique_id=555608656]
+layout_mode = 2
+theme_override_constants/separation = 24
+theme_override_styles/separator = SubResource("StyleBoxEmpty_csipu")
+
+[node name="Columns" type="HBoxContainer" parent="Control/Margin/Content" unique_id=412289996]
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_constants/separation = 140
+
+[node name="PagesColumn" type="VBoxContainer" parent="Control/Margin/Content/Columns" unique_id=1668099091]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TaskPage" type="VBoxContainer" parent="Control/Margin/Content/Columns/PagesColumn" unique_id=1496749021 groups=["StartMenu_TaskPage"]]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="AboutHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=1965230017]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 20
+text = "ЦЕЛЬ"
+
+[node name="Goal" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=274242440]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "Подготовить выход из кабинета и безопасно покинуть здание через ближайший эвакуационный выход."
+autowrap_mode = 3
+
+[node name="NavSeparator" type="HSeparator" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=462583437]
+layout_mode = 2
+theme_override_constants/separation = 32
+theme_override_styles/separator = SubResource("StyleBoxEmpty_sahmk")
+
+[node name="TasksHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=533647537]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 20
+text = "ЗАДАЧИ"
+
+[node name="Task1" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=127965980]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "1.  Отключите электроприборы в кабинете."
+autowrap_mode = 3
+
+[node name="Task2" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=1468012905]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "2.  Закройте окна."
+autowrap_mode = 3
+
+[node name="Task3" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=20603114]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "3.  Возьмите личные вещи."
+autowrap_mode = 3
+
+[node name="Task4" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=912439837]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "4.  Закройте дверь, выходя из кабинета."
+autowrap_mode = 3
+
+[node name="Task5" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=395583089]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "5.  Ознакомьтесь с планом эвакуации."
+autowrap_mode = 3
+
+[node name="Task6" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=2102004372]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 26
+text = "6.  Покиньте здание через ближайший выход, избегая зон задымления."
+autowrap_mode = 3
+
+[node name="ControlsPage" type="VBoxContainer" parent="Control/Margin/Content/Columns/PagesColumn" unique_id=135981796 groups=["StartMenu_ControlsPage"]]
 visible = false
 layout_mode = 2
-theme_override_constants/margin_top = 40
+theme_override_constants/separation = 22
 
-[node name="MainLabel" type="Label" parent="Control/VBoxContainer/MarginContainerCaption" unique_id=518894604]
+[node name="ControlsHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage" unique_id=1860828587]
 layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 55
-text = "МТ-2"
-horizontal_alignment = 1
-
-[node name="MarginContainerCommon" type="MarginContainer" parent="Control/VBoxContainer" unique_id=2105865223]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon" unique_id=1361258807]
-layout_mode = 2
-theme_override_constants/separation = 20
-
-[node name="VBoxContainerButtons" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer" unique_id=1596849827]
-layout_mode = 2
-size_flags_horizontal = 0
-theme_override_constants/separation = 35
-
-[node name="ControlsButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1191161969]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
-theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = ExtResource("2_5t5jj")
-theme_override_styles/pressed = ExtResource("2_5t5jj")
-theme_override_styles/hover = ExtResource("2_5t5jj")
-theme_override_styles/disabled = ExtResource("2_5t5jj")
-theme_override_styles/focus = ExtResource("2_5t5jj")
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 20
 text = "УПРАВЛЕНИЕ"
 
-[node name="TaskButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=725804977]
-visible = false
+[node name="Grid" type="GridContainer" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage" unique_id=86602350]
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
-theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = ExtResource("2_5t5jj")
-theme_override_styles/pressed = ExtResource("2_5t5jj")
-theme_override_styles/hover = ExtResource("2_5t5jj")
-theme_override_styles/disabled = ExtResource("2_5t5jj")
-theme_override_styles/focus = ExtResource("2_5t5jj")
-text = "ЗАДАЧА"
+theme_override_constants/h_separation = 64
+theme_override_constants/v_separation = 22
+columns = 2
 
-[node name="MaterialsButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1398156070]
+[node name="Key1" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=1384755410]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
-theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = ExtResource("2_5t5jj")
-theme_override_styles/pressed = ExtResource("2_5t5jj")
-theme_override_styles/hover = ExtResource("2_5t5jj")
-theme_override_styles/disabled = ExtResource("2_5t5jj")
-theme_override_styles/focus = ExtResource("2_5t5jj")
-text = "МАТЕРИАЛЫ"
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "W  A  S  D"
 
-[node name="Panel" type="Panel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=1178650504]
-custom_minimum_size = Vector2(0, 260)
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_fsmjx")
-
-[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/Panel" unique_id=1801236825]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 15
-theme_override_constants/margin_right = 15
-
-[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons" unique_id=832779924]
-layout_mode = 2
-theme_override_constants/margin_bottom = 25
-
-[node name="MarginContainerPanel" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer" unique_id=1401537974]
+[node name="Action1" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=2105594899]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Движение"
 
-[node name="Panel" type="Panel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel" unique_id=485903032]
+[node name="Key2" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=42268786]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-theme_override_styles/panel = ExtResource("2_5t5jj")
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Мышь"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel" unique_id=233227898]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainerPanelLabel" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer" unique_id=14407572]
+[node name="Action2" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=2135440985]
 layout_mode = 2
-theme_override_constants/margin_top = 10
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Осмотр"
 
-[node name="PanelLabelControls" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=1851189384 groups=["StartMenu_ControlsPage"]]
+[node name="Key3" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=219826463]
+custom_minimum_size = Vector2(200, 0)
 layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 55
-text = "ЭВАКУАЦИЯ"
-horizontal_alignment = 1
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "E"
 
-[node name="PanelLabelTask" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=591046846 groups=["StartMenu_TaskPage"]]
+[node name="Action3" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=1120964137]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Взаимодействие с объектами"
+
+[node name="Key4" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=1578232732]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Shift"
+
+[node name="Action4" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/ControlsPage/Grid" unique_id=882194142]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+text = "Бег"
+
+[node name="MaterialsPage" type="VBoxContainer" parent="Control/Margin/Content/Columns/PagesColumn" unique_id=1351172193 groups=["StartMenu_MaterialsPage"]]
 visible = false
 layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 55
-text = "ЗАДАЧА"
-horizontal_alignment = 1
+theme_override_constants/separation = 22
 
-[node name="PanelLabelMaterials" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelLabel" unique_id=269213445 groups=["StartMenu_MaterialsPage"]]
-visible = false
+[node name="MaterialsHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/MaterialsPage" unique_id=886818169]
 layout_mode = 2
-size_flags_vertical = 1
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 55
+theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 20
 text = "МАТЕРИАЛЫ"
-horizontal_alignment = 1
 
-[node name="MarginContainerPanelPic" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer" unique_id=662272919]
+[node name="MaterialsText" type="RichTextLabel" parent="Control/Margin/Content/Columns/PagesColumn/MaterialsPage" unique_id=1599009875]
 layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 25
-theme_override_constants/margin_top = 10
-theme_override_constants/margin_right = 25
-theme_override_constants/margin_bottom = 25
-
-[node name="TextureRectControls" type="TextureRect" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=1236044400 groups=["StartMenu_ControlsPage"]]
-visible = false
-layout_mode = 2
-texture = ExtResource("3_qf0qt")
-expand_mode = 2
-stretch_mode = 5
-
-[node name="RichTextLabelMaterials" type="RichTextLabel" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=1660289057 groups=["StartMenu_MaterialsPage"]]
-visible = false
-layout_mode = 2
-theme_override_colors/default_color = Color(0.168627, 0.0823529, 0.0862745, 1)
-theme_override_fonts/normal_font = ExtResource("1_hs3dm")
-theme_override_fonts/bold_font = ExtResource("3_7l1tg")
-theme_override_font_sizes/normal_font_size = 23
-theme_override_font_sizes/bold_font_size = 28
-theme_override_font_sizes/bold_italics_font_size = 23
-theme_override_font_sizes/italics_font_size = 23
-theme_override_font_sizes/mono_font_size = 23
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.9, 0.9, 0.93, 1)
+theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
-text = "[code]1. [url=https://sdo.smolate.ru/kbase/resource/view/uid/f0a9cb74e18d217a5e425e6579346a79]Программа испытаний[/url]
-2. [url=https://sdo.smolate.ru/kbase/resource/view/uid/51cc1a5dfc0b4c9c16c07da18336457e]Паспорт на насосный агрегат[/url]
-3. [url=https://sdo.smolate.ru/kbase/resource/view/uid/2f9c1d889593b37c56d651f8f283bb5e]Руководство по эксплуатации насосного агрегата[/url]
-4. [url=https://sdo.smolate.ru/kbase/resource/view/uid/f184d76e0dd07142563fb700f645b705]Система КВС-1[/url]
-5. [url=https://sdo.smolate.ru/kbase/resource/view/uid/a08dc360bca87e6c95d2edf59d59eac5]Целевой инструктаж перед выполнением работ[/url][/code]"
-scroll_active = false
-autowrap_mode = 2
-shortcut_keys_enabled = false
+text = "[url=https://example.com]Ссылка на материалы[/url]"
+fit_content = true
 
-[node name="MarginContainerTask" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic" unique_id=584736634 groups=["StartMenu_TaskPage"]]
+[node name="ControlColumn" type="VBoxContainer" parent="Control/Margin/Content/Columns" unique_id=348535988]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.8
+theme_override_constants/separation = 24
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask" unique_id=1474511187]
+[node name="TaskButton" type="Button" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=273075705]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "Задачи"
+
+[node name="ControlsButton" type="Button" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=1811578803]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "Управление"
+
+[node name="MaterialsButton" type="Button" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=252866961]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "Материалы"
+
+[node name="NavSeparator" type="HSeparator" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=2119161303]
+layout_mode = 2
+theme_override_constants/separation = 32
+theme_override_styles/separator = SubResource("StyleBoxEmpty_sahmk")
+
+[node name="Selectors" type="HBoxContainer" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=2093812267]
+layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="LabelFooter" type="Label" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=53960628]
+[node name="FloorOption" type="OptionButton" parent="Control/Margin/Content/Columns/ControlColumn/Selectors" unique_id=276358754]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 48)
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.168788, 0.0832048, 0.0880258, 1)
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
 theme_override_fonts/font = ExtResource("1_hs3dm")
-theme_override_font_sizes/font_size = 32
-text = "Выберите этаж и кабинет"
-
-[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=1672512643]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_bottom = 40
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer" unique_id=168123865]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 0
-
-[node name="OptionButton" type="OptionButton" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer/HBoxContainer" unique_id=70799042]
-custom_minimum_size = Vector2(0, 40)
-custom_maximum_size = Vector2(-1, 40)
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 18
-
-[node name="OptionButton2" type="OptionButton" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/MarginContainer/HBoxContainer" unique_id=949222980]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 18
-search_bar_enabled = true
-
-[node name="StartButton" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=462863957]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
-theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_5t5jj")
 theme_override_styles/pressed = ExtResource("2_5t5jj")
 theme_override_styles/hover = ExtResource("2_5t5jj")
 theme_override_styles/disabled = ExtResource("2_5t5jj")
 theme_override_styles/focus = ExtResource("2_5t5jj")
-text = "ВЫБРАТЬ "
 
-[node name="StartButton2" type="Button" parent="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer" unique_id=677624833]
+[node name="RoomOption" type="OptionButton" parent="Control/Margin/Content/Columns/ControlColumn/Selectors" unique_id=1263282123]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 48)
 layout_mode = 2
-size_flags_horizontal = 4
+size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
-theme_override_colors/font_pressed_color = Color(0.317647, 0.176471, 0.184314, 1)
-theme_override_colors/font_hover_color = Color(0.371731, 0.175429, 0.14903, 1)
-theme_override_fonts/font = ExtResource("1_q1qrs")
-theme_override_font_sizes/font_size = 40
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
 theme_override_styles/normal = ExtResource("2_5t5jj")
 theme_override_styles/pressed = ExtResource("2_5t5jj")
 theme_override_styles/hover = ExtResource("2_5t5jj")
 theme_override_styles/disabled = ExtResource("2_5t5jj")
 theme_override_styles/focus = ExtResource("2_5t5jj")
-text = "СЛУЧАЙНЫЙ КАБИНЕТ"
+disabled = true
 
-[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/ControlsButton" to="." method="_on_controls_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/TaskButton" to="." method="_on_task_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/VBoxContainerButtons/MaterialsButton" to="." method="_on_materials_button_pressed"]
-[connection signal="meta_clicked" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/RichTextLabelMaterials" to="." method="_on_rich_text_label_materials_meta_clicked"]
-[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/MarginContainerCommon/HBoxContainer/MarginContainerPanel/Panel/VBoxContainer/MarginContainerPanelPic/MarginContainerTask/VBoxContainer/StartButton2" to="." method="_on_start_random_button_pressed"]
+[node name="StartButton" type="Button" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=254404745]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+disabled = true
+text = "Начать"
+
+[node name="RandomButton" type="Button" parent="Control/Margin/Content/Columns/ControlColumn" unique_id=1396365132]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 56)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.31764707, 0.1764706, 0.18431373, 1)
+theme_override_colors/font_hover_color = Color(0.37254903, 0.1764706, 0.14901961, 1)
+theme_override_fonts/font = ExtResource("1_hs3dm")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_5t5jj")
+theme_override_styles/pressed = ExtResource("2_5t5jj")
+theme_override_styles/hover = ExtResource("2_5t5jj")
+theme_override_styles/disabled = ExtResource("2_5t5jj")
+theme_override_styles/focus = ExtResource("2_5t5jj")
+text = "Случайный кабинет"
+
+[connection signal="meta_clicked" from="Control/Margin/Content/Columns/PagesColumn/MaterialsPage/MaterialsText" to="." method="_on_rich_text_label_materials_meta_clicked"]
+[connection signal="pressed" from="Control/Margin/Content/Columns/ControlColumn/TaskButton" to="." method="_on_task_button_pressed"]
+[connection signal="pressed" from="Control/Margin/Content/Columns/ControlColumn/ControlsButton" to="." method="_on_controls_button_pressed"]
+[connection signal="pressed" from="Control/Margin/Content/Columns/ControlColumn/MaterialsButton" to="." method="_on_materials_button_pressed"]
+[connection signal="pressed" from="Control/Margin/Content/Columns/ControlColumn/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Control/Margin/Content/Columns/ControlColumn/RandomButton" to="." method="_on_start_random_button_pressed"]

@@ -232,9 +232,11 @@ mesh = SubResource("PlaneMesh_hcsi8")
 visible = false
 
 [node name="EvacuationTasksUi" parent="." unique_id=1691786361 instance=ExtResource("28_vu8r1")]
+visible = false
 
 [node name="GraphDebug" type="Node3D" parent="." unique_id=1358938395]
 script = ExtResource("26_qcehk")
+enabled = false
 
 [node name="Node3D" parent="." unique_id=1715036190 instance=ExtResource("26_jti5r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.128881, 0.4205488, -2.1445513)

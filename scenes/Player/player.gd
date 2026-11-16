@@ -111,3 +111,7 @@ func _interact():
 	var interactable = _get_interactable()
 	if interactable:
 		interactable.interact()
+		
+func change_visibility_hints(visible: bool): 
+	interact_label.visible = visible
+	crosshair.visible = visible

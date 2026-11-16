@@ -35,7 +35,7 @@ var _virtual_cursor := Vector2.ZERO
 
 func _ready() -> void:
 	add_to_group("plan_viewer")
-	process_mode = Node.PROCESS_MODE_ALWAYS
+	process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	hide()
 
 	background.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -58,6 +58,9 @@ func show_painting(texture: Texture2D) -> void:
 	is_open = true
 	_is_animating = true
 	_set_dragging(false)
+	
+	get_tree().paused = true
+	get_tree().call_group("player", "change_visibility_hints", false)
 
 	current_zoom = 1.0
 	painting_texture.texture = texture
@@ -111,6 +114,10 @@ func _finish_close() -> void:
 	current_zoom = 1.0
 	is_open = false
 	_is_animating = false
+	
+	get_tree().paused = false
+	get_tree().call_group("player", "change_visibility_hints", true)
+	
 	viewer_closed.emit()
 
 func _input(event: InputEvent) -> void:
@@ -125,7 +132,7 @@ func _input(event: InputEvent) -> void:
 			get_viewport().set_input_as_handled()
 		return
 
-	if event.is_action_pressed("ui_cancel") or event.is_action_pressed("ui_interact"):
+	if event.is_action_pressed("ui_interact"):
 		close_painting()
 	elif event is InputEventMouseButton:
 		_on_mouse_button(event)
