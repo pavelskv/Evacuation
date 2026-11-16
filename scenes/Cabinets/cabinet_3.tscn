@@ -310,7 +310,7 @@ area_size = Vector2(1.657333, 1.5202823)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.0009665, 0, 0)
 bounce_indirect_energy = 0.57
 interior = true
-texel_scale = 22.39
+texel_scale = 2.0
 light_data = ExtResource("15_7sdir")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("15_3l5l7")]

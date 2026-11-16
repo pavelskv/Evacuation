@@ -330,7 +330,7 @@ area_size = Vector2(1.657333, 1.5202823)
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=319139280]
 bounce_indirect_energy = 0.34
 interior = true
-texel_scale = 37.21
+texel_scale = 1.69
 light_data = ExtResource("15_fb3v6")
 
 [node name="window_rooms" parent="." unique_id=1587715993 instance=ExtResource("15_2575u")]

@@ -298,7 +298,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6607995, 1.25, -5.9928007)
 
 [node name="LightmapGI" type="LightmapGI" parent="." unique_id=611727306]
 bounce_indirect_energy = 0.5
-texel_scale = 33.89
+texel_scale = 1.66
 light_data = ExtResource("13_pvucw")
 
 [node name="Shmot1" parent="." unique_id=800705356 instance=ExtResource("16_dlo6n")]
