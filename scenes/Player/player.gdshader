@@ -42,13 +42,6 @@ void fragment() {
     color.g = texture(SCREEN_TEXTURE, final_uv).g;
     color.b = texture(SCREEN_TEXTURE, final_uv - to_center * aberr).b;
 
-    // 4. Зерно
-    float grain = random(final_uv + vec2(TIME * 0.1, TIME * 0.05));
-    color += (grain - 0.5) * grain_intensity;
-
-    // 5. Мерцание
-    float flicker = 1.0 + (random(vec2(TIME, 0.0)) - 0.5) * flicker_intensity;
-    color *= flicker;
 
     // 6. Сепия
     float sepia_lum = dot(color, vec3(0.299, 0.587, 0.114));

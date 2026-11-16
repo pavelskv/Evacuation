@@ -1050,6 +1050,20 @@ light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.28520203, 0.23640728)
 
+[node name="AreaLight3D147" type="AreaLight3D" parent="lamp_cor6" unique_id=494652946]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -61.059242, -12.687259, 5.83885)
+light_energy = 1.211
+light_bake_mode = 1
+shadow_enabled = true
+area_size = Vector2(0.28520203, 0.23640728)
+
+[node name="AreaLight3D157" type="AreaLight3D" parent="lamp_cor6" unique_id=706320912]
+transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.32556, -11.161968, 2.2160957)
+light_energy = 1.211
+light_bake_mode = 1
+shadow_enabled = true
+area_size = Vector2(0.28520203, 0.23640728)
+
 [node name="AreaLight3D44" type="AreaLight3D" parent="lamp_cor6" unique_id=1935093373]
 transform = Transform3D(1, 0, 0, 0, -2.9802322e-08, 1, 0, -1, -2.9802322e-08, -60.430862, -7.5018673, 2.3722415)
 light_energy = 1.211
