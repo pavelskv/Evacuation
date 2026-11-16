@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gdak41cbv6ws"
-path.s3tc="res://.godot/imported/smoke_soft.png-be85c23b6ff8fb216171942d6fa944c8.s3tc.ctex"
+uid="uid://bdnyci5kvjw3h"
+path.s3tc="res://.godot/imported/normal+.png-9e909030d762bfd8f51ad61e5d70cab3.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://scenes/fire/smoke_soft.png"
-dest_files=["res://.godot/imported/smoke_soft.png-be85c23b6ff8fb216171942d6fa944c8.s3tc.ctex"]
+source_file="res://scenes/Smoke/normal+.png"
+dest_files=["res://.godot/imported/normal+.png-9e909030d762bfd8f51ad61e5d70cab3.s3tc.ctex"]
 
 [params]
 
