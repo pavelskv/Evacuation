@@ -2184,7 +2184,7 @@ script = ExtResource("6_xtoyf")
 door_id = 114
 cabinet_id = 5
 
-[node name="4_et_door105" parent="Doors/Et1" unique_id=873785396 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door105" parent="Doors/Et1" unique_id=873785396 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -11.099999, 0.7599996)
 script = ExtResource("6_xtoyf")
 door_id = 114
@@ -2223,7 +2223,7 @@ script = ExtResource("6_xtoyf")
 door_id = 104
 cabinet_id = 9
 
-[node name="4_et_door112" parent="Doors/Et1" unique_id=2122451141 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door112" parent="Doors/Et1" unique_id=2122451141 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -11.099999, 0.7599981)
 script = ExtResource("6_xtoyf")
 door_id = 103
@@ -2369,7 +2369,7 @@ script = ExtResource("6_xtoyf")
 door_id = 211
 floor_number = 2
 
-[node name="4_et_door79" parent="Doors/Et2" unique_id=1838608392 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door79" parent="Doors/Et2" unique_id=1838608392 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -7.3999996, 0.75999945)
 script = ExtResource("6_xtoyf")
 floor_number = 2
@@ -2417,7 +2417,7 @@ script = ExtResource("6_xtoyf")
 door_id = 203
 floor_number = 2
 
-[node name="4_et_door67" parent="Doors/Et2" unique_id=953698407 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door67" parent="Doors/Et2" unique_id=953698407 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.48049, -7.3999996, 0.75999796)
 script = ExtResource("6_xtoyf")
 floor_number = 2
@@ -2518,7 +2518,7 @@ door_id = 315
 floor_number = 3
 cabinet_id = 5
 
-[node name="4_et_door34" parent="Doors/Et3" unique_id=1691605277 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door34" parent="Doors/Et3" unique_id=1691605277 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.848, -3.6999998, 0.75999945)
 script = ExtResource("6_xtoyf")
 floor_number = 3
@@ -2597,7 +2597,7 @@ script = ExtResource("6_xtoyf")
 door_id = 304
 floor_number = 3
 
-[node name="4_et_door47" parent="Doors/Et3" unique_id=620833459 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door47" parent="Doors/Et3" unique_id=620833459 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4805, -3.6999998, 0.7599981)
 script = ExtResource("6_xtoyf")
 floor_number = 3
@@ -2779,7 +2779,7 @@ door_id = 421
 floor_number = 4
 cabinet_id = 5
 
-[node name="4_et_door24" parent="Doors/Et4" unique_id=503833073 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door24" parent="Doors/Et4" unique_id=503833073 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 16.840399, 0, 0.7599992)
 script = ExtResource("6_xtoyf")
 door_id = 9
@@ -2812,7 +2812,7 @@ script = ExtResource("6_xtoyf")
 door_id = 403
 floor_number = 4
 
-[node name="4_et_door4" parent="Doors/Et4" unique_id=1223106084 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
+[node name="4_et_door4" parent="Doors/Et4" unique_id=1223106084 instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 79.4722, 0, 0.75999784)
 script = ExtResource("6_xtoyf")
 door_id = 29
