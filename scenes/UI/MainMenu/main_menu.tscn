@@ -6,6 +6,8 @@
 [ext_resource type="Resource" uid="uid://dq7yq43kx5q0r" path="res://assets/cabinets.tres" id="2_scq8j"]
 [ext_resource type="Theme" uid="uid://c7w1l20y3a7s6" path="res://scenes/UI/MainMenu/main_menu_theme.tres" id="2_theme"]
 [ext_resource type="Texture2D" uid="uid://dsog5fptamgw5" path="res://assets/images/images.jpeg" id="3_lwpty"]
+[ext_resource type="FontVariation" uid="uid://dighmt70mnp3g" path="res://assets/fonts/semibold_font_variation.tres" id="5_h0au6"]
+[ext_resource type="FontVariation" uid="uid://drfiep1yn45dh" path="res://assets/fonts/bold_font_variation.tres" id="6_0nte2"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_csipu"]
 
@@ -67,15 +69,15 @@ theme_override_constants/separation = 30
 [node name="SubTitle" type="Label" parent="Control/Margin/Content/VBoxContainer" unique_id=1372810621]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
-theme_override_fonts/font = ExtResource("1_hs3dm")
-theme_override_font_sizes/font_size = 38
+theme_override_fonts/font = ExtResource("5_h0au6")
+theme_override_font_sizes/font_size = 42
 text = "Интерактивный тренажер"
 
 [node name="Title" type="Label" parent="Control/Margin/Content/VBoxContainer" unique_id=91110140]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.96, 0.96, 0.98, 1)
-theme_override_fonts/font = ExtResource("1_hs3dm")
-theme_override_font_sizes/font_size = 64
+theme_override_fonts/font = ExtResource("6_0nte2")
+theme_override_font_sizes/font_size = 75
 text = "Эвакуация офисных работников при пожаре"
 
 [node name="SeparatorTop" type="HSeparator" parent="Control/Margin/Content" unique_id=555608656]
@@ -98,17 +100,18 @@ theme_override_constants/separation = 22
 
 [node name="AboutHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=1965230017]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
-theme_override_fonts/font = ExtResource("1_hs3dm")
-theme_override_font_sizes/font_size = 20
-text = "ЦЕЛЬ"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5_h0au6")
+theme_override_font_sizes/font_size = 40
+text = "ИНСТРУКЦИЯ"
 
 [node name="Goal" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=274242440]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
-theme_override_font_sizes/font_size = 26
-text = "Подготовить выход из кабинета и безопасно покинуть здание через ближайший эвакуационный выход."
+theme_override_font_sizes/font_size = 30
+text = "руководствуясь знаниями о порядке действий при эвакуации по сигналу пожарной тревоги, необходимо отключить электроприборы, взять личные вещи, закрыть за собой окна и дверь кабинета.
+Далее, ориентируясь на указатели направлений к выходам, следует покинуть здание по маршруту, указанному в плане эвакуации."
 autowrap_mode = 3
 
 [node name="NavSeparator" type="HSeparator" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=462583437]
@@ -117,6 +120,7 @@ theme_override_constants/separation = 32
 theme_override_styles/separator = SubResource("StyleBoxEmpty_sahmk")
 
 [node name="TasksHeader" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=533647537]
+visible = false
 layout_mode = 2
 theme_override_colors/font_color = Color(0.58, 0.6, 0.66, 1)
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -124,6 +128,7 @@ theme_override_font_sizes/font_size = 20
 text = "ЗАДАЧИ"
 
 [node name="Task1" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=127965980]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -132,6 +137,7 @@ text = "1.  Отключите электроприборы в кабинете.
 autowrap_mode = 3
 
 [node name="Task2" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=1468012905]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -140,6 +146,7 @@ text = "2.  Закройте окна."
 autowrap_mode = 3
 
 [node name="Task3" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=20603114]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -148,6 +155,7 @@ text = "3.  Возьмите личные вещи."
 autowrap_mode = 3
 
 [node name="Task4" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=912439837]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -156,6 +164,7 @@ text = "4.  Закройте дверь, выходя из кабинета."
 autowrap_mode = 3
 
 [node name="Task5" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=395583089]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
@@ -164,6 +173,7 @@ text = "5.  Ознакомьтесь с планом эвакуации."
 autowrap_mode = 3
 
 [node name="Task6" type="Label" parent="Control/Margin/Content/Columns/PagesColumn/TaskPage" unique_id=2102004372]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("1_hs3dm")
