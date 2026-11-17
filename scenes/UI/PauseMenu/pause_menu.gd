@@ -48,6 +48,7 @@ func _on_restart_button_pressed() -> void:
 
 	get_tree().paused = false
 	GameState.set_state(GameState.State.PAUSED)
+	Notify.clear_alarm()
 	get_tree().change_scene_to_file("res://scenes/UI/MainMenu/main_menu.tscn")
 
 func visibility(val: bool) -> void:
