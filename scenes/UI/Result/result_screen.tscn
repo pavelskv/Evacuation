@@ -17,7 +17,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_i5djn")
-menu_scene = "uid://bswnduq0g73mo"
+menu_scene = "uid://c14gwgoe4r44h"
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1858417279]
 layout_mode = 1

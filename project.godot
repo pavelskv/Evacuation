@@ -40,6 +40,8 @@ runtime/balloon_path="res://assets/balloon.tscn"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/stretch/mode="viewport"
+window/use_occlusion_culling=false
 
 [editor_plugins]
 
@@ -70,4 +72,3 @@ mouse_left={
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
-occlusion_culling/use_occlusion_culling=true

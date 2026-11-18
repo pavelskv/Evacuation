@@ -20,7 +20,6 @@ func _setup_debug_camera() -> void:
 	var debug_camera = debug_camera_scene.instantiate()
 	get_tree().current_scene.add_child(debug_camera)
 
-
 func _ready() -> void:
 	call_deferred("_spawn")
 	call_deferred("_setup_debug_camera")
@@ -121,7 +120,13 @@ func _spawn() -> void:
 	
 	spawn_cabinet.initialize_room()
 	
+	
 	EvacGraph.attach_room(spawn_cabinet)
+	var smoke_pos := EvacGraph.get_smoke_position(spawn_cabinet)
+	if smoke_pos != Vector3.ZERO:
+		var smoke := preload("res://scenes/Smoke/smoke.tscn").instantiate()
+		get_tree().current_scene.add_child(smoke)
+		smoke.global_position = smoke_pos
 
 	# Создаём игрока один раз
 	var player := player_scene.instantiate() as Node3D

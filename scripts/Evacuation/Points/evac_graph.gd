@@ -29,25 +29,47 @@ func register_group(root: Node) -> void:
 		for n in wp.neighbors:
 			if ids.has(n):
 				astar.connect_points(ids[wp], ids[n])
+				
+func _find_room_door(room: Node) -> Waypoint:
+	for wp: Waypoint in room.find_children("*", "Waypoint", true, false):
+		if wp.is_door:
+			return wp
+	return null
+	
+var corridor_id := -1
+	
+func _find_corridor_id(door: Waypoint) -> int:
+	var corridor_id := astar.get_closest_point(door.global_position)
+	if corridor_id == -1:
+		push_error("В графе нет точек коридора!")
+	return corridor_id
 
 # подключить кабинет игрока к коридору
 func attach_room(room: Node) -> void:
-	var door: Waypoint = null
-	for wp: Waypoint in room.find_children("*", "Waypoint", true, false):
-		if wp.is_door:
-			door = wp
-			break
+	var door: Waypoint = _find_room_door(room)
 	if door == null:
 		push_error("В кабинете нет Waypoint с Is Door!")
 		return
 
-	var corridor_id := astar.get_closest_point(door.global_position)
-	if corridor_id == -1:
-		push_error("В графе нет точек коридора!")
-		return
+	corridor_id = _find_corridor_id(door)
 
 	register_group(room)
 	astar.connect_points(ids[door], corridor_id)
+	
+func get_smoke_position(room: Node) -> Vector3:
+	var door: Waypoint = _find_room_door(room)
+	var smoke_id := corridor_id
+	var prev_id = ids[door]
+	
+	for i in 2: # 2 шага по коридору от двери
+		for next_id in astar.get_point_connections(smoke_id):
+			if next_id != prev_id:
+				prev_id = smoke_id
+				smoke_id = next_id
+				break
+
+	astar.set_point_disabled(smoke_id, true)
+	return astar.get_point_position(smoke_id)
 
 # кратчайший путь до ближайшего выхода
 func get_route(from_pos: Vector3) -> PackedVector3Array:
@@ -96,3 +118,13 @@ func build_route(from_pos: Vector3) -> void:
 func advance_route(player_pos: Vector3) -> void:
 	while route.size() > 1 and player_pos.distance_to(route[0]) < 1.5:
 		route = route.slice(1)
+		
+func disable_points_around(pos: Vector3, radius: float) -> Array[int]:
+	var disabled_ids: Array[int] = []
+	for point_id in astar.get_point_ids():
+		var point_pos := astar.get_point_position(point_id)
+		if point_pos.distance_to(pos) <= radius:
+			astar.set_point_disabled(point_id, true)
+			disabled_ids.append(point_id)
+			print("💨 Точка графа ID %d отключена (задымление)" % point_id)
+	return disabled_ids

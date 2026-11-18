@@ -239,7 +239,8 @@ script = ExtResource("26_qcehk")
 enabled = false
 
 [node name="Node3D" parent="." unique_id=1715036190 instance=ExtResource("26_jti5r")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.128881, 0.4205488, -2.1445513)
+transform = Transform3D(30.700987, 0, 0, 0, 1, 0, 0, 0, 7.9438367, 28.128881, 0.4205488, -2.1445513)
+visible = false
 
 [node name="RBCM" type="Node" parent="." unique_id=565138325]
 script = ExtResource("28_w5pvf")

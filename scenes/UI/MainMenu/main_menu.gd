@@ -12,9 +12,6 @@ extends CanvasLayer
 func _ready() -> void:
 	GameState.set_state(GameState.State.PAUSED)
 
-	# В 3D-игре курсор бывает захвачен, в меню он нужен
-	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-
 	Debug.i("Главное меню загружено")
 
 	if skip_start_menu:

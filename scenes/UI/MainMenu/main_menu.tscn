@@ -282,7 +282,7 @@ fit_content = true
 
 [node name="ControlColumn" type="VBoxContainer" parent="Control/Margin/Content/Columns" unique_id=348535988]
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 10
 size_flags_stretch_ratio = 0.8
 theme_override_constants/separation = 24
 
