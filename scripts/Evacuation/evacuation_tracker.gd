@@ -6,7 +6,7 @@ signal tracking_finished(result: Dictionary)
 
 const SAMPLE_INTERVAL := 0.15
 const WAYPOINT_RADIUS := 3.0
-const EXIT_RADIUS := 1.5
+const EXIT_RADIUS := 1
 
 # Допустимое отклонение от кратчайшего маршрута
 const ROUTE_TOLERANCE := 1.2

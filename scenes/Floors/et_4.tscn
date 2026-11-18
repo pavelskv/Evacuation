@@ -2933,7 +2933,7 @@ cabinet_id = 2
 [node name="Exits" type="Node3D" parent="." unique_id=1063957609]
 
 [node name="Exit" parent="Exits" unique_id=1762837628 instance=ExtResource("17_jk051")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.24966, -13.18107, 5.289892)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 74.25353, -13.18107, 5.294524)
 
 [node name="Exit2" parent="Exits" unique_id=701660749 instance=ExtResource("17_jk051")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.608941, -13.193311, 5.35114)
@@ -3698,7 +3698,7 @@ neighbors = [NodePath("../Waypoint_L_Exit3"), NodePath("../Waypoint_L_Exit4"), N
 metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
 
 [node name="Waypoint_L_Exit2" type="Marker3D" parent="Waypoints1" unique_id=902693424 node_paths=PackedStringArray("neighbors")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.08287, -11.587192, 5.3476114)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 76.21377, -11.587192, 6.226964)
 script = ExtResource("21_6dw0v")
 is_exit = true
 neighbors = [NodePath("../Waypoint_L_Exit5")]
@@ -3742,7 +3742,7 @@ neighbors = [NodePath("../../Waypoints2/Waypoint26Stair6"), NodePath("../Waypoin
 metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
 
 [node name="Waypoint_L_Exit5" type="Marker3D" parent="Waypoints1" unique_id=638960328 node_paths=PackedStringArray("neighbors")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.293045, -11.587192, 4.1666903)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 75.3283, -11.587192, 4.298813)
 script = ExtResource("21_6dw0v")
 neighbors = [NodePath("../Waypoint_L_Exit3"), NodePath("../Waypoint_L_Exit2")]
 metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
@@ -3766,7 +3766,7 @@ neighbors = [NodePath("../Waypoint29"), NodePath("../Waypoint32")]
 metadata/_custom_type_script = "uid://cs0tvaq21kvfx"
 
 [node name="Waypoint32" type="Marker3D" parent="Waypoints1" unique_id=1485403112 node_paths=PackedStringArray("neighbors")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.661435, -11.803957, 4.313161)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.381496, -11.803957, 6.3486714)
 script = ExtResource("21_6dw0v")
 is_exit = true
 neighbors = [NodePath("../Waypoint31")]

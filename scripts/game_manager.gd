@@ -122,11 +122,11 @@ func _spawn() -> void:
 	
 	
 	EvacGraph.attach_room(spawn_cabinet)
-	var smoke_pos := EvacGraph.get_smoke_position(spawn_cabinet)
-	if smoke_pos != Vector3.ZERO:
-		var smoke := preload("res://scenes/Smoke/smoke.tscn").instantiate()
-		get_tree().current_scene.add_child(smoke)
-		smoke.global_position = smoke_pos
+	#var smoke_pos := EvacGraph.get_smoke_position(spawn_cabinet)
+	#if smoke_pos != Vector3.ZERO:
+		#var smoke := preload("res://scenes/Smoke/smoke.tscn").instantiate()
+		#get_tree().current_scene.add_child(smoke)
+		#smoke.global_position = smoke_pos
 
 	# Создаём игрока один раз
 	var player := player_scene.instantiate() as Node3D
