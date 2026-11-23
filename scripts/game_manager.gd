@@ -165,6 +165,7 @@ func _spawn() -> void:
 		smoke.global_position = smoke_pos
 
 	EvacGraph.build_route(player.global_position)
+	get_tree().call_group("speaker", "play_sound")
 	
 func _on_evacuation_tracking_finished(result: Dictionary) -> void:
 	EvacuationManager.finish(result)
