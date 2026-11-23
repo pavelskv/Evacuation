@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="5_dpw4s"]
 [ext_resource type="PackedScene" uid="uid://bgmpksahtt0ch" path="res://models/office/rozetka.glb" id="6_onfcu"]
 [ext_resource type="PackedScene" uid="uid://drxxj07mosfex" path="res://models/office/vikl.glb" id="7_y4ieq"]
-[ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="8_schgf"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="9_7ax78"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="10_60b3l"]
+[ext_resource type="PackedScene" uid="uid://exasl82mujji" path="res://scenes/Speaker/speaker.tscn" id="10_dpw4s"]
 [ext_resource type="PackedScene" uid="uid://bowoaujou2ic4" path="res://models/office/table3.glb" id="11_2y1hu"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="12_1u01y"]
 [ext_resource type="LightmapGIData" uid="uid://33rhmqj8wnfh" path="res://scenes/Cabinets/cabinet_3_big_left.lmbake" id="13_pvucw"]
@@ -222,11 +222,11 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.2
 [node name="vikl2" parent="room3_2_big_1" unique_id=629145618 instance=ExtResource("7_y4ieq")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.25262547, 1.6434218, -0.024469618)
 
-[node name="opoveshatel2" parent="room3_2_big_1" unique_id=1866167856 instance=ExtResource("8_schgf")]
+[node name="opoveshatel3" parent="room3_2_big_1" unique_id=268038064 instance=ExtResource("10_dpw4s")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 7.944983, 2.4326525, -2.4010425)
 
-[node name="Decal13_Plane" type="MeshInstance3D" parent="room3_2_big_1/opoveshatel2" unique_id=345051035]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.3, 0.015)
+[node name="Decal13_Plane" type="MeshInstance3D" parent="room3_2_big_1/opoveshatel3" unique_id=345051035]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.29999995, 0.0149998665)
 material_override = SubResource("StandardMaterial3D_owglw")
 mesh = SubResource("PlaneMesh_xjrci")
 

@@ -8,17 +8,34 @@ const GRAVITY = 9.8
 const JUMP_VELOCITY = 4.5
 const MOUSE_SENSITIVITY = 0.002
 
+# Покачивание головы (head bob)
+@export var head_bob_enabled: bool = true
+@export var bob_freq: float = 5.4
+@export var bob_amp: float = 0.018
+
+# Звуки шагов
+@export var footstep_sounds: Array[AudioStream] = []
+@export var land_sound: AudioStream
+@export var step_distance: float = 2.2
+@export var pitch_jitter: float = 0.08
+@export var walk_volume_db: float = -4.0
+@export var run_volume_db: float = 0.0
+
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var raycast = $Head/Camera3D/RayCast3D
 @onready var interact_container = $CrosshairController/HintContainer
 @onready var interact_label = $CrosshairController/HintContainer/InteractLabel
 @onready var crosshair = $CrosshairController
+@onready var footstep_player: AudioStreamPlayer3D = $FootstepPlayer
 
 var current_speed = WALK_SPEED
 var e_pressed = false
 
 var _focused: Interactable = null
+var _distance_accumulator: float = 0.0
+var _was_on_floor: bool = true
+var _t_bob: float = 0.0
 
 func _ready():
 	add_to_group("player")
@@ -66,8 +83,55 @@ func _physics_process(delta):
 		velocity.z = lerp(velocity.z, 0.0, DECELERATION * delta)
 
 	move_and_slide()
+	_handle_headbob(delta)
+	_handle_footsteps(delta)
 
 	_check_interact()
+
+func _handle_headbob(delta: float) -> void:
+	if not camera:
+		return
+
+	var horizontal_speed := Vector2(velocity.x, velocity.z).length()
+	if head_bob_enabled and is_on_floor() and horizontal_speed > 0.2:
+		_t_bob += delta * horizontal_speed
+		var target_pos := Vector3(
+			cos(_t_bob * bob_freq * 0.5) * bob_amp,
+			sin(_t_bob * bob_freq) * bob_amp,
+			0.0
+		)
+		camera.position = camera.position.lerp(target_pos, 14.0 * delta)
+	else:
+		camera.position = camera.position.lerp(Vector3.ZERO, 10.0 * delta)
+
+func _handle_footsteps(delta: float) -> void:
+	var on_floor := is_on_floor()
+
+	if on_floor and not _was_on_floor and land_sound and footstep_player:
+		footstep_player.stream = land_sound
+		footstep_player.pitch_scale = randf_range(0.95, 1.05)
+		footstep_player.volume_db = run_volume_db
+		footstep_player.play()
+
+	_was_on_floor = on_floor
+
+	if not on_floor or footstep_sounds.is_empty() or not footstep_player:
+		return
+
+	var horizontal_speed := Vector2(velocity.x, velocity.z).length()
+	if horizontal_speed > 0.2:
+		_distance_accumulator += horizontal_speed * delta
+		if _distance_accumulator >= step_distance:
+			_distance_accumulator -= step_distance
+			_play_footstep(horizontal_speed > (WALK_SPEED + RUN_SPEED) * 0.5)
+	else:
+		_distance_accumulator = max(_distance_accumulator - delta * 4.0, 0.0)
+
+func _play_footstep(is_running: bool) -> void:
+	footstep_player.stream = footstep_sounds.pick_random()
+	footstep_player.pitch_scale = randf_range(1.0 - pitch_jitter, 1.0 + pitch_jitter)
+	footstep_player.volume_db = run_volume_db if is_running else walk_volume_db
+	footstep_player.play()
 
 func _get_interactable() -> Interactable:
 	if not raycast.is_colliding():

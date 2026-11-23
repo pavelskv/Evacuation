@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://bpna7e2vm0qec" path="res://scenes/Doors/door.gd" id="1_kgkxw"]
 [ext_resource type="PackedScene" uid="uid://cuhqmd2dytht0" path="res://models/doors/4_et_door_1.glb" id="2_kgkxw"]
+[ext_resource type="AudioStream" uid="uid://7mt5jau2vtdm" path="res://assets/sound/doors/doorOpen_1.ogg" id="2_ryyhg"]
+[ext_resource type="AudioStream" uid="uid://cnaw6cydxjxn0" path="res://assets/sound/doors/doorClose_1.ogg" id="3_yhb1j"]
 
 [node name="Door" type="Node3D" unique_id=1320742896]
 script = ExtResource("1_kgkxw")
+open_sound = ExtResource("2_ryyhg")
+close_sound = ExtResource("3_yhb1j")
 
 [node name="Pivot" type="Node3D" parent="." unique_id=1179660041]
 
@@ -13,7 +17,9 @@ script = ExtResource("1_kgkxw")
 [node name="4_et_door_1" parent="Pivot" unique_id=1627872669 instance=ExtResource("2_kgkxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0013810396, 0.041404724)
 
-[node name="StaticBody3D" parent="Pivot/4_et_door_1/wall_door_038" parent_id_path=PackedInt32Array(1627872669, 159683018) index="0" unique_id=1419598927]
+[node name="StaticBody3D" parent="Pivot/4_et_door_1/wall_door_038" parent_id_path=PackedInt32Array(1627872669, 1800747731) index="0" unique_id=1160365930]
 collision_layer = 3
+
+[node name="AudioPlayer" type="AudioStreamPlayer3D" parent="." unique_id=644408817]
 
 [editable path="Pivot/4_et_door_1"]

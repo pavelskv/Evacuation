@@ -2192,7 +2192,7 @@ door_id = 114
 [node name="4_et_door106" parent="Doors/Et1" unique_id=1733196310 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 19.8305, -11.099999, 0.7599995)
 script = ExtResource("6_xtoyf")
-door_id = 113
+door_id = 129
 
 [node name="4_et_door108" parent="Doors/Et1" unique_id=181263532 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 25.739399, -11.099999, 0.7599994)
@@ -2231,12 +2231,12 @@ door_id = 103
 [node name="4_et_door113" parent="Doors/Et1" unique_id=1480853020 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 82.463, -11.099999, 0.759998)
 script = ExtResource("6_xtoyf")
-door_id = 103
+door_id = 102
 
 [node name="4_et_door114" parent="Doors/Et1" unique_id=1915527672 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 85.493095, -11.099999, 0.75999796)
 script = ExtResource("6_xtoyf")
-door_id = 103
+door_id = 101
 cabinet_id = 2
 
 [node name="4_et_door95" parent="Doors/Et1" unique_id=748224291 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
@@ -2283,19 +2283,19 @@ cabinet_id = 2
 [node name="4_et_door102" parent="Doors/Et1" unique_id=1407813614 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.5968, -11.099999, -2.7600017)
 script = ExtResource("6_xtoyf")
-door_id = 108
+door_id = 107
 cabinet_id = 2
 
 [node name="4_et_door107" parent="Doors/Et1" unique_id=1905826464 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87.026794, -11.099999, -2.7600021)
 script = ExtResource("6_xtoyf")
-door_id = 117
+door_id = 106
 cabinet_id = 8
 
 [node name="4_et_door116" parent="Doors/Et1" unique_id=733570975 groups=["cabinet_doors"] instance=ExtResource("6_l5fpg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72.58, -11.099999, -2.7600017)
 script = ExtResource("6_xtoyf")
-door_id = 119
+door_id = 106
 cabinet_id = 9
 
 [node name="Et2" type="Node3D" parent="Doors" unique_id=107508771]

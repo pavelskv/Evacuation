@@ -9,9 +9,14 @@ enum HingeSide {
 @export var open_angle: float = 90.0
 @export var duration: float = 0.5
 
+@export var open_sound: AudioStream
+@export var close_sound: AudioStream
+@export var pitch_jitter: float = 0.05
+
 var is_open = false
 var tween: Tween
 @onready var pivot = $Pivot
+@onready var audio_player: AudioStreamPlayer3D = $AudioPlayer
 
 func _ready() -> void:
 	add_to_group("training_task_objects")
@@ -43,5 +48,17 @@ func interact():
 			target_angle = open_angle
 		else:
 			target_angle = -open_angle
+		_play_door_sound(open_sound)
 	
 	tween.tween_property(pivot, "rotation_degrees:y", target_angle, duration)
+
+	if not is_open:
+		tween.finished.connect(func(): _play_door_sound(close_sound), CONNECT_ONE_SHOT)
+
+func _play_door_sound(stream: AudioStream) -> void:
+	if not audio_player or not stream:
+		return
+
+	audio_player.stream = stream
+	audio_player.pitch_scale = randf_range(1.0 - pitch_jitter, 1.0 + pitch_jitter)
+	audio_player.play()

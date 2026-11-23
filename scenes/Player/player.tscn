@@ -2,8 +2,13 @@
 
 [ext_resource type="Script" uid="uid://cp7b45w0dg3hc" path="res://scenes/Player/player.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://db1yy4rmch63b" path="res://scenes/UI/Crosshair/crosshair.tscn" id="2_1kbk7"]
+[ext_resource type="AudioStream" uid="uid://bjaehy8rtry2a" path="res://assets/sound/footsteps/footstep_concrete_000.ogg" id="2_wwtew"]
 [ext_resource type="Texture2D" uid="uid://p44x0n14erls" path="res://assets/images/free-icon-left-click-3645852.png" id="3_gqjuk"]
+[ext_resource type="AudioStream" uid="uid://wtwd5vo323wa" path="res://assets/sound/footsteps/footstep_concrete_001.ogg" id="3_uxo23"]
 [ext_resource type="Shader" uid="uid://dv3g4ha5luhqy" path="res://scenes/Player/player.gdshader" id="4_c4h5g"]
+[ext_resource type="AudioStream" uid="uid://yief5hr2c7y4" path="res://assets/sound/footsteps/footstep_concrete_002.ogg" id="4_n7rn1"]
+[ext_resource type="AudioStream" uid="uid://dwvw6peuphvqa" path="res://assets/sound/footsteps/footstep_concrete_003.ogg" id="5_7tfl1"]
+[ext_resource type="AudioStream" uid="uid://bfk4q4vtoilky" path="res://assets/sound/footsteps/footstep_concrete_004.ogg" id="6_jxtnq"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
 radius = 0.3
@@ -28,6 +33,10 @@ shader_parameter/zoom = 1.15
 
 [node name="Player" type="CharacterBody3D" unique_id=1500151941]
 script = ExtResource("1")
+bob_amp = 0.012
+footstep_sounds = Array[AudioStream]([ExtResource("2_wwtew"), ExtResource("3_uxo23"), ExtResource("4_n7rn1"), ExtResource("5_7tfl1"), ExtResource("6_jxtnq")])
+land_sound = ExtResource("2_wwtew")
+step_distance = 1.5
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1998121182]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
@@ -83,3 +92,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="." unique_id=1268938105]

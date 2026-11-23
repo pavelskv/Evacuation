@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="7_8cvnm"]
 [ext_resource type="PackedScene" uid="uid://bgmpksahtt0ch" path="res://models/office/rozetka.glb" id="8_obfak"]
 [ext_resource type="PackedScene" uid="uid://drxxj07mosfex" path="res://models/office/vikl.glb" id="9_vye8c"]
-[ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="10_0uvu7"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="11_i6wbf"]
+[ext_resource type="PackedScene" uid="uid://exasl82mujji" path="res://scenes/Speaker/speaker.tscn" id="11_obfak"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="12_qcebg"]
 [ext_resource type="PackedScene" uid="uid://bowoaujou2ic4" path="res://models/office/table3.glb" id="13_0yhe0"]
 [ext_resource type="PackedScene" uid="uid://bv0vta2ogme8i" path="res://scenes/Windows/window_rooms1.tscn" id="15_2575u"]
@@ -249,11 +249,11 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 1.12
 [node name="vikl2" parent="." unique_id=629145618 instance=ExtResource("9_vye8c")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -0.33568376, 1.5771219, -0.061947588)
 
-[node name="opoveshatel2" parent="." unique_id=1866167856 instance=ExtResource("10_0uvu7")]
+[node name="opoveshatel3" parent="." unique_id=268038064 instance=ExtResource("11_obfak")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 7.796475, 2.3663526, -2.4385204)
 
-[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel2" unique_id=345051035]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.3, 0.015)
+[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel3" unique_id=345051035]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, -0.29999995, 0.0149998665)
 material_override = SubResource("StandardMaterial3D_owglw")
 mesh = SubResource("PlaneMesh_xjrci")
 

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://7thvtfgfrese" path="res://models/rooms/room2_1.glb" id="1_gytgy"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="2_gytgy"]
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="3_ooc1h"]
-[ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="4_d3myk"]
+[ext_resource type="PackedScene" uid="uid://exasl82mujji" path="res://scenes/Speaker/speaker.tscn" id="5_4xo0q"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="5_mwqbk"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="6_80toc"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_chn0m"]
@@ -80,11 +80,11 @@ mesh = SubResource("PlaneMesh_w4dt6")
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("3_ooc1h")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88009995, -0.0013810396, 0.0012343898)
 
-[node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("4_d3myk")]
+[node name="opoveshatel3" parent="." unique_id=268038064 instance=ExtResource("5_4xo0q")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 4.8097787, 2.4003906, -2.3080902)
 
-[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel2" unique_id=488674409]
-transform = Transform3D(1, 0, -3.821371e-15, -3.821371e-15, 4.371139e-08, -1, 0, 1, 4.371139e-08, -0.005, -0.309, 0.01)
+[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel3" unique_id=488674409]
+transform = Transform3D(1, 0, -3.821371e-15, -3.821371e-15, 4.371139e-08, -1, 0, 1, 4.371139e-08, -0.0050001144, -0.30900002, 0.010000229)
 material_override = SubResource("StandardMaterial3D_njlgv")
 mesh = SubResource("PlaneMesh_w6ap4")
 

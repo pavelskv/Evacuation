@@ -8,10 +8,18 @@ var ids := {}
 var exits: Array[int] = []
 var route := PackedVector3Array()   # сохранённый маршрут
 
+var corridor_id := -1
+var corridor_ids: Array = []
+
+const SMOKE_MIN_DIST := 5.0
+const SMOKE_MAX_DIST := 15.0
+
 func reset() -> void:
 	astar.clear()
 	ids.clear()
 	exits.clear()
+	#corridor_id = -1
+	
 	route = PackedVector3Array()
 	
 
@@ -36,8 +44,6 @@ func _find_room_door(room: Node) -> Waypoint:
 			return wp
 	return null
 	
-var corridor_id := -1
-	
 func _find_corridor_id(door: Waypoint) -> int:
 	var corridor_id := astar.get_closest_point(door.global_position)
 	if corridor_id == -1:
@@ -52,24 +58,58 @@ func attach_room(room: Node) -> void:
 		return
 
 	corridor_id = _find_corridor_id(door)
+	corridor_ids = astar.get_point_ids()
 
 	register_group(room)
 	astar.connect_points(ids[door], corridor_id)
 	
-func get_smoke_position(room: Node) -> Vector3:
-	var door: Waypoint = _find_room_door(room)
-	var smoke_id := corridor_id
-	var prev_id = ids[door]
-	
-	for i in 2: # 2 шага по коридору от двери
-		for next_id in astar.get_point_connections(smoke_id):
-			if next_id != prev_id:
-				prev_id = smoke_id
-				smoke_id = next_id
-				break
+func _closest_corridor_id(pos: Vector3) -> int:
+	var best := -1
+	var best_d := INF
+	for id in corridor_ids:
+		var d := astar.get_point_position(id).distance_to(pos)
+		if d < best_d:
+			best_d = d
+			best = id
+	return best
 
-	astar.set_point_disabled(smoke_id, true)
-	return astar.get_point_position(smoke_id)
+func get_smoke_position(player_room: Node, rooms: Array[Node3D]) -> Vector3:
+	var player_door: Waypoint = _find_room_door(player_room)
+	var start: int = ids[player_door]
+	var origin := player_door.global_position
+
+	# точки коридора напротив дверей соседних кабинетов
+	var links: Array[int] = []
+	for room in rooms:
+		if room == player_room:
+			continue
+		var door := _find_room_door(room)
+		if door == null:
+			continue
+		var d := door.global_position.distance_to(origin)
+		if d < SMOKE_MIN_DIST or d > SMOKE_MAX_DIST:
+			continue
+		if absf(door.global_position.y - origin.y) > MAX_DY:
+			continue   # другой этаж
+		var link := _closest_corridor_id(door.global_position)
+		if link == corridor_id or exits.has(link):
+			continue   # не запираем свою дверь и не закрываем выход
+		links.append(link)
+
+	links.shuffle()
+	for link in links:
+		astar.set_point_disabled(link, true)
+		if _any_exit_reachable(start):
+			return astar.get_point_position(link)
+		astar.set_point_disabled(link, false)   # перекрыл все выходы — берём другую дверь
+
+	return Vector3.ZERO
+	
+func _any_exit_reachable(start: int) -> bool:
+	for e in exits:
+		if not astar.get_id_path(start, e).is_empty():
+			return true
+	return false
 
 # кратчайший путь до ближайшего выхода
 func get_route(from_pos: Vector3) -> PackedVector3Array:

@@ -14,6 +14,3 @@ extends Node3D
 	"3 окна (большая дверь право):9"
 )
 var cabinet_id: int = 1
-
-func _ready():
-	add_to_group("cabinet_doors")

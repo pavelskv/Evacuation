@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cg7lcwou3via2" path="res://scenes/Doors/door_room.tscn" id="2_68ffn"]
 [ext_resource type="Texture2D" uid="uid://imn5f7gd3ol0" path="res://models/decals/lamp.png" id="3_4akki"]
 [ext_resource type="Texture2D" uid="uid://xpwocxpw8s8g" path="res://models/decals/4et/4.png" id="4_eka2v"]
-[ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="5_3e7xq"]
+[ext_resource type="PackedScene" uid="uid://exasl82mujji" path="res://scenes/Speaker/speaker.tscn" id="4_f6jvb"]
 [ext_resource type="Texture2D" uid="uid://bxsva1wby5878" path="res://models/decals/opovesh.jpg" id="6_ksou2"]
 [ext_resource type="PackedScene" uid="uid://bn73wj6i8w8e3" path="res://models/office/table2.glb" id="7_5jfge"]
 [ext_resource type="PackedScene" uid="uid://bkl4i33yxmmng" path="res://scenes/Cabinets/wardob.tscn" id="9_tg88c"]
@@ -56,20 +56,20 @@ player_computer = NodePath("Pc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0037156343, -0.00055933, 0.001863718)
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=511730757]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.3008728, 0.34935534, -4.9575386)
+transform = Transform3D(-0.81859493, 0, -0.5743713, 0, 1, 0, 0.5743713, 0, -0.81859493, -0.3008728, 0.34935534, -4.9575386)
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("2_68ffn")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88, -0.0013810396, -0.0068818554)
 
-[node name="opoveshatel2" parent="." unique_id=2016713123 instance=ExtResource("5_3e7xq")]
+[node name="opoveshatel3" parent="." unique_id=268038064 instance=ExtResource("4_f6jvb")]
 transform = Transform3D(-4.371138e-08, 0, -1, 0, 1, 0, 1, 0, -4.371138e-08, 1.8908224, 2.491732, -2.7981455)
 
-[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel2" unique_id=373170573]
+[node name="Decal13_Plane" type="MeshInstance3D" parent="opoveshatel3" unique_id=373170573]
 transform = Transform3D(1, 0, -3.821371e-15, -3.821371e-15, 4.371139e-08, -1, 0, 1, 4.371139e-08, -0.005428076, -0.30920935, -0.019117832)
 material_override = SubResource("StandardMaterial3D_3e7xq")
 mesh = SubResource("PlaneMesh_ksou2")
 
-[node name="AreaLight3D" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=1256355778]
+[node name="AreaLight3D" type="AreaLight3D" parent="opoveshatel3/Decal13_Plane" unique_id=1256355778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, 1.4044712, 1.5272205, -0.57155967)
 visible = false
 light_energy = 0.704
@@ -77,7 +77,7 @@ light_bake_mode = 1
 shadow_enabled = true
 area_size = Vector2(0.62540746, 0.5814543)
 
-[node name="AreaLight3D2" type="AreaLight3D" parent="opoveshatel2/Decal13_Plane" unique_id=8306778]
+[node name="AreaLight3D2" type="AreaLight3D" parent="opoveshatel3/Decal13_Plane" unique_id=8306778]
 transform = Transform3D(-1, 4.3711374e-08, 1.3113416e-07, 4.3711385e-08, 1, 8.742277e-08, -1.3113416e-07, 8.742278e-08, -1, -1.610991, 1.577302, -0.57155967)
 visible = false
 light_energy = 0.704

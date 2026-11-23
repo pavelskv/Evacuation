@@ -36,5 +36,7 @@ collision_layer = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1.18, -0.02054937)
 shape = SubResource("BoxShape3D_f68q1")
 
+[node name="AudioPlayer" type="AudioStreamPlayer3D" parent="." unique_id=574713026]
+
 [editable path="PivotLeft/kor_L"]
 [editable path="PivotRight/kor_R"]
