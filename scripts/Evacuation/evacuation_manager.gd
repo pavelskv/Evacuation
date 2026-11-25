@@ -71,7 +71,7 @@ func start() -> void:
 	_start_msec = Time.get_ticks_msec()
 	_elapsed_sec = 0.0
 
-	Notify.alarm("Пожарная тревога!\nВсем сотрудникам необходимо покинуть здание!", "Внимание!")
+	
 
 	tasks_reset.emit()
 

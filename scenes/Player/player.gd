@@ -28,6 +28,7 @@ const MOUSE_SENSITIVITY = 0.002
 @onready var interact_label = $CrosshairController/HintContainer/InteractLabel
 @onready var crosshair = $CrosshairController
 @onready var footstep_player: AudioStreamPlayer3D = $FootstepPlayer
+@onready var smoke: ColorRect = $CanvasLayer/Smoke
 
 var current_speed = WALK_SPEED
 var e_pressed = false
@@ -179,3 +180,6 @@ func _interact():
 func change_visibility_hints(visible: bool): 
 	interact_label.visible = visible
 	crosshair.visible = visible
+	
+func fade_in_fog(duration: float = 5.0, target_alpha: float = 0.7) -> void:
+	smoke.fade_in_fog(duration, target_alpha)

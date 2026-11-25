@@ -76,7 +76,7 @@ script = ExtResource("1_3y5we")
 player_computer = NodePath("Pc3")
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=1093298756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.70973533, 0.8043487, -0.9312848)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2171724, 0, -0.787236)
 
 [node name="table2" parent="." unique_id=1289605029 instance=ExtResource("2_3y5we")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -6.349003, -0.016301095, -1.65087)

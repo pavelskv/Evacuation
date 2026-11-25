@@ -7,6 +7,10 @@ extends Node
 @export var use_debug_camera: bool = false
 @export var debug_camera_scene: PackedScene
 
+@onready var loading_screen: LoadingScreen = $"../LoadingScreen"
+
+const SHADER_WARMUP_SCRIPT = preload("res://scripts/ShaderWarmup.gd")
+
 const SMOKE_SCENE: PackedScene = preload("res://scenes/Smoke/smoke.tscn")
 const CABINETS_PER_FRAME: int = 1
 
@@ -111,6 +115,8 @@ func _spawn() -> void:
 	EvacuationManager.spawn_cabinet = spawn_cabinet
 	spawn_cabinet.initialize_room()
 	EvacGraph.attach_room(spawn_cabinet)
+	
+	await get_tree().process_frame
 
 	# 3. Сразу создаём игрока в стартовом кабинете
 	var player := player_scene.instantiate() as Node3D
@@ -124,13 +130,20 @@ func _spawn() -> void:
 		push_warning("В сцене кабинета нет узла PlayerSpawn!")
 		
 	scene_root.add_child(player)
+	
+	var player_camera := player.get_node("Head/Camera3D") as Camera3D
 
+	await SHADER_WARMUP_SCRIPT.run(
+		player_camera,
+		loading_screen,
+		12
+	)
 
-	evacuation_tracker = EvacuationTracker.new()
-	add_child(evacuation_tracker)
-	evacuation_tracker.tracking_finished.connect(_on_evacuation_tracking_finished)
-	evacuation_tracker.start_tracking(player, EvacGraph)
-
+	
+	await loading_screen.hide_loading()
+	
+	print("Позиция игрока: ", player.global_position)
+	
 	var cab_id: int = spawn_cabinet.get_meta("cabinet_id")
 	var floor_num: int = spawn_cabinet.get_meta("floor_number")
 
@@ -138,8 +151,11 @@ func _spawn() -> void:
 		"Вы находитесь в кабинете №%d здания ПЛК на %d этаже" % [cab_id, floor_num],
 		"Местоположение"
 	)
-	EvacuationManager.start()
 
+	var cutscene := IntroCutscene.new()
+	scene_root.add_child(cutscene)
+	cutscene.play(player, spawn_cabinet)
+	
 	# 4. Доспавниваем остальные кабинеты по несколько штук за кадр
 	var spawned_in_step := 0
 	for door in valid_doors:
@@ -165,7 +181,21 @@ func _spawn() -> void:
 		smoke.global_position = smoke_pos
 
 	EvacGraph.build_route(player.global_position)
-	get_tree().call_group("speaker", "play_sound")
+	
+	await cutscene.finished
+
+	evacuation_tracker = EvacuationTracker.new()
+	add_child(evacuation_tracker)
+	evacuation_tracker.tracking_finished.connect(_on_evacuation_tracking_finished)
+	evacuation_tracker.start_tracking(player, EvacGraph)
+
+	EvacuationManager.start()
+	print("Позиция игрока: ", player.global_position)
+	player.fade_in_fog(5.0, 0.5)
+	
+	
+	
+	#get_tree().call_group("speaker", "play_sound")
 	
 func _on_evacuation_tracking_finished(result: Dictionary) -> void:
 	EvacuationManager.finish(result)

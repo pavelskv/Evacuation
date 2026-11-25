@@ -9,6 +9,8 @@
 [ext_resource type="AudioStream" uid="uid://yief5hr2c7y4" path="res://assets/sound/footsteps/footstep_concrete_002.ogg" id="4_n7rn1"]
 [ext_resource type="AudioStream" uid="uid://dwvw6peuphvqa" path="res://assets/sound/footsteps/footstep_concrete_003.ogg" id="5_7tfl1"]
 [ext_resource type="AudioStream" uid="uid://bfk4q4vtoilky" path="res://assets/sound/footsteps/footstep_concrete_004.ogg" id="6_jxtnq"]
+[ext_resource type="Shader" uid="uid://brdtq4n8yuu1g" path="res://scenes/Player/fog.gdshader" id="10_uxo23"]
+[ext_resource type="Script" uid="uid://dgh1mxc5gra8o" path="res://scenes/Player/fog.gd" id="11_n7rn1"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1"]
 radius = 0.3
@@ -22,7 +24,7 @@ shadow_color = Color(0, 0, 0, 0.50980395)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_bhunq"]
 shader = ExtResource("4_c4h5g")
-shader_parameter/vignette_intensity = 0.6
+shader_parameter/vignette_intensity = 0.0
 shader_parameter/grain_intensity = 0.15
 shader_parameter/aberration_strength = 0.02
 shader_parameter/flicker_intensity = 0.05
@@ -30,6 +32,38 @@ shader_parameter/sepia_amount = 0.3
 shader_parameter/fade_blacks = 0.1
 shader_parameter/barrel_strength = 0.35
 shader_parameter/zoom = 1.15
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_uxo23"]
+frequency = 0.0047
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_n7rn1"]
+noise = SubResource("FastNoiseLite_uxo23")
+seamless = true
+seamless_blend_skirt = 1.0
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_n7rn1"]
+frequency = 0.02
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7tfl1"]
+noise = SubResource("FastNoiseLite_n7rn1")
+seamless = true
+seamless_blend_skirt = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_csipu"]
+shader = ExtResource("10_uxo23")
+shader_parameter/camera_position = Vector2(0, 0)
+shader_parameter/camera_offset = Vector2(0, 0)
+shader_parameter/camera_position_speed = 0.025
+shader_parameter/camera_offset_speed = 0.025
+shader_parameter/noise_texture_1 = SubResource("NoiseTexture2D_n7rn1")
+shader_parameter/noise_texture_2 = SubResource("NoiseTexture2D_7tfl1")
+shader_parameter/noise_blend = 0.48400002299
+shader_parameter/noise_speed_1 = 0.30000001425
+shader_parameter/noise_speed_2 = 0.30000001425
+shader_parameter/noise_dir_1 = Vector2(1, 1)
+shader_parameter/noise_dir_2 = Vector2(1, -1)
+shader_parameter/smoke_color = Color(0.58707803, 0.58707845, 0.58707833, 1)
+shader_parameter/density = 1.0
 
 [node name="Player" type="CharacterBody3D" unique_id=1500151941]
 script = ExtResource("1")
@@ -92,5 +126,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Smoke" type="ColorRect" parent="CanvasLayer" unique_id=114276727]
+material = SubResource("ShaderMaterial_csipu")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("11_n7rn1")
 
 [node name="FootstepPlayer" type="AudioStreamPlayer3D" parent="." unique_id=1268938105]

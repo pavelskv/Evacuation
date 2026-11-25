@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://b430uamxq8han" path="res://scenes/UI/PauseMenu/pause_menu.tscn" id="25_2wyq8"]
 [ext_resource type="PackedScene" uid="uid://b8tcs7k6ucece" path="res://scenes/Plan/PlanViewer.tscn" id="26_0aed0"]
 [ext_resource type="Script" uid="uid://n5a8qkkeyebk" path="res://scripts/Evacuation/Points/graph_debug.gd" id="26_qcehk"]
+[ext_resource type="PackedScene" uid="uid://2rwi7cs5qekw" path="res://scenes/UI/Loading/LoadingScreen.tscn" id="27_qcehk"]
 [ext_resource type="PackedScene" uid="uid://drics75ljx3rx" path="res://scripts/Evacuation/EvacuationTasksUI.tscn" id="28_vu8r1"]
 [ext_resource type="Script" uid="uid://f6jrelrw8xpk" path="res://addons/rb_condition_manager/game/rbcm_loader.gd" id="28_w5pvf"]
 [ext_resource type="PackedScene" uid="uid://57vxupnx85cc" path="res://models/office/firelom.glb" id="37_fuf3a"]
@@ -241,3 +242,5 @@ enabled = false
 script = ExtResource("28_w5pvf")
 RBCM_Datafile = "res://scenes/Main/data.rbcm"
 metadata/_custom_type_script = "uid://f6jrelrw8xpk"
+
+[node name="LoadingScreen" parent="." unique_id=1692454576 instance=ExtResource("27_qcehk")]

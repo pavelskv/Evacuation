@@ -56,7 +56,7 @@ player_computer = NodePath("Pc")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0037156343, -0.00055933, 0.001863718)
 
 [node name="PlayerSpawn" type="Marker3D" parent="." unique_id=511730757]
-transform = Transform3D(-0.81859493, 0, -0.5743713, 0, 1, 0, 0.5743713, 0, -0.81859493, -0.3008728, 0.34935534, -4.9575386)
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -0.301, 0, -4.678937)
 
 [node name="Door" parent="." unique_id=1320742896 instance=ExtResource("2_68ffn")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0.88, -0.0013810396, -0.0068818554)

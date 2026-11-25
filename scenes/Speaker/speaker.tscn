@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://fi3pwuex2afq" path="res://models/office/opoveshatel.glb" id="1_4g04j"]
 [ext_resource type="Script" uid="uid://cvrvyocrhuyq7" path="res://scenes/Speaker/speaker.gd" id="2_4g04j"]
-[ext_resource type="AudioStream" uid="uid://b02sbrkdv4pew" path="res://assets/sound/04299.mp3" id="3_uykuh"]
+[ext_resource type="AudioStream" uid="uid://bfxiecwego54i" path="res://assets/sound/alarm_3.ogg" id="3_uykuh"]
 
 [node name="opoveshatel2" unique_id=268038064 instance=ExtResource("1_4g04j")]
 script = ExtResource("2_4g04j")
