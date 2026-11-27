@@ -8,6 +8,9 @@ var _tween: Tween
 
 @onready var screen = $monitor_2/Screen
 @onready var monitor = $monitor_2
+@onready var audio_player = $AudioPlayer
+
+const button_sound := preload("res://assets/sound/pc_disable_button.ogg")
 
 var enabled := false
 
@@ -47,6 +50,9 @@ func interact():
 	enabled = not enabled
 	set_screen(enabled)
 	
+	audio_player.stream = button_sound
+	audio_player.play()
+	
 	notify_state_changed()
 	
 func get_training_task_id() -> StringName:
@@ -57,3 +63,9 @@ func is_task_completed() -> bool:
 
 func _process(delta: float) -> void:
 	pass
+
+func play_sound() -> void:
+	audio_player.play()
+	
+func stop_sound() -> void: 
+	audio_player.stop()

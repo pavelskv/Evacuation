@@ -56,17 +56,19 @@ func _on_body_entered(body: Node3D) -> void:
 	_time_inside = 0.0
 	_dead = false
 	vignette_rect.visible = true
+	_player.start_cough()
 
 
 func _on_body_exited(body: Node3D) -> void:
 	if body != _player:
 		return
+		
+	_player.stop_cough()
 	_player = null
 
 	# Если игрок вышел до смерти — плавно гасим затемнение
 	if not _dead:
 		_fade_out()
-
 
 func _fade_out() -> void:
 	var current := 0.0

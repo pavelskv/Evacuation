@@ -4,6 +4,7 @@ var taken := false
 var interactable:= false
 
 @onready var shmot = $shmot
+@onready var audio_player: AudioStreamPlayer3D = $AudioPlayer
 
 func _ready() -> void:
 	add_to_group("training_task_objects")
@@ -27,6 +28,8 @@ func interact():
 	notify_state_changed()
 	
 	$shmot/StaticBody3D/CollisionShape3D.set_deferred("disabled", true)
+
+	audio_player.play()
 
 	var tween = create_tween()
 	tween.tween_property(self, "scale", Vector3.ZERO, 0.3) \

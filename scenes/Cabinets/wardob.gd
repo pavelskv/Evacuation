@@ -8,8 +8,13 @@ extends Interactable
 var is_open := false
 var tween: Tween
 
+@export var open_sound: AudioStream
+@export var close_sound: AudioStream
+@export var pitch_jitter: float = 0.05
+
 @onready var pivot_left: Node3D = $shkaf_006
 @onready var pivot_right: Node3D = $shkaf_007
+@onready var audio_player: AudioStreamPlayer3D = $AudioPlayer
 
 func get_message() -> String:
 	return "Закрыть шкаф " if is_open else "Открыть шкаф "
@@ -35,3 +40,14 @@ func interact() -> void:
 	tween.set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
 	tween.tween_property(pivot_left,  "rotation_degrees:y", left_target,  duration)
 	tween.tween_property(pivot_right, "rotation_degrees:y", right_target, duration)
+	
+	var sound = open_sound if is_open else close_sound
+	tween.finished.connect(func(): _play_sound(sound), CONNECT_ONE_SHOT)
+	
+func _play_sound(stream: AudioStream) -> void:
+	if not audio_player or not stream:
+		return
+
+	audio_player.stream = stream
+	audio_player.pitch_scale = randf_range(1.0 - pitch_jitter, 1.0 + pitch_jitter)
+	audio_player.play()

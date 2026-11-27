@@ -1,14 +1,18 @@
 [gd_scene format=3 uid="uid://cpy4njjrftv6l"]
 
 [ext_resource type="Script" uid="uid://koqhntbei7i2" path="res://scenes/Doors/door_double.gd" id="1_83dcw"]
+[ext_resource type="AudioStream" uid="uid://ddbyrxn5hn0kq" path="res://assets/sound/doors/double_door_open.ogg" id="2_6biva"]
 [ext_resource type="PackedScene" uid="uid://b5ka43yw4jp2k" path="res://models/doors/kor_L.glb" id="2_uvdjg"]
 [ext_resource type="PackedScene" uid="uid://nxdo2aeu1ths" path="res://models/doors/kor_R.glb" id="3_83dcw"]
+[ext_resource type="AudioStream" uid="uid://cyuxlh21nbtmd" path="res://assets/sound/doors/double_door_close.ogg" id="3_s5hsp"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_f68q1"]
 size = Vector3(0.601593, 2.3502197, 0.053253174)
 
 [node name="Door" type="Node3D" unique_id=1320742896]
 script = ExtResource("1_83dcw")
+open_sound = ExtResource("2_6biva")
+close_sound = ExtResource("3_s5hsp")
 
 [node name="PivotLeft" type="Node3D" parent="." unique_id=1179660041]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.61, 0, 0)

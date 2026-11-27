@@ -12,6 +12,7 @@ enum HingeSide {
 
 @onready var pivot: Node3D = $window_active
 @onready var window: Node3D = $"window_active/4et_020"
+@onready var audio_player: AudioStreamPlayer3D = $AudioPlayer
 
 var is_open: bool = false
 var tween: Tween
@@ -62,15 +63,13 @@ func interact() -> void:
 		_get_target_angle(),
 		duration
 	)
-
+	tween.finished.connect(func(): audio_player.play(), CONNECT_ONE_SHOT)
 
 func get_message() -> String:
 	return "Закрыть окно " if is_open else ""
 
-
 func get_training_task_id() -> StringName:
 	return &"close_windows"
-
 
 func is_task_completed() -> bool:
 	return not is_open

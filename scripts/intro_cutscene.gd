@@ -30,14 +30,20 @@ func play(player: CharacterBody3D, spawn_cabinet: Node3D) -> void:
 	cam.global_position = sit_pos
 	cam.look_at(pc_look_pos, Vector3.UP)
 	cam.current = true
+	
+	get_tree().call_group("pc_active", "play_sound")
 
 	# 1. Сидит за ПК
 	await get_tree().create_timer(sit_time).timeout
 	if not is_instance_valid(cam):
 		return
+		
 
 	# 2. Сигнализация и взгляд на оповещатель только внутри своей комнаты
 	get_tree().call_group("speaker", "play_sound")
+	
+	get_tree().call_group("pc_active", "stop_sound")
+
 	Notify.alarm("Пожарная тревога!\nВсем сотрудникам необходимо покинуть здание!", "Внимание!")
 	var speaker := _room_speaker(sit_pos)
 	if speaker:

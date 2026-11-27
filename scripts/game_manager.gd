@@ -67,6 +67,8 @@ func _spawn() -> void:
 	if player_scene == null:
 		push_error("Назначь сцену игрока в player_scene!")
 		return
+		
+	await loading_screen.show_loading()
 
 	var raw_doors := get_tree().get_nodes_in_group("cabinet_doors")
 	if raw_doors.is_empty():
@@ -103,6 +105,8 @@ func _spawn() -> void:
 			return
 	else:
 		primary_door = valid_doors.pick_random()
+		
+	await loading_screen.set_progress(30)
 
 	# 2. Сначала создаём стартовый кабинет и подключаем его к графу
 	var spawn_cabinet := _create_cabinet_for_door(primary_door, scene_root)
@@ -132,6 +136,8 @@ func _spawn() -> void:
 	scene_root.add_child(player)
 	
 	var player_camera := player.get_node("Head/Camera3D") as Camera3D
+	
+	await loading_screen.set_progress(50)
 
 	await SHADER_WARMUP_SCRIPT.run(
 		player_camera,
@@ -191,7 +197,7 @@ func _spawn() -> void:
 
 	EvacuationManager.start()
 	print("Позиция игрока: ", player.global_position)
-	player.fade_in_fog(5.0, 0.5)
+	#player.fade_in_fog(10.0, 1)
 	
 	
 	

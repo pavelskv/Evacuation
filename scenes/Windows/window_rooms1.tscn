@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c3v5l428fg0wb" path="res://models/rooms/window_rooms.glb" id="1_mwc48"]
 [ext_resource type="Script" uid="uid://bsiijppdfmari" path="res://scenes/Windows/window_room.gd" id="2_3k04w"]
 [ext_resource type="PackedScene" uid="uid://fvkd7p6a745g" path="res://models/rooms/window_active.glb" id="3_yuakn"]
+[ext_resource type="AudioStream" uid="uid://8qw1tlsot4kp" path="res://assets/sound/close_window.ogg" id="4_3k04w"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_csipu"]
 size = Vector3(0.57714844, 1.4125366, 0.020629883)
@@ -21,3 +22,6 @@ collision_layer = 3
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2945516, 0.71006846, 0.0042352676)
 shape = SubResource("BoxShape3D_csipu")
 debug_color = Color(0, 0.6, 0.69803923, 0.99215686)
+
+[node name="AudioPlayer" type="AudioStreamPlayer3D" parent="." index="2" unique_id=951022292]
+stream = ExtResource("4_3k04w")

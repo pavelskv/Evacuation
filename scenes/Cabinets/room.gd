@@ -15,6 +15,7 @@ func initialize_room() -> void:
 		item.set_interactable()
 			
 	if player_computer != null:
+		player_computer.add_to_group("pc_active")
 		player_computer.set_screen(true)
 
 func _room_nodes(group: StringName) -> Array[Node]:
