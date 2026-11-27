@@ -2,15 +2,19 @@
 
 [ext_resource type="PackedScene" uid="uid://biygn8dquw2hg" path="res://models/office/wardob1.glb" id="1_byo4u"]
 [ext_resource type="Script" uid="uid://b0f3vccy3ig6b" path="res://scenes/Cabinets/wardob.gd" id="2_d3jaq"]
+[ext_resource type="AudioStream" uid="uid://cpwrbboi075un" path="res://assets/sound/warbob_open.ogg" id="3_g2o81"]
 [ext_resource type="LightmapGIData" uid="uid://csgdjb2o25xtt" path="res://scenes/Cabinets/wardob.lmbake" id="3_w31mu"]
+[ext_resource type="AudioStream" uid="uid://kfruf6pdwp7v" path="res://assets/sound/warbob_close.ogg" id="4_dqjrp"]
 
 [node name="wardob1" unique_id=1816264476 instance=ExtResource("1_byo4u")]
 script = ExtResource("2_d3jaq")
+open_sound = ExtResource("3_g2o81")
+close_sound = ExtResource("4_dqjrp")
 
-[node name="StaticBody3D" parent="shkaf_006" parent_id_path=PackedInt32Array(176387059) index="0" unique_id=1035249562]
+[node name="StaticBody3D" parent="shkaf_006" parent_id_path=PackedInt32Array(896841220) index="0" unique_id=1861974641]
 collision_layer = 3
 
-[node name="StaticBody3D" parent="shkaf_007" parent_id_path=PackedInt32Array(635592940) index="0" unique_id=1457539776]
+[node name="StaticBody3D" parent="shkaf_007" parent_id_path=PackedInt32Array(1546849746) index="0" unique_id=1506150909]
 collision_layer = 3
 
 [node name="LightmapGI" type="LightmapGI" parent="." index="3" unique_id=1224342096]
@@ -30,3 +34,5 @@ light_energy = 0.474
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.93750036, 0.30928802)
 visible = false
 light_energy = 0.474
+
+[node name="AudioPlayer" type="AudioStreamPlayer3D" parent="." index="4" unique_id=2065648664]

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cjlvxtixvfw7p" path="res://models/office/PC.glb" id="1_1fyyv"]
 [ext_resource type="Script" uid="uid://dqdxrhb1a4lc6" path="res://scenes/Cabinets/pc.gd" id="2_r7meb"]
 [ext_resource type="Texture2D" uid="uid://brfcnarihjcvh" path="res://assets/images/astra.webp" id="3_louq6"]
+[ext_resource type="AudioStream" uid="uid://8ljsw4f4jt8t" path="res://assets/sound/keyboard.ogg" id="4_xip7f"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_louq6"]
 shading_mode = 0
@@ -16,9 +17,12 @@ script = ExtResource("2_r7meb")
 screen_on_material = SubResource("StandardMaterial3D_louq6")
 message = "Выключить"
 
-[node name="Screen" type="MeshInstance3D" parent="monitor_2" parent_id_path=PackedInt32Array(1113867137) index="0" unique_id=792563859]
+[node name="Screen" type="MeshInstance3D" parent="monitor_2" parent_id_path=PackedInt32Array(582393641) index="0" unique_id=792563859]
 transform = Transform3D(-0.9999989, 0, -0.0007680329, 0, 1, 0, 0.0007680329, 0, -0.9999989, 0.0013914248, 0.31895953, -0.066515096)
 mesh = SubResource("QuadMesh_csipu")
 
-[node name="StaticBody3D" parent="monitor_2" parent_id_path=PackedInt32Array(1113867137) index="1" unique_id=521844719]
+[node name="StaticBody3D" parent="monitor_2" parent_id_path=PackedInt32Array(582393641) index="1" unique_id=112432024]
 collision_layer = 3
+
+[node name="AudioPlayer" type="AudioStreamPlayer3D" parent="." index="1" unique_id=788709735]
+stream = ExtResource("4_xip7f")
